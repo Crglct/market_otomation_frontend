@@ -1,0 +1,1572 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Male-Fashion | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/elegant-icons.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/nice-select.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+
+    <style>
+        .admin-topbar {
+
+            margin-bottom: 30px;
+        }
+
+
+
+        .admin-page-title h3 {
+
+            font-size: 34px;
+
+            font-weight: 800;
+
+            color: #111;
+
+            margin-bottom: 8px;
+        }
+
+
+
+        .admin-page-title p {
+
+            color: #888;
+
+            margin: 0;
+
+            font-size: 15px;
+        }
+
+
+
+        .admin-card {
+
+            background: #fff;
+
+            border-radius: 24px;
+
+            padding: 30px;
+
+            box-shadow:
+                0 10px 35px rgba(0, 0, 0, 0.04);
+
+            border: 1px solid #f1f1f1;
+        }
+
+
+
+        .admin-table {
+
+            margin: 0;
+
+            border-collapse: separate;
+
+            border-spacing: 0 18px;
+        }
+
+
+
+        .admin-table thead tr {
+
+            background: transparent;
+        }
+
+
+
+        .admin-table th {
+
+            font-size: 14px;
+
+            font-weight: 800;
+
+            color: #999;
+
+            border: none;
+
+            padding: 0 20px 14px 20px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 0.5px;
+        }
+
+
+
+        .admin-table tbody tr {
+
+            background: #fff;
+
+            transition: 0.25s;
+
+            box-shadow:
+                0 3px 12px rgba(0, 0, 0, 0.04);
+
+            border-radius: 18px;
+        }
+
+
+
+        .admin-table tbody tr:hover {
+
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 10px 25px rgba(0, 0, 0, 0.07);
+        }
+
+
+
+        .admin-table td {
+
+            vertical-align: middle;
+
+            padding: 22px 20px;
+
+            border: none;
+
+            background: #fff;
+        }
+
+
+
+        .admin-table td:first-child {
+
+            border-top-left-radius: 18px;
+
+            border-bottom-left-radius: 18px;
+        }
+
+
+
+        .admin-table td:last-child {
+
+            border-top-right-radius: 18px;
+
+            border-bottom-right-radius: 18px;
+        }
+
+
+
+        .product-image-wrapper {
+
+            width: 110px;
+
+            height: 110px;
+
+            background: #f8f8f8;
+
+            border-radius: 24px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            overflow: hidden;
+
+            border: 1px solid #f1f1f1;
+        }
+
+
+
+        .product-image {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+        }
+
+
+
+        .product-info {
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            gap: 6px;
+        }
+
+
+
+        .product-name {
+
+            font-size: 18px;
+
+            font-weight: 800;
+
+            color: #111;
+
+            line-height: 1.4;
+        }
+
+
+
+        .status-badge {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            min-width: 140px;
+
+            height: 42px;
+
+            padding: 0 18px;
+
+            border-radius: 999px;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            white-space: nowrap;
+        }
+
+
+
+        .status-active {
+
+            background: #e7f8ef;
+
+            color: #1f9d55;
+        }
+
+
+
+        .status-passive {
+
+            background: #fff0f0;
+
+            color: #ff4d4f;
+        }
+
+        .order-row {
+
+            cursor: pointer;
+
+            transition: all .2s ease;
+        }
+
+
+
+        .order-row:hover {
+
+            background: #fafafa;
+        }
+
+
+        .actions {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
+        }
+
+        .order-no {
+
+            font-weight: 700;
+
+            white-space: nowrap;
+        }
+
+        .action-btn {
+
+            width: 44px;
+
+            height: 44px;
+
+            border-radius: 14px;
+
+            border: none;
+
+            cursor: pointer;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            transition: 0.2s;
+
+            font-size: 18px;
+        }
+
+        .orders-table-wrapper,
+        .table-responsive {
+
+            overflow: visible !important;
+        }
+
+
+
+        .nice-select .list {
+
+            z-index: 99999 !important;
+        }
+
+        .action-btn:hover {
+
+            transform: translateY(-2px);
+        }
+
+
+
+        .btn-edit {
+
+            background: #111;
+
+            color: #fff;
+        }
+
+
+
+        .btn-passive {
+
+            background: #fff4e5;
+
+            color: #ff9800;
+        }
+
+
+
+        .btn-active {
+
+            background: #e8f7ee;
+
+            color: #1f9d55;
+        }
+
+
+
+        .form-control {
+
+            height: 56px;
+
+            border-radius: 16px;
+
+            border: 1px solid #eee;
+
+            box-shadow: none;
+
+            font-size: 15px;
+
+            padding: 0 20px;
+        }
+
+
+
+        .form-control:focus {
+
+            border-color: #111;
+
+            box-shadow: none;
+        }
+
+
+
+        .site-btn {
+
+            height: 56px;
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 0 28px;
+
+            border-radius: 16px;
+
+            font-size: 14px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.5px;
+        }
+
+        .banner-card {
+
+            padding: 20px;
+        }
+
+
+
+        .banner-image-wrapper {
+
+            width: 100%;
+
+            height: 240px;
+
+            overflow: hidden;
+
+            border-radius: 18px;
+
+            background: #f8f8f8;
+        }
+
+
+
+        .banner-image {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+        }
+
+
+
+        .admin-label {
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            margin-bottom: 10px;
+
+            display: block;
+
+            color: #111;
+        }
+
+        .banner-create-card {
+
+            padding: 22px;
+        }
+
+        .banner-card {
+
+            transition: .25s;
+        }
+
+
+
+        .banner-card:hover {
+
+            transform: translateY(-4px);
+
+            box-shadow:
+                0 14px 40px rgba(0, 0, 0, .08);
+        }
+
+        .orders-table-wrapper {
+
+            height: calc(100vh - 260px);
+
+            overflow-y: visible;
+
+            overflow-x: hidden;
+
+            border-radius: 18px;
+        }
+
+
+
+        .orders-table-wrapper::-webkit-scrollbar {
+
+            width: 8px;
+        }
+
+
+
+        .orders-table-wrapper::-webkit-scrollbar-thumb {
+
+            background: #dcdcdc;
+
+            border-radius: 999px;
+        }
+
+
+
+        .admin-table thead {
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 20;
+        }
+
+
+
+        .admin-table thead th {
+
+            background: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+
+    <!-- Offcanvas Menu End -->
+
+
+    <!-- Header Section Begin -->
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__text">
+                        <h4>Admin Panel</h4>
+                        <div class="breadcrumb__links">
+                            <a href="/admin/dashboard.html">Dashboard</a>
+                            <span>Dashboard</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+    <div id="profileLoader" style="
+        height:500px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size:22px;
+        font-weight:700;
+    ">
+
+        Yükleniyor...
+
+    </div>
+
+    <!-- About Section Begin -->
+    <section class="profile-section spad" id="profileContent" style="display:none;">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- SOL MENU -->
+
+                <div class="col-lg-3">
+
+                    <div id="sidebar-container"></div>
+
+                </div>
+
+                <!-- SAĞ PANEL -->
+
+                <div class="col-lg-9">
+
+                    <!-- TOP BAR -->
+
+                    <div class="admin-topbar">
+
+                        <div class="row align-items-center">
+
+                            <!-- TITLE -->
+
+                            <div class="col-lg-6">
+
+                                <div class="admin-page-title">
+
+                                    <h3>
+                                        Kullanıcı Yönetimi
+                                    </h3>
+
+                                    <p>
+                                        Tüm kullanıcıları buradan yönetebilirsiniz.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- SEARCH -->
+
+                            <div class="col-lg-3">
+
+                                <input type="text" class="form-control" id="searchUser"
+                                    placeholder="Ad Soyad veya E-Posta Ara">
+
+                            </div>
+
+
+
+                            <!-- FILTER -->
+
+                            <div class="col-lg-3">
+
+                                <select class="form-control" id="statusFilter">
+
+                                    <option value="">
+                                        Tüm Kullanıcılar
+                                    </option>
+
+                                    <option value="active">
+                                        Aktif Kullanıcılar
+                                    </option>
+
+                                    <option value="passive">
+                                        Pasif Kullanıcılar
+                                    </option>
+
+                                </select>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- USERS TABLE -->
+
+                    <div class="admin-card mt-4">
+
+                        <div class="table-responsive orders-table-wrapper">
+
+                            <table class="table admin-table align-middle">
+
+                                <thead>
+
+                                    <tr>
+
+                                        <th>
+                                            Kullanıcı
+                                        </th>
+
+                                        <th>
+                                            E-Posta
+                                        </th>
+
+                                        <th>
+                                            Telefon
+                                        </th>
+
+                                        <th>
+                                            Rol
+                                        </th>
+
+                                        <th>
+                                            Durum
+                                        </th>
+
+                                    </tr>
+
+                                </thead>
+
+                                <tbody id="usersTableBody">
+
+                                    <!-- JS -->
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PAGINATION -->
+
+                    <div class="d-flex justify-content-center mt-4" id="paginationContainer">
+                    </div>
+
+                </div>
+
+
+
+                <!-- USER DETAIL MODAL -->
+
+                <div id="userModal" style="
+        position:fixed;
+        inset:0;
+        background:rgba(0,0,0,0.5);
+        display:none;
+        align-items:center;
+        justify-content:center;
+        z-index:9999;
+    ">
+
+                    <div style="
+        width:650px;
+        background:white;
+        border-radius:30px;
+        padding:35px;
+        max-height:90vh;
+        overflow-y:auto;
+    ">
+
+                        <!-- HEADER -->
+
+                        <div style="
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            margin-bottom:30px;
+        ">
+
+                            <div>
+
+                                <h3 style="
+                    font-size:34px;
+                    font-weight:800;
+                    margin:0;
+                ">
+                                    Kullanıcı Detayı
+                                </h3>
+
+                                <p style="
+                    margin-top:8px;
+                    color:#777;
+                ">
+                                    Kullanıcı bilgilerini görüntüleyin.
+                                </p>
+
+                            </div>
+
+
+
+                            <button onclick="closeUserModal()" style="
+                    border:none;
+                    background:none;
+                    font-size:34px;
+                    line-height:1;
+                ">
+                                ×
+                            </button>
+
+                        </div>
+
+
+
+                        <!-- CONTENT -->
+
+                        <div id="userModalContent">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+
+    </section>
+    <!-- About Section End -->
+
+    <!-- Testimonial Section Begin -->
+
+    <!-- Testimonial Section End -->
+
+    <!-- Counter Section Begin -->
+
+    <!-- Counter Section End -->
+
+    <!-- Team Section Begin -->
+
+
+    <!-- Team Section End -->
+
+    <!-- Client Section Begin -->
+
+
+    <!-- Client Section End -->
+
+    <!-- Footer Section Begin -->
+
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+
+    <script src="../js/bootstrap.min.js"></script>
+
+    <script src="../js/jquery.nice-select.min.js"></script>
+
+    <script src="../js/jquery.nicescroll.min.js"></script>
+
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+
+    <script src="../js/jquery.countdown.min.js"></script>
+
+    <script src="../js/jquery.slicknav.js"></script>
+
+    <script src="../js/mixitup.min.js"></script>
+
+    <script src="../js/owl.carousel.min.js"></script>
+
+    <script src="../js/main.js"></script>
+
+    <script>
+
+        const currentPage = "users";
+
+        let users = [];
+
+
+
+        document.addEventListener(
+
+            "DOMContentLoaded",
+
+            async function () {
+
+                await initializePage();
+
+            }
+        );
+
+
+
+        async function initializePage() {
+
+            try {
+
+                const token = localStorage.getItem(
+                    "admin_token"
+                );
+
+                if (!token) {
+
+                    window.location.href =
+                        "login.html";
+
+                    return;
+                }
+
+                showLoader();
+
+                await loadSidebar();
+
+                initializeLogout();
+
+                await fetchUsers();
+
+                $('select').niceSelect();
+
+                initializeFilters();
+
+                hideLoader();
+
+            }
+            catch (error) {
+
+                console.error(
+                    "Sayfa yüklenirken hata oluştu:",
+                    error
+                );
+            }
+        }
+
+
+
+        async function loadSidebar() {
+
+            try {
+
+                const response = await fetch(
+                    "./sidebar.html"
+                );
+
+                const html =
+                    await response.text();
+
+                document.getElementById(
+                    "sidebar-container"
+                ).innerHTML = html;
+
+                setActiveSidebar();
+
+            }
+            catch (error) {
+
+                console.error(
+                    "Sidebar hatası:",
+                    error
+                );
+            }
+        }
+
+
+
+        function setActiveSidebar() {
+
+            const sidebarLinks =
+
+                document.querySelectorAll(
+                    ".sidebar-link"
+                );
+
+            sidebarLinks.forEach(link => {
+
+                link.classList.remove(
+                    "active"
+                );
+
+                if (
+                    link.dataset.page ===
+                    currentPage
+                ) {
+
+                    link.classList.add(
+                        "active"
+                    );
+                }
+            });
+        }
+
+
+
+        async function fetchUsers() {
+            try {
+
+                const token =
+                    localStorage.getItem(
+                        "admin_token"
+                    );
+
+
+
+                const search =
+
+                    document.getElementById(
+                        "searchUser"
+                    ).value;
+
+
+
+                const status =
+
+                    document.getElementById(
+                        "statusFilter"
+                    ).value;
+
+
+
+                const response = await fetch(
+
+                    `http://127.0.0.1:8000/api/admin/users?search=${search}&status=${status}`,
+
+                    {
+
+                        method: "GET",
+
+                        headers: {
+
+                            "Accept":
+                                "application/json",
+
+                            "Authorization":
+                                `Bearer ${token}`
+                        }
+                    }
+                );
+
+
+
+                if (response.status === 401) {
+
+                    localStorage.removeItem(
+                        "admin_token"
+                    );
+
+                    window.location.href =
+                        "login.html";
+
+                    return;
+                }
+
+
+
+                const result =
+                    await response.json();
+
+                console.log(result);
+
+                users = result.data.data ?? [];
+
+
+
+                renderUsers();
+
+            }
+            catch (error) {
+
+                console.error(
+                    "Kullanıcılar alınamadı:",
+                    error
+                );
+            }
+        }
+
+
+
+        function renderUsers() {
+
+            const tableBody =
+
+                document.getElementById(
+                    "usersTableBody"
+                );
+
+            tableBody.innerHTML = "";
+
+
+
+            if (
+                users.length === 0
+            ) {
+
+                tableBody.innerHTML = `
+
+                <tr>
+
+                    <td colspan="5">
+
+                        <div class="text-center py-5">
+
+                            Kullanıcı bulunamadı
+
+                        </div>
+
+                    </td>
+
+                </tr>
+
+            `;
+
+                return;
+            }
+
+
+
+            let html = "";
+
+
+
+            users.forEach(user => {
+
+                html += `
+
+                <tr
+
+                    onclick="
+                        openUserModal(
+                            ${user.id}
+                        )
+                    "
+
+                    style="
+                        cursor:pointer;
+                    "
+                >
+
+                    <td>
+
+                        <div style="
+                            font-weight:700;
+                            color:#111;
+                        ">
+
+                            ${user.first_name}
+
+                            <br>
+
+                            ${user.last_name}
+
+                        </div>
+
+                    </td>
+
+
+
+                    <td>
+
+                        ${user.email}
+
+                    </td>
+
+
+
+                    <td>
+
+                        ${user.phone ?? '-'}
+
+                    </td>
+
+
+
+                    <td>
+
+                        ${user.role === 'admin'
+
+                        ? 'Admin'
+                        : 'Kullanıcı'
+                    }
+
+                    </td>
+
+
+
+                    <td>
+
+                        <span
+
+                            class="status-badge"
+
+                            style="
+                                background:
+
+                                ${user.is_active
+
+                        ? '#d4edda'
+                        : '#f8d7da'};
+
+                                color:
+
+                                ${user.is_active
+
+                        ? '#20bf6b'
+                        : '#eb3b5a'};
+                            "
+                        >
+
+                            ${user.is_active
+
+                        ? 'Aktif'
+                        : 'Pasif'
+                    }
+
+                        </span>
+
+                    </td>
+
+                </tr>
+
+            `;
+            });
+
+            tableBody.innerHTML = html;
+        }
+
+
+
+        function openUserModal(id) {
+            const user = users.find(
+                x => x.id === id
+            );
+
+            if (!user) {
+                return;
+            }
+
+            document.getElementById(
+                "userModal"
+            ).style.display = "flex";
+
+
+
+            document.getElementById(
+                "userModalContent"
+            ).innerHTML = `
+
+            <div style="
+                display:flex;
+                flex-direction:column;
+                gap:18px;
+            ">
+
+                <div>
+
+                    <b>ID:</b>
+
+                    ${user.id}
+
+                </div>
+
+
+
+                <div>
+
+                    <b>Ad Soyad:</b>
+
+                    ${user.first_name}
+                    ${user.last_name}
+
+                </div>
+
+
+
+                <div>
+
+                    <b>E-Posta:</b>
+
+                    ${user.email}
+
+                </div>
+
+
+
+                <div>
+
+                    <b>Telefon:</b>
+
+                    ${user.phone ?? '-'}
+
+                </div>
+
+
+
+                <div>
+
+                    <b>Rol:</b>
+
+                    ${user.role === 'admin'
+
+                    ? 'Admin'
+                    : 'Kullanıcı'
+                }
+
+                </div>
+
+
+
+                <div>
+
+                    <b>Durum:</b>
+
+                    ${user.is_active
+                    ? 'Aktif'
+                    : 'Pasif'
+                }
+
+                </div>
+
+
+
+                <div>
+
+                    <b>Adres:</b>
+
+                    ${user.addresses &&
+                    user.addresses.length > 0
+
+                    ? `
+
+                            ${user.addresses[0].city?.name ?? ''}
+
+                            /
+
+                            ${user.addresses[0].district?.name ?? ''}
+
+                            /
+
+                            ${user.addresses[0].neighborhood?.name ?? ''}
+
+                            <br><br>
+
+                            ${user.addresses[0].address}
+
+                        `
+
+                    : '-'
+                }
+
+                </div>
+
+
+
+                <div>
+
+                    <b>Kayıt Tarihi:</b>
+
+                    ${new Date(
+                    user.created_at
+                ).toLocaleDateString("tr-TR")}
+
+                </div>
+
+
+
+                <div style="
+                    display:flex;
+                    gap:14px;
+                    margin-top:25px;
+                ">
+
+                    <button
+
+                        onclick="
+                            toggleUserStatus(
+                                ${user.id}
+                            )
+                        "
+
+                        ${user.role === 'admin'
+                    ? 'disabled'
+                    : ''
+                }
+
+                        style="
+                            flex:1;
+
+                            border:none;
+
+                            background:
+
+                            ${user.is_active
+                    ? '#eb3b5a'
+                    : '#20bf6b'};
+
+                            color:white;
+
+                            padding:16px;
+
+                            border-radius:16px;
+
+                            font-weight:700;
+
+                            opacity:${user.role === 'admin'
+                    ? '0.5'
+                    : '1'};
+                        "
+                    >
+
+                        ${user.role === 'admin'
+
+                    ? 'Admin'
+
+                    : user.is_active
+
+                        ? 'Pasif Yap'
+
+                        : 'Aktif Yap'
+                }
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        `;
+        }
+
+
+
+        function closeUserModal() {
+            document.getElementById(
+                "userModal"
+            ).style.display = "none";
+        }
+
+
+
+        async function toggleUserStatus(id) {
+            try {
+
+                const token =
+                    localStorage.getItem(
+                        "admin_token"
+                    );
+
+                const response = await fetch(
+
+                    `http://127.0.0.1:8000/api/admin/users/${id}/toggle-status`,
+
+                    {
+
+                        method: "PATCH",
+
+                        headers: {
+
+                            "Accept":
+                                "application/json",
+
+                            "Authorization":
+                                `Bearer ${token}`
+                        }
+                    }
+                );
+
+                const result =
+                    await response.json();
+
+
+
+                if (!response.ok) {
+
+                    alert(
+                        result.message
+                    );
+
+                    return;
+                }
+
+
+
+                closeUserModal();
+
+                await fetchUsers();
+
+            }
+            catch (error) {
+
+                console.error(
+                    "Durum güncelleme hatası:",
+                    error
+                );
+            }
+        }
+
+
+
+        function initializeFilters() {
+
+            document
+
+                .getElementById(
+                    "searchUser"
+                )
+
+                .addEventListener(
+
+                    "input",
+
+                    function () {
+
+                        fetchUsers();
+                    }
+                );
+
+
+
+            $(document).on(
+
+                "change",
+
+                "#statusFilter",
+
+                function () {
+
+                    fetchUsers();
+                }
+            );
+        }
+
+
+
+        function showLoader() {
+
+            document.getElementById(
+                "profileLoader"
+            ).style.display = "flex";
+
+            document.getElementById(
+                "profileContent"
+            ).style.display = "none";
+        }
+
+
+
+        function hideLoader() {
+
+            document.getElementById(
+                "profileLoader"
+            ).style.display = "none";
+
+            document.getElementById(
+                "profileContent"
+            ).style.display = "block";
+        }
+        function initializeLogout() {
+
+            const logoutBtn =
+
+                document.getElementById(
+                    "logoutBtn"
+                );
+
+
+
+            if (!logoutBtn) {
+                return;
+            }
+
+
+
+            logoutBtn.addEventListener(
+
+                "click",
+
+                function (e) {
+
+                    e.preventDefault();
+
+
+
+                    localStorage.removeItem(
+                        "admin_token"
+                    );
+
+
+
+                    window.location.href =
+                        "./login.html";
+                }
+            );
+        }
+    </script>
+
+</html>

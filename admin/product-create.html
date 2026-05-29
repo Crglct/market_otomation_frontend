@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Male-Fashion | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/elegant-icons.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/nice-select.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+
+    <!-- Offcanvas Menu End -->
+
+
+    <!-- Header Section Begin -->
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__text">
+                        <h4>Admin Panel</h4>
+                        <div class="breadcrumb__links">
+                            <a href="/admin/dashboard.html">Dashboard</a>
+                            <span>Dashboard</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+    <div id="profileLoader" style="
+        height:500px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size:22px;
+        font-weight:700;
+    ">
+
+        Yükleniyor...
+
+    </div>
+
+    <!-- About Section Begin -->
+    <section class="profile-section spad" id="profileContent" style="display:none;">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- SOL MENU -->
+
+                <div class="col-lg-3">
+
+                    <div id="sidebar-container"></div>
+
+                </div>
+
+                <!-- SAĞ PANEL -->
+
+                <div class="col-lg-9">
+
+                    <div style="
+                    background:#fff;
+                    border:1px solid #eee;
+                    border-radius:14px;
+                    padding:40px;
+                    box-shadow:0 5px 20px rgba(0,0,0,0.04);
+                ">
+
+                        <!-- HEADER -->
+
+                        <div style="
+                        display:flex;
+                        align-items:center;
+                        justify-content:space-between;
+                        margin-bottom:35px;
+                    ">
+
+                            <div>
+
+                                <h3 style="
+                                font-weight:700;
+                                margin-bottom:8px;
+                            ">
+                                    Yeni Ürün Ekle
+                                </h3>
+
+                                <p style="
+                                color:#777;
+                                margin:0;
+                            ">
+                                    Yeni market ürünü oluşturabilirsiniz.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <!-- FORM -->
+
+                        <div style="
+                        margin-top:30px;
+                    ">
+
+                            <div class="row">
+
+                                <!-- PRODUCT NAME -->
+                                <div class="col-lg-6">
+
+                                    <div class="checkout__input">
+
+                                        <p>Ürün Adı</p>
+
+                                        <input type="text" id="nameInput" placeholder="Ürün adı girin">
+
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-6">
+
+                                    <div class="checkout__input">
+
+                                        <p>Ürün Ölçüsü</p>
+
+                                        <div style="
+            display:flex;
+            gap:10px;
+        ">
+
+                                            <input type="number" id="sizeValueInput" placeholder="Örn: 500">
+
+                                            <select id="sizeTypeInput">
+
+                                                <option value="ML">
+                                                    ML
+                                                </option>
+
+                                                <option value="L">
+                                                    L
+                                                </option>
+
+                                                <option value="GR">
+                                                    GR
+                                                </option>
+
+                                                <option value="KG">
+                                                    KG
+                                                </option>
+
+                                                <option value="Adet">
+                                                    Adet
+                                                </option>
+
+                                                <option value="'li Paket">
+                                                    'li Paket
+                                                </option>
+
+                                            </select>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- CATEGORY -->
+
+                                <div class="col-lg-6">
+
+                                    <div class="checkout__input">
+
+                                        <p>Kategori</p>
+
+                                        <select id="categoryInput">
+
+                                            <option value="">
+                                                Kategori Seç
+                                            </option>
+
+                                        </select>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- BRAND -->
+
+                                <div class="col-lg-6">
+
+                                    <div class="checkout__input">
+
+                                        <p>Marka</p>
+
+                                        <select id="brandInput">
+
+                                            <option value="">
+                                                Marka Seç
+                                            </option>
+
+                                        </select>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- PRICE -->
+
+                                <div class="col-lg-6">
+
+                                    <div class="checkout__input">
+
+                                        <p>Fiyat</p>
+
+                                        <input type="number" id="priceInput" placeholder="Ürün fiyatı">
+
+                                    </div>
+
+                                </div>
+
+                                <!-- STOCK -->
+
+                                <div class="col-lg-6">
+
+                                    <div class="checkout__input">
+
+                                        <p>Stok</p>
+
+                                        <input type="number" id="stockInput" placeholder="Ürün stok miktarı">
+
+                                    </div>
+
+                                </div>
+
+                                <!-- DISCOUNT -->
+
+                                <div class="col-lg-6">
+
+                                    <div class="checkout__input">
+
+                                        <p>İndirim Oranı (%)</p>
+
+                                        <input type="number" id="discountInput" placeholder="Örn: 10">
+
+                                    </div>
+
+                                </div>
+
+                                <!-- STATUS -->
+
+                                <div class="col-lg-6">
+
+                                    <div class="checkout__input">
+
+                                        <p>Durum</p>
+
+                                        <select id="statusInput">
+
+                                            <option value="1">
+                                                Aktif
+                                            </option>
+
+                                            <option value="0">
+                                                Pasif
+                                            </option>
+
+                                        </select>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- DESCRIPTION -->
+
+                                <div class="col-lg-12">
+
+                                    <div class="checkout__input">
+
+                                        <p>Açıklama</p>
+
+                                        <textarea id="descriptionInput" placeholder="Ürün açıklaması" style="
+                                            width:100%;
+                                            height:140px;
+                                            border:1px solid #e1e1e1;
+                                            border-radius:8px;
+                                            padding:15px;
+                                        "></textarea>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-6">
+
+                                    <div class="checkout__input">
+
+                                        <p>Barkod</p>
+
+                                        <input type="text" id="barcodeInput" placeholder="Ürün barkodu">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-6">
+
+                                    <div class="checkout__input">
+
+                                        <p>Son Kullanma Tarihi</p>
+
+                                        <input type="date" id="expireDateInput">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-6">
+
+                                    <div class="checkout__input">
+
+                                        <p>Menşei Ülke</p>
+
+                                        <input type="text" id="countryInput" placeholder="Örn: Türkiye">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-12">
+
+                                    <div class="checkout__input">
+
+                                        <p>İçindekiler</p>
+
+                                        <textarea id="contentsInput" style="
+                width:100%;
+                height:120px;
+                border:1px solid #e1e1e1;
+                border-radius:8px;
+                padding:15px;
+            " placeholder="Örn: Su, şeker, aroma verici"></textarea>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-12">
+
+                                    <div class="checkout__input">
+
+                                        <p>Saklama Koşulu</p>
+
+                                        <textarea id="storageInput" style="
+                width:100%;
+                height:120px;
+                border:1px solid #e1e1e1;
+                border-radius:8px;
+                padding:15px;
+            " placeholder="Örn: Serin ve kuru yerde saklayınız"></textarea>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- IMAGES -->
+
+                                <div class="col-lg-12">
+
+                                    <div class="checkout__input">
+
+                                        <p>Ürün Fotoğrafları</p>
+
+                                        <input type="file" id="productImagesInput" multiple>
+
+                                        <div id="imagePreviewContainer" style="
+                                            display:flex;
+                                            flex-wrap:wrap;
+                                            gap:15px;
+                                            margin-top:20px;
+                                        "></div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- BUTTON -->
+
+                            <button id="createProductButton" class="site-btn" style="
+                                margin-top:40px;
+                                border-radius:10px;
+                                padding:14px 35px;
+                            ">
+
+                                Ürünü Oluştur
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- About Section End -->
+
+    <!-- Testimonial Section Begin -->
+
+    <!-- Testimonial Section End -->
+
+    <!-- Counter Section Begin -->
+
+    <!-- Counter Section End -->
+
+    <!-- Team Section Begin -->
+
+
+    <!-- Team Section End -->
+
+    <!-- Client Section Begin -->
+
+
+    <!-- Client Section End -->
+
+    <!-- Footer Section Begin -->
+
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+
+    <script src="../js/bootstrap.min.js"></script>
+
+    <script src="../js/jquery.nice-select.min.js"></script>
+
+    <script src="../js/jquery.nicescroll.min.js"></script>
+
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+
+    <script src="../js/jquery.countdown.min.js"></script>
+
+    <script src="../js/jquery.slicknav.js"></script>
+
+    <script src="../js/mixitup.min.js"></script>
+
+    <script src="../js/owl.carousel.min.js"></script>
+
+    <script src="../js/main.js"></script>
+
+ <script>
+
+const API_BASE =
+    "http://127.0.0.1:8000/api";
+
+const token =
+    localStorage.getItem(
+        "admin_token"
+    );
+
+if (!token) {
+
+    window.location.href =
+        "login.html";
+}
+
+$(document).ready(function () {
+
+    if ($.fn.niceSelect) {
+
+        $('select').niceSelect();
+    }
+});
+
+function showPopup(
+    message,
+    success = true
+) {
+
+    const popup =
+        document.getElementById(
+            "popup"
+        );
+
+    const popupText =
+        document.getElementById(
+            "popupText"
+        );
+
+    const popupIcon =
+        document.getElementById(
+            "popupIcon"
+        );
+
+    popupText.innerText =
+        message;
+
+    if (success) {
+
+        popupIcon.style.background =
+            "#27ae60";
+
+        popupIcon.innerText =
+            "✓";
+
+    } else {
+
+        popupIcon.style.background =
+            "#e74c3c";
+
+        popupIcon.innerText =
+            "!";
+    }
+
+    popup.style.display =
+        "flex";
+
+    setTimeout(() => {
+
+        popup.style.display =
+            "none";
+
+    }, 3000);
+}
+
+async function loadCategories() {
+
+    try {
+
+        const response =
+            await fetch(
+                API_BASE +
+                "/categories"
+            );
+
+        const data =
+            await response.json();
+
+        if (!response.ok) {
+
+            return;
+        }
+
+        const select =
+            document.getElementById(
+                "categoryInput"
+            );
+
+        select.innerHTML =
+            `
+            <option value="">
+                Kategori Seç
+            </option>
+        `;
+
+        data.data.forEach(category => {
+
+            select.innerHTML += `
+
+                <option value="${category.id}">
+                    ${category.name}
+                </option>
+
+            `;
+        });
+
+        $('#categoryInput')
+            .niceSelect('update');
+
+    } catch (error) {
+
+        showPopup(
+            "Kategoriler yüklenemedi",
+            false
+        );
+    }
+}
+
+async function loadBrands() {
+
+    try {
+
+        const response =
+            await fetch(
+                API_BASE +
+                "/brands"
+            );
+
+        const data =
+            await response.json();
+
+        if (!response.ok) {
+
+            return;
+        }
+
+        const select =
+            document.getElementById(
+                "brandInput"
+            );
+
+        select.innerHTML =
+            `
+            <option value="">
+                Marka Seç
+            </option>
+        `;
+
+        data.data.forEach(brand => {
+
+            select.innerHTML += `
+
+                <option value="${brand.id}">
+                    ${brand.name}
+                </option>
+
+            `;
+        });
+
+        $('#brandInput')
+            .niceSelect('update');
+
+    } catch (error) {
+
+        showPopup(
+            "Markalar yüklenemedi",
+            false
+        );
+    }
+}
+
+const currentPage =
+    "product-create";
+
+async function initializePage() {
+
+    await loadSidebar();
+
+    await loadCategories();
+
+    await loadBrands();
+
+    document
+        .getElementById(
+            "profileLoader"
+        )
+        .style.display =
+        "none";
+
+    document
+        .getElementById(
+            "profileContent"
+        )
+        .style.display =
+        "block";
+}
+
+initializePage();
+
+let selectedImages = [];
+
+document
+    .getElementById(
+        "productImagesInput"
+    )
+    .addEventListener(
+        "change",
+        handleImages
+    );
+
+function handleImages(event) {
+
+    const files =
+        Array.from(
+            event.target.files
+        );
+
+    selectedImages = [
+
+        ...selectedImages,
+
+        ...files
+    ];
+
+    renderImagePreviews();
+}
+
+function renderImagePreviews() {
+
+    const container =
+        document.getElementById(
+            "imagePreviewContainer"
+        );
+
+    container.innerHTML = "";
+
+    selectedImages.forEach(
+        (image, index) => {
+
+            const imageUrl =
+                URL.createObjectURL(
+                    image
+                );
+
+            container.innerHTML += `
+
+                <div style="
+                    width:120px;
+                    border:1px solid #eee;
+                    border-radius:12px;
+                    overflow:hidden;
+                    background:white;
+                ">
+
+                    <img
+                        src="${imageUrl}"
+
+                        style="
+                            width:100%;
+                            height:120px;
+                            object-fit:cover;
+                        "
+                    >
+
+                    <button
+                        type="button"
+
+                        onclick="
+                            removeImage(${index})
+                        "
+
+                        style="
+                            width:100%;
+                            border:none;
+                            background:#e74c3c;
+                            color:white;
+                            padding:10px;
+                            font-weight:600;
+                            cursor:pointer;
+                        "
+                    >
+                        Sil
+                    </button>
+
+                </div>
+
+            `;
+        }
+    );
+}
+
+function removeImage(index) {
+
+    selectedImages.splice(
+        index,
+        1
+    );
+
+    renderImagePreviews();
+}
+
+document
+    .getElementById(
+        "createProductButton"
+    )
+    .addEventListener(
+        "click",
+        createProduct
+    );
+
+async function createProduct() {
+
+    const button =
+        document.getElementById(
+            "createProductButton"
+        );
+
+    if (button.disabled) {
+
+        return;
+    }
+
+    button.disabled = true;
+
+    button.innerText =
+        "Oluşturuluyor...";
+
+    const name =
+        document.getElementById(
+            "nameInput"
+        ).value.trim();
+
+    const categoryId =
+        document.getElementById(
+            "categoryInput"
+        ).value;
+
+    const brandId =
+        document.getElementById(
+            "brandInput"
+        ).value;
+
+    const price =
+        document.getElementById(
+            "priceInput"
+        ).value;
+
+    const stock =
+        document.getElementById(
+            "stockInput"
+        ).value;
+
+    const sizeValue =
+        document.getElementById(
+            "sizeValueInput"
+        ).value;
+
+    const sizeType =
+        document.getElementById(
+            "sizeTypeInput"
+        ).value;
+
+    const discountRate =
+        document.getElementById(
+            "discountInput"
+        ).value;
+
+    const status =
+        document.getElementById(
+            "statusInput"
+        ).value;
+
+    const description =
+        document.getElementById(
+            "descriptionInput"
+        ).value.trim();
+
+    const barcode =
+        document.getElementById(
+            "barcodeInput"
+        ).value.trim();
+
+    const expireDate =
+        document.getElementById(
+            "expireDateInput"
+        ).value;
+
+    const country =
+        document.getElementById(
+            "countryInput"
+        ).value.trim();
+
+    const contents =
+        document.getElementById(
+            "contentsInput"
+        ).value.trim();
+
+    const storage =
+        document.getElementById(
+            "storageInput"
+        ).value.trim();
+
+    if (
+
+        !name ||
+
+        !categoryId ||
+
+        !brandId ||
+
+        !price ||
+
+        !stock
+
+    ) {
+
+        showPopup(
+            "Gerekli alanları doldurun",
+            false
+        );
+
+        button.disabled = false;
+
+        button.innerText =
+            "Ürünü Oluştur";
+
+        return;
+    }
+
+    const formData =
+        new FormData();
+
+    formData.append(
+        "name",
+        name
+    );
+
+    formData.append(
+        "category_id",
+        categoryId
+    );
+
+    formData.append(
+        "brand_id",
+        brandId
+    );
+
+    formData.append(
+        "price",
+        price
+    );
+
+    formData.append(
+        "stock",
+        stock
+    );
+
+    formData.append(
+        "size",
+        sizeValue
+    );
+
+    formData.append(
+        "size_type",
+        sizeType
+    );
+
+    formData.append(
+        "discount_rate",
+        discountRate || 0
+    );
+
+    formData.append(
+        "active",
+        status
+    );
+
+    formData.append(
+        "description",
+        description
+    );
+
+    formData.append(
+        "barcode",
+        barcode
+    );
+
+    formData.append(
+        "expire_date",
+        expireDate
+    );
+
+    formData.append(
+        "country",
+        country
+    );
+
+    formData.append(
+        "contents",
+        contents
+    );
+
+    formData.append(
+        "storage",
+        storage
+    );
+
+    selectedImages.forEach(
+        (image, index) => {
+
+            formData.append(
+
+                `images[${index}]`,
+
+                image
+            );
+        }
+    );
+
+    try {
+
+        const response =
+            await fetch(
+
+                API_BASE +
+                "/admin/products",
+
+                {
+
+                    method: "POST",
+
+                    headers: {
+
+                        Authorization:
+                            "Bearer " + token,
+
+                        Accept:
+                            "application/json"
+                    },
+
+                    body: formData
+                }
+            );
+
+        const data =
+            await response.json();
+
+        if (!response.ok) {
+
+            showPopup(
+
+                data.message ||
+
+                "Ürün oluşturulamadı",
+
+                false
+            );
+
+            return;
+        }
+
+        showPopup(
+            "Ürün başarıyla oluşturuldu 🚀"
+        );
+
+        document.getElementById("nameInput").value = "";
+
+        document.getElementById("priceInput").value = "";
+
+        document.getElementById("stockInput").value = "";
+
+        document.getElementById("discountInput").value = "";
+
+        document.getElementById("descriptionInput").value = "";
+
+        document.getElementById("barcodeInput").value = "";
+
+        document.getElementById("expireDateInput").value = "";
+
+        document.getElementById("countryInput").value = "";
+
+        document.getElementById("contentsInput").value = "";
+
+        document.getElementById("storageInput").value = "";
+
+        document.getElementById("sizeValueInput").value = "";
+
+        document.getElementById("categoryInput").selectedIndex = 0;
+
+        document.getElementById("brandInput").selectedIndex = 0;
+
+        document.getElementById("sizeTypeInput").selectedIndex = 0;
+
+        document.getElementById("statusInput").selectedIndex = 0;
+
+        document.getElementById("productImagesInput").value = "";
+
+        selectedImages = [];
+
+        renderImagePreviews();
+
+        $('select').niceSelect('update');
+
+    } catch (error) {
+
+        showPopup(
+            "Sunucu hatası",
+            false
+        );
+
+    } finally {
+
+        button.disabled = false;
+
+        button.innerText =
+            "Ürünü Oluştur";
+    }
+}
+
+async function loadSidebar() {
+
+    try {
+
+        const response =
+            await fetch(
+                "./sidebar.html"
+            );
+
+        const html =
+            await response.text();
+
+        document.getElementById(
+            "sidebar-container"
+        ).innerHTML = html;
+
+        const links =
+            document.querySelectorAll(
+                ".sidebar-link"
+            );
+
+        links.forEach(link => {
+
+            if (
+                link.dataset.page ===
+                currentPage
+            ) {
+
+                link.classList.add(
+                    "active"
+                );
+            }
+        });
+
+    } catch (error) {
+
+        console.log(error);
+    }
+}
+
+</script>
+
+
+
+
+    <div id="popup" style="
+    position:fixed;
+    top:30px;
+    right:30px;
+    background:white;
+    padding:18px 22px;
+    border-radius:16px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.12);
+    z-index:99999;
+    display:none;
+    min-width:320px;
+    align-items:center;
+    gap:15px;
+">
+
+        <div id="popupIcon" style="
+        width:38px;
+        height:38px;
+        border-radius:50%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        color:white;
+        font-size:18px;
+        font-weight:bold;
+        background:#27ae60;
+    ">
+            ✓
+        </div>
+
+        <p id="popupText" style="
+        margin:0;
+        font-size:16px;
+        font-weight:600;
+        color:#222;
+    "></p>
+
+    </div>
+</body>
+
+</html>

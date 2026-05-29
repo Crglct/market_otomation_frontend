@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="MarketSepetim online market alışveriş platformu.">
+    <meta name="keywords" content="
+        market,
+        online market,
+        içecek,
+        temel gıda,
+        atıştırmalık
+    ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MarketSepetim</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <style>
+        .home-tab-btn {
+
+            border: none;
+
+            background: #f5f5f5;
+
+            padding: 14px 28px;
+
+            border-radius: 999px;
+
+            font-size: 15px;
+
+            font-weight: 700;
+
+            transition: 0.3s;
+
+            cursor: pointer;
+        }
+
+        .home-tab-btn.active {
+
+            background: #111;
+
+            color: white;
+        }
+
+        .home-tab-btn:hover {
+
+            background: #111;
+
+            color: white;
+        }
+    </style>
+    <style>
+        .product__item:hover .product__item__text {
+
+            position: relative !important;
+
+            bottom: 0 !important;
+
+        }
+
+        .product__item:hover .product__item__text h6 {
+
+            opacity: 1 !important;
+
+        }
+    </style>
+    <style>
+        @media only screen and (max-width:768px) {
+
+            .hero__items {
+
+                height: 220px !important;
+
+                background-size: cover !important;
+
+                background-position: center !important;
+            }
+
+            .product.spad {
+
+                margin-top: 40px !important;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+
+    <!-- Offcanvas Menu End -->
+    <div class="header__top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-4">
+                    <div class="header__top__left">
+                        <p>🚚 Ücretsiz Kargo</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="header__top__center">
+                        <p>Yeni Üyelere %10 İndirim</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 text-right">
+                    <div class="header__top__right">
+                        <p>📞 0850 123 45 67</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Header Section Begin -->
+    <div id="header"></div>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Begin -->
+    <!-- Hero Section Begin -->
+    <section class="hero">
+
+        <div class="hero__slider owl-carousel" id="bannerSlider">
+
+        </div>
+
+    </section>
+    <!-- Hero Section End -->
+
+
+
+    <!-- Product Section Begin -->
+    <section class="product spad" style="margin-top:100px;">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-12">
+
+                    <div class="section-title">
+
+                        <span>
+                            Ürünler
+                        </span>
+
+                        <h2>
+                            Öne Çıkan Ürünler
+                        </h2>
+
+                    </div>
+
+                    <div style="
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:18px;
+        margin-top:25px;
+        margin-bottom:50px;
+        flex-wrap:wrap;
+    ">
+
+                        <button class="home-tab-btn active" onclick="
+            loadProducts(
+                'best-sellers',
+                this
+            )
+        ">
+                            Çok Satanlar
+                        </button>
+
+                        <button class="home-tab-btn" onclick="
+            loadProducts(
+                'new-arrivals',
+                this
+            )
+        ">
+                            Yeni Gelenler
+                        </button>
+
+                        <button class="home-tab-btn" onclick="
+            loadProducts(
+                'discounted-products',
+                this
+            )
+        ">
+                            İndirimdekiler
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="
+                    row
+                    product__filter
+                " id="homeProducts" style="
+                    min-height:950px;
+                    align-items:flex-start;
+                ">
+
+            </div>
+
+
+
+            <div class="row">
+
+                <div class="col-lg-12" style="
+                    text-align:center;
+                    margin-top:50px;
+                ">
+
+                    <a href="./shop.html" class="primary-btn">
+
+                        TÜMÜNÜ GÖR →
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Product Section End -->
+
+
+
+
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+
+                    <div class="footer__about">
+
+                        <div class="footer__logo">
+
+                            <h2 style="color:white;">
+                                MarketSepetim
+                            </h2>
+
+                        </div>
+
+                        <p>
+                            MarketSepetim ile temel gıda,
+                            içecek ve günlük ihtiyaçlarını
+                            güvenle sipariş ver.
+                        </p>
+
+                        <a href="#">
+                            <img src="img/payment.png" alt="">
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="
+                col-lg-2
+                offset-lg-1
+                col-md-3
+                col-sm-6
+            ">
+
+                    <div class="footer__widget">
+
+                        <h6>
+                            Kategoriler
+                        </h6>
+
+                        <ul>
+
+                            <li>
+                                <a href="./shop.html?category=icecekler">
+                                    İçecekler
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./shop.html?category=temel-gida">
+                                    Temel Gıda
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./shop.html?category=atistirmalik">
+                                    Atıştırmalıklar
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./shop.html">
+                                    Tüm Ürünler
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="
+                col-lg-2
+                col-md-3
+                col-sm-6
+            ">
+
+                    <div class="footer__widget">
+
+                        <h6>
+                            Kurumsal
+                        </h6>
+
+                        <ul>
+
+                            <li>
+                                <a href="./about.html">
+                                    Hakkımızda
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./contact.html">
+                                    İletişim
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./refund.html">
+                                    Teslimat & İade
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="
+                col-lg-3
+                offset-lg-1
+                col-md-6
+                col-sm-6
+            ">
+
+                    <div class="footer__widget">
+
+                        <h6>
+                            Bülten
+                        </h6>
+
+                        <div class="footer__newslatter">
+
+                            <p>
+                                Yeni ürün ve fırsatlardan
+                                haberdar olun.
+                            </p>
+
+                            <form action="#">
+
+                                <input type="text" placeholder="Email giriniz">
+
+                                <button type="submit">
+
+                                    <span class="
+                                    icon_mail_alt
+                                "></span>
+
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="row">
+
+                <div class="col-lg-12 text-center">
+
+                    <div class="
+                    footer__copyright__text
+                ">
+
+                        <p>
+
+                            Copyright ©
+
+                            <script>
+                                document.write(
+                                    new Date().getFullYear()
+                                );
+                            </script>
+
+                            2020
+
+                            All rights reserved |
+                            This template is made with
+
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+
+                            by
+
+                            <a href="https://colorlib.com" target="_blank">
+                                Colorlib
+                            </a>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Ürün ara...">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <link rel="stylesheet" href="css/slicknav.min.css">
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+
+        const API_BASE =
+            "http://127.0.0.1:8000/api";
+
+    </script>
+
+
+    <script>
+
+        async function toggleFavorite(
+            productId
+        ) {
+
+            const token =
+                localStorage.getItem(
+                    "token"
+                );
+
+            if (!token) {
+
+                showPopup(
+                    "Favorilere eklemek için giriş yapın",
+                    false
+                );
+
+                return;
+            }
+
+            try {
+
+                const response =
+                    await fetch(
+
+                        API_BASE +
+                        "/favorites/toggle/" +
+                        productId,
+
+                        {
+                            method: "POST",
+
+                            headers: {
+
+                                Authorization:
+                                    "Bearer " + token,
+
+                                Accept:
+                                    "application/json"
+                            }
+                        }
+                    );
+
+                const data =
+                    await response.json();
+
+
+                showPopup(
+
+                    data.data
+
+                        ? "Ürün favorilere eklendi"
+
+                        : "Ürün favorilerden kaldırıldı"
+                );
+                loadProducts();
+
+            } catch (error) {
+
+                console.log(error);
+            }
+        }
+
+    </script>
+    <script>
+
+        /*
+        |--------------------------------------------------------------------------
+        | LOAD BANNERS
+        |--------------------------------------------------------------------------
+        */
+
+        async function loadBanners() {
+
+            try {
+
+                const response =
+
+                    await fetch(
+
+                        API_BASE +
+                        "/banners"
+                    );
+
+                const result =
+
+                    await response.json();
+
+
+
+                const slider =
+
+                    document.getElementById(
+                        "bannerSlider"
+                    );
+
+
+
+                slider.innerHTML = "";
+
+
+
+                if (result.data.length === 0) {
+
+                    slider.innerHTML = `
+
+                  <div class="hero__items">
+
+                <img
+                    src="${banner.image}"
+                    style="
+                        width:100%;
+                        height:420px;
+                        object-fit:cover;
+                        border-radius:24px;
+                        display:block;
+                    "
+                >
+
+            </div>
+
+                </div>
+
+                   <div class="container">
+
+                    <div class="row">
+
+                        <div class="
+                            col-xl-5
+                            col-lg-7
+                            col-md-8
+                        ">
+
+                            <div class="hero__text">
+
+                                <h6>
+                                    MarketSepetim
+                                </h6>
+
+                                <h2>
+                                    Günlük İhtiyaçlarınız
+                                    Kapınızda
+                                </h2>
+
+                                <p>
+                                    İçecek, temel gıda ve
+                                    market ürünlerini hızlı
+                                    ve güvenli şekilde sipariş ver.
+                                </p>
+
+                                <a
+
+                                    href="./shop.html"
+
+                                    class="primary-btn"
+                                >
+
+                                    Alışverişe Başla
+
+                                    <span class="
+                                        arrow_right
+                                    "></span>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                </div>
+
+                `;
+                }
+
+
+
+                result.data.forEach(banner => {
+
+                    slider.innerHTML += `
+
+                <div
+
+                    class="hero__items"
+
+                    style="
+                        background-image:
+                        url('${banner.image}');
+
+                        height:520px;
+
+background-size:contain;
+background-repeat:no-repeat;
+background-color:#f5f5f5;
+                        background-position:center;
+
+                        display:flex;
+
+                        align-items:center;
+                    "
+                >
+
+                </div>
+
+                `;
+                });
+
+
+
+                if ($(".hero__slider").hasClass("owl-loaded")) {
+
+                    $(".hero__slider").trigger("destroy.owl.carousel");
+
+                    $(".hero__slider").removeClass("owl-loaded");
+
+                    $(".hero__slider").find(".owl-stage-outer").children().unwrap();
+                }
+
+                $(".hero__slider").owlCarousel({
+
+                    items: 1,
+
+                    loop: true,
+
+                    nav: true,
+
+                    dots: true,
+
+                    autoplay: true,
+
+                    autoplayTimeout: 5000,
+
+                    smartSpeed: 1200,
+
+                    animateOut: "fadeOut",
+
+                    animateIn: "fadeIn",
+
+                    navText: [
+
+                        "<span class='arrow_left'></span>",
+
+                        "<span class='arrow_right'></span>"
+                    ]
+                });
+
+            } catch (error) {
+
+                console.log(error);
+            }
+        }
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | LOAD PRODUCTS
+        |--------------------------------------------------------------------------
+        */
+
+        async function loadProducts(
+            type = 'best-sellers',
+            element = null
+        ) {
+
+            try {
+
+                if (element) {
+
+                    document
+                        .querySelectorAll(
+                            '.home-tab-btn'
+                        )
+                        .forEach(li => {
+
+                            li.classList.remove(
+                                'active'
+                            );
+                        });
+
+                    element.classList.add(
+                        'active'
+                    );
+                }
+
+                const container =
+
+                    document.getElementById(
+                        "homeProducts"
+                    );
+
+                container.innerHTML = "";
+
+
+
+                const response =
+
+                    await fetch(
+
+                        API_BASE +
+                        "/home/" +
+                        type
+                    );
+
+                const result =
+
+                    await response.json();
+
+                    if (!result.data || result.data.length === 0) {
+
+                        container.innerHTML = `
+
+                            <div
+                                class="col-12"
+                                style="
+                                    text-align:center;
+                                    padding:80px 20px;
+                                "
+                            >
+
+                                <h4 style="
+                                    font-size:28px;
+                                    font-weight:700;
+                                    color:#111;
+                                    margin-bottom:12px;
+                                ">
+                                    Ürün Bulunamadı
+                                </h4>
+
+                                <p style="
+                                    color:#777;
+                                    font-size:16px;
+                                ">
+                                    Bu kategoride henüz ürün bulunmamaktadır.
+                                </p>
+
+                            </div>
+
+                        `;
+
+                        return;
+                    }
+
+                result.data.forEach(product => {
+
+                    container.innerHTML += `
+
+                <div class="
+                    col-lg-3
+                    col-md-6
+                    col-sm-6
+                ">
+
+                    <div class="product__item">
+
+                        <div
+
+                            class="
+                                product__item__pic
+                            "
+
+                            style="
+                                height:320px;
+                                background:#f7f7f7;
+                                border-radius:14px;
+                                overflow:hidden;
+                                position:relative;
+                                padding:20px;
+                                cursor:pointer;
+                            "
+
+                            onclick="
+                                window.location.href =
+                                'product-details.html?slug=${product.slug}'
+                            "
+                        >
+
+                            <img
+
+                                src="${product.image ??
+                        'img/product/product-1.jpg'
+                        }"
+
+                                style="
+                                    width:100%;
+                                    height:100%;
+                                    object-fit:contain;
+                                "
+                            >
+
+                            <ul class="product__hover">
+
+                            <li>
+
+                                <a
+                                    href="#"
+
+                                   onclick="
+                                        event.preventDefault();
+
+                                        event.stopPropagation();
+
+                                        toggleFavorite(
+                                            ${product.id}
+                                        );
+                                    "
+
+                                    style="
+                                        margin-top:-10px;
+                                        display:flex;
+                                        align-items:center;
+                                        justify-content:center;
+                                    "
+                                >
+
+                                    <img
+
+                                        src="
+                                        ${product.is_favorite
+
+                            ? 'img/icon/red-heart.png'
+
+                            : 'img/icon/heart.png'
+                        }
+                                        "
+
+                                        alt=""
+
+                                        style="
+                                            width:41px;
+                                            height:41px;
+                                            object-fit:contain;
+                                        "
+                                    >
+
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                        </div>
+
+                        <div class="
+                            product__item__text
+                        ">
+
+                            <h6>
+                                ${product.name}
+                            </h6>
+
+                            <div class="
+                                rating
+                            ">
+
+                                ⭐
+                                ${product.reviews_avg_rating
+                        }
+
+                                (
+                                ${product.reviews_count}
+                                )
+
+                            </div>
+
+                            <h5>
+                                ₺${Number(
+                            product.price
+                        ).toLocaleString(
+                            'tr-TR'
+                        )}
+                            </h5>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                `;
+                });
+
+            } catch (error) {
+
+                console.log(error);
+            }
+        }
+
+
+
+        loadBanners();
+
+        loadProducts();
+
+
+
+    </script>
+    <script>
+
+        async function loadHeader() {
+
+            const response =
+                await fetch("components/header.html");
+
+
+
+            const data =
+                await response.text();
+
+
+
+            document.getElementById("header").innerHTML =
+                data;
+
+
+
+            eval(
+                document
+                    .querySelector("#header script")
+                    .innerText
+            );
+
+        }
+
+
+        function showPopup(
+            message,
+            success = true
+        ) {
+
+            const popup =
+                document.getElementById(
+                    "popup"
+                );
+
+            const popupText =
+                document.getElementById(
+                    "popupText"
+                );
+
+            const popupIcon =
+                document.getElementById(
+                    "popupIcon"
+                );
+
+            popup.style.display =
+                "flex";
+
+            popupText.innerText =
+                message;
+
+            if (success) {
+
+                popupIcon.innerText = "✓";
+
+                popupIcon.style.background =
+                    "#27ae60";
+
+            } else {
+
+                popupIcon.innerText = "✕";
+
+                popupIcon.style.background =
+                    "#e74c3c";
+            }
+
+            setTimeout(() => {
+
+                popup.style.display =
+                    "none";
+
+            }, 2500);
+        }
+        loadHeader();
+    </script>
+    <div id="popup" style=" 
+    position:fixed;
+    top:30px;
+    right:30px;
+    background:white;
+    padding:18px 22px;
+    border-radius:16px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.12);
+    z-index:99999;
+    display:none;
+    min-width:320px;
+    align-items:center;
+    gap:15px;
+">
+
+        <div id="popupIcon" style="
+            width:38px;
+            height:38px;
+            border-radius:50%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            color:white;
+            font-size:18px;
+            font-weight:bold;
+            background:#27ae60;
+        ">
+            ✓
+        </div>
+
+        <p id="popupText" style="
+        margin:0;
+        font-size:16px;
+        font-weight:600;
+        color:#222;
+    "></p>
+
+</body>
+
+</html>

@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Male-Fashion | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/elegant-icons.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/nice-select.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+
+    <style>
+        .admin-topbar {
+
+            margin-bottom: 30px;
+        }
+
+
+
+        .admin-page-title h3 {
+
+            font-size: 34px;
+
+            font-weight: 800;
+
+            color: #111;
+
+            margin-bottom: 8px;
+        }
+
+
+
+        .admin-page-title p {
+
+            color: #888;
+
+            margin: 0;
+
+            font-size: 15px;
+        }
+
+
+
+        .admin-card {
+
+            background: #fff;
+
+            border-radius: 24px;
+
+            padding: 30px;
+
+            box-shadow:
+                0 10px 35px rgba(0, 0, 0, 0.04);
+
+            border: 1px solid #f1f1f1;
+        }
+
+
+
+        .admin-table {
+
+            margin: 0;
+
+            border-collapse: separate;
+
+            border-spacing: 0 18px;
+        }
+
+
+
+        .admin-table thead tr {
+
+            background: transparent;
+        }
+
+
+
+        .admin-table th {
+
+            font-size: 14px;
+
+            font-weight: 800;
+
+            color: #999;
+
+            border: none;
+
+            padding: 0 20px 14px 20px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 0.5px;
+        }
+
+
+
+        .admin-table tbody tr {
+
+            background: #fff;
+
+            transition: 0.25s;
+
+            box-shadow:
+                0 3px 12px rgba(0, 0, 0, 0.04);
+
+            border-radius: 18px;
+        }
+
+
+
+        .admin-table tbody tr:hover {
+
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 10px 25px rgba(0, 0, 0, 0.07);
+        }
+
+
+
+        .admin-table td {
+
+            vertical-align: middle;
+
+            padding: 22px 20px;
+
+            border: none;
+
+            background: #fff;
+        }
+
+
+
+        .admin-table td:first-child {
+
+            border-top-left-radius: 18px;
+
+            border-bottom-left-radius: 18px;
+        }
+
+
+
+        .admin-table td:last-child {
+
+            border-top-right-radius: 18px;
+
+            border-bottom-right-radius: 18px;
+        }
+
+
+        .product-image-wrapper {
+
+            width: 110px;
+
+            height: 110px;
+
+            background: #f8f8f8;
+
+            border-radius: 24px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            overflow: hidden;
+
+            border: 1px solid #f1f1f1;
+        }
+
+
+        .product-image {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: contain;
+        }
+
+
+
+        .product-name {
+
+            font-size: 19px;
+
+            font-weight: 800;
+
+            color: #111;
+
+            margin-bottom: 6px;
+
+            line-height: 1.4;
+        }
+
+
+
+        .product-id {
+
+            color: #999;
+
+            font-size: 13px;
+
+            font-weight: 600;
+        }
+
+
+
+        .brand-text {
+
+            font-size: 16px;
+
+            font-weight: 700;
+
+            color: #444;
+        }
+
+
+
+        .variant-count {
+
+            width: 42px;
+
+            height: 42px;
+
+            border-radius: 12px;
+
+            background: #f5f5f5;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-weight: 800;
+
+            color: #111;
+
+            font-size: 15px;
+        }
+
+
+
+        .status-badge {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 10px 18px;
+
+            border-radius: 999px;
+
+            font-size: 13px;
+
+            font-weight: 800;
+        }
+
+
+
+        .status-active {
+
+            background: #e7f8ef;
+
+            color: #1f9d55;
+        }
+
+
+
+        .status-passive {
+
+            background: #fff0f0;
+
+            color: #ff4d4f;
+        }
+
+
+
+        .actions {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
+        }
+
+
+
+        .action-btn {
+
+            width: 44px;
+
+            height: 44px;
+
+            border-radius: 14px;
+
+            border: none;
+
+            cursor: pointer;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            transition: 0.2s;
+
+            font-size: 18px;
+        }
+
+
+
+        .action-btn:hover {
+
+            transform: translateY(-2px);
+        }
+
+
+
+        .btn-edit {
+
+            background: #111;
+
+            color: #fff;
+        }
+
+
+
+        .btn-passive {
+
+            background: #fff4e5;
+
+            color: #ff9800;
+        }
+
+
+
+        .btn-active {
+
+            background: #e8f7ee;
+
+            color: #1f9d55;
+        }
+
+
+
+        .product-info {
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            gap: 6px;
+        }
+
+
+        .pagination-area {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 10px;
+
+            margin-top: 35px;
+        }
+
+
+
+        .form-control {
+
+            height: 56px;
+
+            border-radius: 16px;
+
+            border: 1px solid #eee;
+
+            box-shadow: none;
+
+            font-size: 15px;
+
+            padding: 0 20px;
+        }
+
+
+
+        .form-control:focus {
+
+            border-color: #111;
+
+            box-shadow: none;
+        }
+
+
+
+        .site-btn {
+
+            height: 56px;
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 0 28px;
+
+            border-radius: 16px;
+
+            font-size: 14px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+
+    <!-- Offcanvas Menu End -->
+
+
+    <!-- Header Section Begin -->
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__text">
+                        <h4>Admin Panel</h4>
+                        <div class="breadcrumb__links">
+                            <a href="/admin/dashboard.html">Dashboard</a>
+                            <span>Dashboard</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+    <div id="profileLoader" style="
+        height:500px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size:22px;
+        font-weight:700;
+    ">
+
+        Yükleniyor...
+
+    </div>
+
+    <!-- About Section Begin -->
+    <section class="profile-section spad" id="profileContent" style="display:none;">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- SIDEBAR -->
+
+                <div class="col-lg-3">
+
+                    <div id="sidebar-container"></div>
+
+                </div>
+
+                <!-- CONTENT -->
+
+                <div class="col-lg-9">
+
+                    <!-- PAGE HEADER -->
+
+                    <div class="admin-topbar">
+
+                        <div class="row align-items-center">
+
+                            <!-- LEFT -->
+
+                            <div class="col-lg-6">
+
+                                <div class="admin-page-title">
+
+                                    <h3>
+                                        Ürün Yönetimi
+                                    </h3>
+
+                                    <p>
+                                        Market ürünlerini buradan yönetebilirsiniz.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <!-- RIGHT -->
+
+                            <div class="col-lg-6 text-right">
+
+                                <a href="./product-create.html" class="site-btn">
+
+                                    + Yeni Ürün
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- FILTERS -->
+
+                    <div class="admin-card mt-4">
+
+                        <div class="row">
+
+                            <!-- SEARCH -->
+
+                            <div class="col-lg-6">
+
+                                <input type="text" class="form-control" id="searchInput" placeholder="Ürün ara...">
+
+                            </div>
+
+                            <!-- STATUS -->
+
+                            <div class="col-lg-3">
+
+                                <select class="form-control" id="statusFilter">
+
+                                    <option value="">
+                                        Tüm Durumlar
+                                    </option>
+
+                                    <option value="active">
+                                        Aktif
+                                    </option>
+
+                                    <option value="passive">
+                                        Pasif
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                            <!-- CATEGORY -->
+
+                            <div class="col-lg-3">
+
+                                <select class="form-control" id="categoryFilter">
+
+                                    <option value="">
+                                        Tüm Kategoriler
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- PRODUCTS TABLE -->
+
+                    <div class="admin-card mt-4">
+
+                        <div class="table-responsive">
+
+                            <table class="table admin-table">
+
+                                <thead>
+
+                                    <tr>
+
+                                        <th>Görsel</th>
+
+                                        <th>Ürün</th>
+
+                                        <th>Marka</th>
+
+                                        <th>Kategori</th>
+
+                                        <th>Stok</th>
+
+                                        <th>Durum</th>
+
+                                        <th>İşlem</th>
+
+                                    </tr>
+
+                                </thead>
+
+                                <tbody id="productsTableBody">
+
+                                    <!-- JS -->
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+                    <!-- PAGINATION -->
+
+                    <div class="pagination-area mt-4" id="paginationContainer">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- About Section End -->
+
+    <!-- Testimonial Section Begin -->
+
+    <!-- Testimonial Section End -->
+
+    <!-- Counter Section Begin -->
+
+    <!-- Counter Section End -->
+
+    <!-- Team Section Begin -->
+
+
+    <!-- Team Section End -->
+
+    <!-- Client Section Begin -->
+
+
+    <!-- Client Section End -->
+
+    <!-- Footer Section Begin -->
+
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+
+    <script src="../js/bootstrap.min.js"></script>
+
+    <script src="../js/jquery.nice-select.min.js"></script>
+
+    <script src="../js/jquery.nicescroll.min.js"></script>
+
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+
+    <script src="../js/jquery.countdown.min.js"></script>
+
+    <script src="../js/jquery.slicknav.js"></script>
+
+    <script src="../js/mixitup.min.js"></script>
+
+    <script src="../js/owl.carousel.min.js"></script>
+
+    <script src="../js/main.js"></script>
+
+    <script>
+
+        const currentPage = "products";
+
+        let products = [];
+
+        document.addEventListener(
+            "DOMContentLoaded",
+
+            async function () {
+
+                await initializePage();
+            }
+        );
+
+        async function initializePage() {
+
+            try {
+
+                showLoader();
+
+                await loadSidebar();
+
+                await loadCategories();
+
+                $('select').niceSelect();
+
+                await fetchProducts();
+
+                initializeFilters();
+
+                hideLoader();
+
+            } catch (error) {
+
+                console.error(
+                    "Sayfa yüklenirken hata oluştu:",
+                    error
+                );
+            }
+        }
+
+        async function loadSidebar() {
+
+            try {
+
+                const response = await fetch(
+                    "./sidebar.html"
+                );
+
+                const html =
+                    await response.text();
+
+                document.getElementById(
+                    "sidebar-container"
+                ).innerHTML = html;
+
+                setActiveSidebar();
+
+            } catch (error) {
+
+                console.error(
+                    "Sidebar yüklenemedi:",
+                    error
+                );
+            }
+        }
+
+        function setActiveSidebar() {
+
+            const sidebarLinks =
+
+                document.querySelectorAll(
+                    ".sidebar-link"
+                );
+
+            sidebarLinks.forEach(link => {
+
+                link.classList.remove(
+                    "active"
+                );
+
+                if (
+                    link.dataset.page ===
+                    currentPage
+                ) {
+
+                    link.classList.add(
+                        "active"
+                    );
+                }
+            });
+        }
+
+        async function loadCategories() {
+
+            try {
+
+                const response = await fetch(
+
+                    "http://127.0.0.1:8000/api/categories"
+                );
+
+                const result =
+                    await response.json();
+
+                const categoryFilter =
+
+                    document.getElementById(
+                        "categoryFilter"
+                    );
+
+                result.data.forEach(category => {
+
+                    categoryFilter.innerHTML += `
+
+                    <option value="${category.id}">
+                        ${category.name}
+                    </option>
+
+                `;
+                });
+
+                $('#categoryFilter').niceSelect('update');
+
+            } catch (error) {
+
+                console.error(
+                    "Kategori hatası:",
+                    error
+                );
+            }
+        }
+
+        async function fetchProducts() {
+
+            try {
+
+                const token =
+                    localStorage.getItem(
+                        "admin_token"
+                    );
+
+                const search =
+
+                    document.getElementById(
+                        "searchInput"
+                    ).value;
+
+                const status =
+
+                    document.getElementById(
+                        "statusFilter"
+                    ).value;
+
+                const categoryId =
+
+                    document.getElementById(
+                        "categoryFilter"
+                    ).value;
+
+                const query = new URLSearchParams({
+
+                    search: search || "",
+
+                    status: status || "",
+
+                    category_id: categoryId || ""
+                });
+
+                const response = await fetch(
+
+                    `http://127.0.0.1:8000/api/admin/products/filter?${query.toString()}`,
+
+                    {
+
+                        method: "GET",
+
+                        headers: {
+
+                            "Accept":
+                                "application/json",
+
+                            "Authorization":
+                                `Bearer ${token}`
+                        }
+                    }
+                );
+
+                const result =
+                    await response.json();
+
+                products = result.data || [];
+
+                renderProducts();
+
+            } catch (error) {
+
+                console.error(
+                    "Ürünler alınamadı:",
+                    error
+                );
+            }
+        }
+
+        function initializeFilters() {
+
+            const searchInput =
+
+                document.getElementById(
+                    "searchInput"
+                );
+
+            let searchTimeout;
+
+            searchInput.addEventListener(
+
+                "input",
+
+                function () {
+
+                    clearTimeout(
+                        searchTimeout
+                    );
+
+                    searchTimeout = setTimeout(
+
+                        async () => {
+
+                            await fetchProducts();
+
+                        },
+
+                        500
+                    );
+                }
+            );
+
+            $('#statusFilter').on(
+
+                'change',
+
+                async function () {
+
+                    await fetchProducts();
+                }
+            );
+
+            $('#categoryFilter').on(
+
+                'change',
+
+                async function () {
+
+                    await fetchProducts();
+                }
+            );
+        }
+
+        function renderProducts() {
+
+            const tableBody =
+
+                document.getElementById(
+                    "productsTableBody"
+                );
+
+            tableBody.innerHTML = "";
+
+            if (products.length === 0) {
+
+                tableBody.innerHTML = `
+
+                <tr>
+
+                    <td colspan="7">
+
+                        <div style="
+                            padding:60px;
+                            text-align:center;
+                        ">
+
+                            Ürün bulunamadı
+
+                        </div>
+
+                    </td>
+
+                </tr>
+
+            `;
+
+                return;
+            }
+
+            products.forEach(product => {
+
+                tableBody.innerHTML += `
+
+                <tr>
+
+                    <!-- IMAGE -->
+
+                    <td>
+
+                        <div class="product-image-wrapper">
+
+                            <img
+
+                                src="${product.image || '../img/no-image.png'}"
+
+                                class="product-image"
+                            >
+
+                        </div>
+
+                    </td>
+
+                    <!-- PRODUCT -->
+
+                    <td>
+
+                        <div class="product-info">
+
+                            <div class="product-name">
+
+                                ${product.name}
+
+                            </div>
+
+                            <div class="product-id">
+
+                                ID: ${product.id}
+
+                            </div>
+
+                        </div>
+
+                    </td>
+
+                    <!-- BRAND -->
+
+                    <td>
+
+                        ${product.brand ?? "-"}
+
+                    </td>
+
+                    <!-- CATEGORY -->
+
+                    <td>
+
+                        ${product.category ?? "-"}
+
+                    </td>
+
+                    <!-- STOCK -->
+
+                    <td>
+
+                        ${product.stock}
+
+                    </td>
+
+                    <!-- STATUS -->
+
+                    <td>
+
+                        ${product.status
+
+                        ?
+
+                        `
+
+                                <span class="
+                                    status-badge
+                                    status-active
+                                ">
+                                    Aktif
+                                </span>
+
+                            `
+
+                        :
+
+                        `
+
+                                <span class="
+                                    status-badge
+                                    status-passive
+                                ">
+                                    Pasif
+                                </span>
+
+                            `
+                    }
+
+                    </td>
+
+                    <!-- ACTIONS -->
+
+                    <td>
+
+                        <div style="
+                            display:flex;
+                            gap:10px;
+                        ">
+
+                            <!-- EDIT -->
+
+                            <button
+
+                                onclick="
+                                    goToEditPage(
+                                        ${product.id}
+                                    )
+                                "
+
+                                class="admin-action-btn"
+
+                                style="
+                                    background:#000;
+                                    color:#fff;
+                                "
+                            >
+
+                                <i class="fa fa-pencil"></i>
+
+                            </button>
+
+                            <!-- STATUS -->
+
+                            <button
+
+                                onclick="
+                                    toggleProductStatus(
+                                        ${product.id},
+                                        ${product.status}
+                                    )
+                                "
+
+                                class="admin-action-btn"
+
+                                style="
+                                    background:#f5ead7;
+                                    color:#d89b3c;
+                                "
+                            >
+
+                                <i class="fa fa-eye-slash"></i>
+
+                            </button>
+
+                        </div>
+
+                    </td>
+
+                </tr>
+
+            `;
+            });
+        }
+
+        function goToEditPage(productId) {
+
+            window.location.href =
+
+                `./product-edit.html?id=${productId}`;
+        }
+
+        async function toggleProductStatus(
+            productId,
+            currentStatus
+        ) {
+
+            const confirmMessage = currentStatus
+
+                ?
+
+                "Ürünü pasif yapmak istiyor musunuz?"
+
+                :
+
+                "Ürünü tekrar aktif yapmak istiyor musunuz?";
+
+            if (!confirm(confirmMessage)) {
+
+                return;
+            }
+
+            try {
+
+                const token =
+                    localStorage.getItem(
+                        "admin_token"
+                    );
+
+                let url = "";
+                let method = "";
+
+                // AKTİF → PASİF
+
+                if (currentStatus) {
+
+                    url =
+                        `http://127.0.0.1:8000/api/admin/products/${productId}`;
+
+                    method = "DELETE";
+                }
+
+                // PASİF → AKTİF
+
+                else {
+
+                    url =
+                        `http://127.0.0.1:8000/api/admin/products/${productId}/restore`;
+
+                    method = "PATCH";
+                }
+
+                const response = await fetch(
+
+                    url,
+
+                    {
+
+                        method: method,
+
+                        headers: {
+
+                            "Accept":
+                                "application/json",
+
+                            "Authorization":
+                                `Bearer ${token}`
+                        }
+                    }
+                );
+
+                const result =
+                    await response.json();
+
+                console.log(result);
+
+                if (!response.ok) {
+
+                    throw new Error(
+                        result.message ||
+                        "Durum değiştirilemedi"
+                    );
+                }
+
+                await fetchProducts();
+
+            } catch (error) {
+
+                console.error(error);
+
+                alert(
+                    error.message
+                );
+            }
+        }
+
+        function showLoader() {
+
+            document.getElementById(
+                "profileLoader"
+            ).style.display = "flex";
+
+            document.getElementById(
+                "profileContent"
+            ).style.display = "none";
+        }
+
+        function hideLoader() {
+
+            document.getElementById(
+                "profileLoader"
+            ).style.display = "none";
+
+            document.getElementById(
+                "profileContent"
+            ).style.display = "block";
+        }
+
+    </script>
+
+</html>

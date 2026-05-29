@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Male-Fashion | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__option">
+            <div class="offcanvas__links">
+                <a href="#">Sign in</a>
+                <a href="#">FAQs</a>
+            </div>
+            <div class="offcanvas__top__hover">
+                <span>Usd <i class="arrow_carrot-down"></i></span>
+                <ul>
+                    <li>USD</li>
+                    <li>EUR</li>
+                    <li>USD</li>
+                </ul>
+            </div>
+        </div>
+        <div class="offcanvas__nav__option">
+            <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
+            <a href="#"><img src="img/icon/heart.png" alt=""></a>
+            <a href="#"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
+            <div class="price">$0.00</div>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__text">
+            <p>Free shipping, 30-day return or refund guarantee.</p>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <div class="header__top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-4">
+                    <div class="header__top__left">
+                        <p>🚚 Ücretsiz Kargo</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="header__top__center">
+                        <p>Yeni Üyelere %10 İndirim</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 text-right">
+                    <div class="header__top__right">
+                        <p>📞 0850 123 45 67</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <div id="header"></div>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__text">
+                        <h4>Sepet</h4>
+                        <div class="breadcrumb__links">
+                            <a href="./index.html">Home</a>
+                            <span>Sepet</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+
+    <!-- About Section Begin -->
+
+    <section class="shopping-cart spad">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- SOL -->
+
+                <div class="col-lg-8">
+
+                    <div id="cartContainer"></div>
+
+                </div>
+
+                <!-- SAĞ -->
+
+                <div class="col-lg-4">
+
+                    <div style="
+                    border:1px solid #eee;
+                    padding:35px;
+                    border-radius:24px;
+                    position:sticky;
+                    top:30px;
+                    background:#fff;
+                    box-shadow:0 10px 40px rgba(0,0,0,0.05);
+                ">
+
+                        <h3 style="
+                        font-weight:800;
+                        margin-bottom:30px;
+                        font-size:28px;
+                    ">
+                            Sipariş Özeti
+                        </h3>
+
+                        <div style="
+                        display:flex;
+                        justify-content:space-between;
+                        margin-bottom:18px;
+                        color:#555;
+                        font-size:17px;
+                    ">
+
+                            <span>Ara Toplam</span>
+
+                            <span id="subtotalPrice">
+                                ₺0
+                            </span>
+
+                        </div>
+
+                        <div style="
+                        display:flex;
+                        justify-content:space-between;
+                        margin-bottom:18px;
+                        color:#555;
+                        font-size:17px;
+                    ">
+
+                            <span>Kargo</span>
+
+                            <span id="shippingPrice">
+                                ₺0
+                            </span>
+
+                        </div>
+
+                        <hr>
+
+                        <div style="
+                        display:flex;
+                        justify-content:space-between;
+                        margin-bottom:30px;
+                        font-size:28px;
+                        font-weight:800;
+                    ">
+
+                            <span>Toplam</span>
+
+                            <span id="totalPrice">
+                                ₺0
+                            </span>
+
+                        </div>
+
+                        <button id="checkoutButton" style="
+                            width:100%;
+                            height:65px;
+                            border:none;
+                            background:#111;
+                            color:#fff;
+                            font-size:18px;
+                            font-weight:700;
+                            border-radius:18px;
+                            transition:0.2s;
+                        " onmouseover="
+                            this.style.opacity='0.9'
+                        " onmouseout="
+                            this.style.opacity='1'
+                        ">
+
+                            Ödemeye Geç
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- About Section End -->
+
+    <!-- Testimonial Section Begin -->
+
+    <!-- Testimonial Section End -->
+
+    <!-- Counter Section Begin -->
+
+    <!-- Counter Section End -->
+
+    <!-- Team Section Begin -->
+
+
+    <!-- Team Section End -->
+
+    <!-- Client Section Begin -->
+
+
+    <!-- Client Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+
+                    <div class="footer__about">
+
+                        <div class="footer__logo">
+
+                            <h2 style="color:white;">
+                                MarketSepetim
+                            </h2>
+
+                        </div>
+
+                        <p>
+                            MarketSepetim ile temel gıda,
+                            içecek ve günlük ihtiyaçlarını
+                            güvenle sipariş ver.
+                        </p>
+
+                        <a href="#">
+                            <img src="img/payment.png" alt="">
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="
+                col-lg-2
+                offset-lg-1
+                col-md-3
+                col-sm-6
+            ">
+
+                    <div class="footer__widget">
+
+                        <h6>
+                            Kategoriler
+                        </h6>
+
+                        <ul>
+
+                            <li>
+                                <a href="./shop.html?category=icecekler">
+                                    İçecekler
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./shop.html?category=temel-gida">
+                                    Temel Gıda
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./shop.html?category=atistirmalik">
+                                    Atıştırmalıklar
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./shop.html">
+                                    Tüm Ürünler
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="
+                col-lg-2
+                col-md-3
+                col-sm-6
+            ">
+
+                    <div class="footer__widget">
+
+                        <h6>
+                            Kurumsal
+                        </h6>
+
+                        <ul>
+
+                            <li>
+                                <a href="./about.html">
+                                    Hakkımızda
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./contact.html">
+                                    İletişim
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./refund.html">
+                                    Teslimat & İade
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="
+                col-lg-3
+                offset-lg-1
+                col-md-6
+                col-sm-6
+            ">
+
+                    <div class="footer__widget">
+
+                        <h6>
+                            Bülten
+                        </h6>
+
+                        <div class="footer__newslatter">
+
+                            <p>
+                                Yeni ürün ve fırsatlardan
+                                haberdar olun.
+                            </p>
+
+                            <form action="#">
+
+                                <input type="text" placeholder="Email giriniz">
+
+                                <button type="submit">
+
+                                    <span class="
+                                    icon_mail_alt
+                                "></span>
+
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="row">
+
+                <div class="col-lg-12 text-center">
+
+                    <div class="
+                    footer__copyright__text
+                ">
+
+                        <p>
+
+                            Copyright ©
+
+                            <script>
+                                document.write(
+                                    new Date().getFullYear()
+                                );
+                            </script>
+
+                            2020
+
+                            All rights reserved |
+                            This template is made with
+
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+
+                            by
+
+                            <a href="https://colorlib.com" target="_blank">
+                                Colorlib
+                            </a>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+
+        const API_BASE =
+            "http://127.0.0.1:8000/api";
+
+        const token =
+            localStorage.getItem("token");
+
+        let cartItems = [];
+
+        /*
+        |--------------------------------------------------------------------------
+        | INIT
+        |--------------------------------------------------------------------------
+        */
+
+        fetchCart();
+
+        /*
+        |--------------------------------------------------------------------------
+        | FETCH CART
+        |--------------------------------------------------------------------------
+        */
+
+        async function fetchCart() {
+
+            try {
+
+                const response =
+                    await fetch(
+
+                        API_BASE + "/cart",
+
+                        {
+                            headers: {
+                                Authorization:
+                                    "Bearer " + token
+                            }
+                        }
+                    );
+
+                const result =
+                    await response.json();
+
+                console.log(result);
+
+                if (!response.ok) {
+
+                    cartItems = [];
+
+                    renderCart();
+
+                    updateSummary();
+
+                    return;
+                }
+                cartItems =
+                    result.data || [];
+
+                renderCart();
+
+                updateSummary();
+
+            }
+            catch (error) {
+
+                console.log(error);
+            }
+        }
+
+        /*
+        |--------------------------------------------------------------------------
+        | RENDER CART
+        |--------------------------------------------------------------------------
+        */
+        function renderCart() {
+
+            const container =
+                document.getElementById(
+                    "cartContainer"
+                );
+
+
+
+            /*
+            |--------------------------------------------------------------------------
+            | EMPTY CART
+            |--------------------------------------------------------------------------
+            */
+
+            if (cartItems.length === 0) {
+
+                container.innerHTML = `
+
+        <div style="
+            background:#fff;
+            padding:80px 40px;
+            border-radius:24px;
+            text-align:center;
+            box-shadow:0 10px 40px rgba(0,0,0,0.05);
+        ">
+
+            <img
+                src="img/icon/cart.png"
+
+                style="
+                    width:80px;
+                    opacity:0.3;
+                    margin-bottom:20px;
+                "
+            >
+
+            <h2 style="
+                font-weight:800;
+                margin-bottom:15px;
+            ">
+                Sepetiniz boş
+            </h2>
+
+            <p style="
+                color:#777;
+                margin-bottom:30px;
+                font-size:17px;
+            ">
+                Hemen ürünleri keşfetmeye başlayın
+            </p>
+
+            <a
+                href="./shop.html"
+
+                style="
+                    display:inline-flex;
+                    align-items:center;
+                    justify-content:center;
+
+                    height:60px;
+                    padding:0 35px;
+
+                    border-radius:18px;
+
+                    background:#111;
+                    color:#fff;
+
+                    font-weight:700;
+                    text-decoration:none;
+                "
+            >
+
+                Alışverişe Başla
+
+            </a>
+
+        </div>
+
+    `;
+
+                return;
+            }
+
+
+
+            /*
+            |--------------------------------------------------------------------------
+            | ITEMS
+            |--------------------------------------------------------------------------
+            */
+
+            container.innerHTML = "";
+
+
+
+            cartItems.forEach(item => {
+
+                container.innerHTML += `
+
+        <div style="
+            background:#fff;
+            border-radius:24px;
+            padding:25px;
+            margin-bottom:25px;
+
+            display:flex;
+            gap:25px;
+
+            box-shadow:0 10px 40px rgba(0,0,0,0.05);
+        ">
+
+            <!-- IMAGE -->
+
+            <a href="./product-details.html?slug=${item.slug}">
+
+                <img
+                    src="${item.image && item.image.startsWith('http')
+                        ? item.image
+                        : 'http://127.0.0.1:8000/storage/' + item.image
+                    }"
+
+                    style="
+                        width:140px;
+                        height:140px;
+                        object-fit:contain;
+                        border-radius:20px;
+                        background:#f5f5f5;
+                    "
+                >
+
+            </a>
+
+
+
+            <!-- INFO -->
+
+            <div style="
+                flex:1;
+                display:flex;
+                flex-direction:column;
+                justify-content:space-between;
+            ">
+
+                <div>
+
+                    <a 
+                        href="./product-details.html?slug=${item.slug}"
+
+                        style="
+                            text-decoration:none;
+                            color:#111;
+                        "
+                    >
+
+                        <h3 style="
+                            font-weight:800;
+                            margin-bottom:14px;
+                            line-height:34px;
+                        ">
+                            ${item.product_name}
+                        </h3>
+
+                    </a>
+
+
+
+                    <p style="
+                        color:
+                            ${item.quantity >= item.stock
+
+                        ? '#e74c3c'
+
+                        : '#27ae60'
+                    };
+
+                        font-weight:700;
+                        margin-bottom:0;
+                    ">
+
+                        ${item.quantity >= item.stock
+
+                        ? 'Maksimum stok miktarına ulaşıldı'
+
+                        : item.stock_text
+                    }
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- BOTTOM -->
+
+                <div style="
+                    display:flex;
+                    justify-content:space-between;
+                    align-items:center;
+                    flex-wrap:wrap;
+                    gap:20px;
+                ">
+
+                    <!-- QUANTITY -->
+
+                    <div style="
+                        display:flex;
+                        align-items:center;
+                        gap:15px;
+                    ">
+
+                        <button
+
+                            onclick="
+                                decreaseQuantity(
+                                    ${item.id}
+                                )
+                            "
+
+                            style="
+                                width:45px;
+                                height:45px;
+
+                                border:none;
+                                border-radius:14px;
+
+                                background:#f5f5f5;
+
+                                font-size:22px;
+                                font-weight:700;
+                            "
+                        >
+
+                            -
+
+                        </button>
+
+
+
+                        <span style="
+                            font-size:20px;
+                            font-weight:800;
+                            min-width:30px;
+                            text-align:center;
+                        ">
+
+                            ${item.quantity}
+
+                        </span>
+
+
+
+                        <button
+
+                            onclick="
+                                increaseQuantity(
+                                    ${item.id}
+                                )
+                            "
+
+                            ${item.quantity >= item.stock
+
+                        ? 'disabled'
+
+                        : ''
+                    }
+
+                            style="
+                                width:45px;
+                                height:45px;
+
+                                border:none;
+                                border-radius:14px;
+
+                                background:
+                                    ${item.quantity >= item.stock
+
+                        ? '#dcdcdc'
+
+                        : '#111'
+                    };
+
+                                color:
+                                    ${item.quantity >= item.stock
+
+                        ? '#888'
+
+                        : '#fff'
+                    };
+
+                                font-size:22px;
+                                font-weight:700;
+
+                                cursor:
+                                    ${item.quantity >= item.stock
+
+                        ? 'not-allowed'
+
+                        : 'pointer'
+                    };
+
+                                transition:0.3s;
+                            "
+                        >
+
+                            +
+
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- PRICE -->
+
+                    <div style="
+                        text-align:right;
+                    ">
+
+                        <h3 style="
+                            font-weight:800;
+                            margin-bottom:5px;
+                        ">
+
+                            ₺${Number(
+                        item.subtotal
+                    ).toLocaleString("tr-TR")}
+
+                        </h3>
+
+                    </div>
+
+
+
+                    <!-- REMOVE -->
+
+                    <button
+
+                        onclick="
+                            removeCartItem(
+                                ${item.id}
+                            )
+                        "
+
+                        style="
+                            width:50px;
+                            height:50px;
+
+                            border:none;
+                            border-radius:16px;
+
+                            background:#fff0f0;
+                            color:#e74c3c;
+
+                            font-size:20px;
+                        "
+                    >
+
+                        <i class="fa fa-trash"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    `;
+            });
+        }
+
+        /*
+        |--------------------------------------------------------------------------
+        | SUMMARY
+        |--------------------------------------------------------------------------
+        */
+
+        function updateSummary() {
+
+            let subtotal = 0;
+
+            cartItems.forEach(item => {
+
+                subtotal +=
+                    Number(item.subtotal);
+            });
+
+            let shippingPrice = 0;
+
+            if (subtotal === 0) {
+
+                shippingPrice = 0;
+            }
+
+            else if (subtotal >= 500) {
+
+                shippingPrice = 0;
+            }
+
+            else {
+
+                shippingPrice = 99;
+            }
+
+            const totalPrice =
+                subtotal + shippingPrice;
+
+            /*
+            |--------------------------------------------------------------------------
+            | ARA TOPLAM
+            |--------------------------------------------------------------------------
+            */
+
+            document.getElementById(
+                "subtotalPrice"
+            ).innerText =
+
+                "₺" +
+                subtotal.toLocaleString(
+                    "tr-TR"
+                );
+
+            /*
+            |--------------------------------------------------------------------------
+            | KARGO
+            |--------------------------------------------------------------------------
+            */
+
+            document.getElementById(
+                "shippingPrice"
+            ).innerText =
+
+                shippingPrice === 0
+
+                    ? "Ücretsiz"
+
+                    : "₺" + shippingPrice;
+
+            /*
+            |--------------------------------------------------------------------------
+            | TOPLAM
+            |--------------------------------------------------------------------------
+            */
+
+            document.getElementById(
+                "totalPrice"
+            ).innerText =
+
+                "₺" +
+                totalPrice.toLocaleString(
+                    "tr-TR"
+                );
+
+            /*
+            |--------------------------------------------------------------------------
+            | BUTTON
+            |--------------------------------------------------------------------------
+            */
+
+            const checkoutButton =
+
+                document.getElementById(
+                    "checkoutButton"
+                );
+
+            if (cartItems.length === 0) {
+
+                checkoutButton.disabled = true;
+
+                checkoutButton.style.background =
+                    "#dcdcdc";
+
+                checkoutButton.style.cursor =
+                    "not-allowed";
+
+                checkoutButton.style.opacity =
+                    "0.7";
+            }
+
+            else {
+
+                checkoutButton.disabled = false;
+
+                checkoutButton.style.background =
+                    "#111";
+
+                checkoutButton.style.cursor =
+                    "pointer";
+
+                checkoutButton.style.opacity =
+                    "1";
+            }
+        }
+        /*
+        |--------------------------------------------------------------------------
+        | INCREASE
+        |--------------------------------------------------------------------------
+        */
+
+        async function increaseQuantity(id) {
+
+            const item =
+                cartItems.find(
+                    x => x.id === id
+                );
+
+
+
+            if (
+                item.quantity >= item.stock
+            ) {
+
+                alert(
+                    "Maksimum stok miktarına ulaştınız"
+                );
+
+                return;
+            }
+
+
+
+            await updateQuantity(
+
+                id,
+
+                item.quantity + 1
+            );
+        }
+        /*
+        |--------------------------------------------------------------------------
+        | DECREASE
+        |--------------------------------------------------------------------------
+        */
+
+        async function decreaseQuantity(id) {
+
+            const item =
+                cartItems.find(
+                    x => x.id === id
+                );
+
+            if (item.quantity <= 1) {
+                return;
+            }
+
+            await updateQuantity(
+                id,
+                item.quantity - 1
+            );
+        }
+
+        /*
+        |--------------------------------------------------------------------------
+        | UPDATE QUANTITY
+        |--------------------------------------------------------------------------
+        */
+
+        async function updateQuantity(
+            id,
+            quantity
+        ) {
+
+            try {
+
+                const response =
+                    await fetch(
+
+                        API_BASE +
+                        "/cart/" +
+                        id,
+
+                        {
+                            method: "PATCH",
+
+                            headers: {
+
+                                "Content-Type":
+                                    "application/json",
+
+                                Authorization:
+                                    "Bearer " + token
+                            },
+
+                            body: JSON.stringify({
+                                quantity
+                            })
+                        }
+                    );
+
+                const result =
+                    await response.json();
+
+
+                fetchCart();
+
+            }
+            catch (error) {
+
+                console.log(error);
+            }
+        }
+
+        /*
+        |--------------------------------------------------------------------------
+        | REMOVE
+        |--------------------------------------------------------------------------
+        */
+
+        async function removeCartItem(id) {
+
+            try {
+
+                const response =
+                    await fetch(
+
+                        API_BASE +
+                        "/cart/" +
+                        id,
+
+                        {
+                            method: "DELETE",
+
+                            headers: {
+                                Authorization:
+                                    "Bearer " + token
+                            }
+                        }
+                    );
+
+                const result =
+                    await response.json();
+
+
+                fetchCart();
+
+            }
+            catch (error) {
+
+                console.log(error);
+            }
+        }
+
+        /*
+        |--------------------------------------------------------------------------
+        | CHECKOUT
+        |--------------------------------------------------------------------------
+        */
+
+        document.getElementById(
+            "checkoutButton"
+        ).addEventListener(
+
+            "click",
+
+            function () {
+
+                window.location.href =
+                    "./checkout.html";
+            }
+        );
+
+    </script>
+    <script>
+
+        async function loadHeader() {
+
+            const response =
+                await fetch("components/header.html");
+
+
+
+            const data =
+                await response.text();
+
+
+
+            document.getElementById("header").innerHTML =
+                data;
+
+
+
+            eval(
+                document
+                    .querySelector("#header script")
+                    .innerText
+            );
+
+        }
+
+
+
+        loadHeader();
+
+    </script>
+</body>
+
+</html>

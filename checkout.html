@@ -1,0 +1,2923 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Male-Fashion | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <style>
+        .nice-select {
+
+            width: 100% !important;
+
+            height: 60px;
+
+            border: 1px solid #ddd;
+
+            border-radius: 12px;
+
+            display: flex;
+
+            align-items: center;
+
+            padding: 0 18px;
+
+            font-size: 15px;
+
+            margin-bottom: 15px;
+
+            line-height: 60px;
+
+            float: none;
+
+            transition: 0.2s;
+        }
+
+
+
+        .nice-select:hover {
+
+            border-color: black;
+        }
+
+
+
+        .nice-select.open {
+
+            border-color: black;
+        }
+
+
+
+        .nice-select .current {
+
+            color: #333;
+
+            font-weight: 500;
+        }
+
+
+
+        .nice-select .list {
+
+            width: 100%;
+
+            max-height: 250px;
+
+            overflow-y: auto;
+
+            border-radius: 12px;
+
+            margin-top: 8px;
+
+            border: 1px solid #eee;
+
+            box-shadow:
+
+                0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+
+
+        .nice-select .option {
+
+            min-height: 50px;
+
+            line-height: 50px;
+
+            padding: 0 18px;
+
+            font-size: 14px;
+
+            transition: 0.2s;
+        }
+
+
+
+        .nice-select .option:hover {
+
+            background: #f5f5f5;
+        }
+
+
+
+        .nice-select .option.selected {
+
+            background: black;
+
+            color: white;
+
+            font-weight: 600;
+        }
+
+
+
+        .nice-select:after {
+
+            right: 18px;
+
+            width: 8px;
+
+            height: 8px;
+
+            border-bottom: 2px solid #555;
+
+            border-right: 2px solid #555;
+        }
+
+        .checkout-card {
+            border: 1px solid #eee;
+            border-radius: 20px;
+            padding: 35px;
+            background: #fff;
+        }
+
+        .checkout-summary {
+            border: 1px solid #eee;
+            border-radius: 20px;
+            padding: 35px;
+            background: #fff;
+            position: sticky;
+            top: 30px;
+        }
+
+        .checkout-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .checkout-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .checkout-address {
+            background: #f8f8f8;
+            border-radius: 16px;
+            padding: 25px;
+        }
+
+        .checkout-input {
+            width: 100%;
+            height: 60px;
+            border: 1px solid #ddd;
+            border-radius: 14px;
+            padding: 0 20px;
+            margin-bottom: 20px;
+            transition: 0.2s;
+        }
+
+        .checkout-input:focus {
+            border-color: black;
+            outline: none;
+        }
+
+        .payment-methods {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .paymentMethodButton {
+            flex: 1;
+            height: 60px;
+            border-radius: 14px;
+            border: 1px solid #ddd;
+            background: white;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .active-payment {
+            background: black !important;
+            color: white !important;
+            border: none !important;
+        }
+
+        .wallet-box {
+            display: none;
+            background: #f8f8f8;
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 18px;
+            color: #555;
+        }
+
+        .summary-total {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 28px;
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .summary-divider {
+            width: 100%;
+            height: 1px;
+            background: #eee;
+            margin: 25px 0;
+        }
+
+        .checkout-complete-button {
+            width: 100%;
+            height: 60px;
+            border: none;
+            border-radius: 14px;
+            background: black;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .checkout-complete-button:hover {
+            opacity: 0.9;
+        }
+
+        .black-button {
+            border: none;
+            background: black;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .nice-select {
+
+            background: #fff !important;
+
+            color: #111 !important;
+
+            font-weight: 500;
+
+            cursor: pointer;
+        }
+
+
+        .nice-select .current {
+
+            color: #111 !important;
+
+            font-size: 16px;
+        }
+
+
+        .nice-select .list {
+
+            background: white !important;
+
+            z-index: 99999 !important;
+        }
+
+
+        .nice-select .option {
+
+            color: #222 !important;
+
+            background: white !important;
+
+            font-size: 15px !important;
+
+            font-weight: 500;
+
+            min-height: 50px;
+
+            line-height: 50px;
+        }
+
+
+
+        .nice-select .option:hover {
+
+            background: #f5f5f5 !important;
+
+            color: black !important;
+        }
+
+
+
+        .nice-select .option.selected {
+
+            background: black !important;
+
+            color: white !important;
+        }
+
+
+
+
+        .nice-select.disabled {
+
+            background: #f3f3f3 !important;
+
+            opacity: 1 !important;
+
+            cursor: not-allowed;
+        }
+
+
+
+        .nice-select.disabled .current {
+
+            color: #999 !important;
+        }
+
+
+        .nice-select:after {
+
+            border-color: #555 !important;
+        }
+
+
+        .nice-select.open {
+
+            border-color: black !important;
+
+            box-shadow:
+                0 0 0 4px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__option">
+            <div class="offcanvas__links">
+                <a href="#">Sign in</a>
+                <a href="#">FAQs</a>
+            </div>
+            <div class="offcanvas__top__hover">
+                <span>Usd <i class="arrow_carrot-down"></i></span>
+                <ul>
+                    <li>USD</li>
+                    <li>EUR</li>
+                    <li>USD</li>
+                </ul>
+            </div>
+        </div>
+        <div class="offcanvas__nav__option">
+            <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
+            <a href="#"><img src="img/icon/heart.png" alt=""></a>
+            <a href="#"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
+            <div class="price">$0.00</div>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__text">
+            <p>Free shipping, 30-day return or refund guarantee.</p>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <div class="header__top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-4">
+                    <div class="header__top__left">
+                        <p>🚚 Ücretsiz Kargo</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="header__top__center">
+                        <p>Yeni Üyelere %10 İndirim</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 text-right">
+                    <div class="header__top__right">
+                        <p>📞 0850 123 45 67</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <div id="header"></div>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__text">
+                        <h4>Ödeme</h4>
+                        <div class="breadcrumb__links">
+                            <a href="./index.html">Home</a>
+                            <span>Ödeme</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- CHECKOUT SECTION BEGIN -->
+
+    <section class="checkout spad">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <!-- LEFT -->
+                <div class="col-lg-8">
+
+                    <!-- ADDRESS CARD -->
+                    <div class="checkout-card mb-4">
+
+                        <div class="checkout-header">
+
+                            <h3>
+                                Teslimat Adresi
+                            </h3>
+
+                            <button id="changeAddressButton" class="black-button">
+                                Adres Değiştir
+                            </button>
+
+                        </div>
+
+                        <div id="selectedAddress" class="checkout-address">
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PAYMENT CARD -->
+                    <div class="checkout-card">
+
+                        <h3 class="checkout-title">
+                            Ödeme Bilgileri
+                        </h3>
+
+
+
+                        <!-- PAYMENT METHODS -->
+
+                        <div class="payment-methods">
+
+                            <button class="paymentMethodButton active-payment" data-method="card">
+
+                                💳 Kart ile Öde
+
+                            </button>
+
+
+
+                            <button class="paymentMethodButton" data-method="wallet">
+
+                                👜 Cüzdan ile Öde
+
+                            </button>
+
+                        </div>
+
+
+
+                        <!-- WALLET -->
+
+                        <div id="walletInfo" class="wallet-box">
+
+                            <p>
+                                Kullanılabilir Bakiye
+                            </p>
+
+                            <h3 id="walletBalance">
+                                ₺0
+                            </h3>
+
+                        </div>
+
+
+
+                        <!-- CARD FIELDS -->
+
+                        <div id="cardFields">
+
+                            <input type="text" id="cardNumber" class="checkout-input" placeholder="Kart Numarası">
+
+
+
+                            <div class="row">
+
+                                <div class="col-lg-6">
+
+                                    <input type="text" id="expireDate" class="checkout-input"
+                                        placeholder="Son Kullanma Tarihi">
+
+                                </div>
+
+
+
+                                <div class="col-lg-6">
+
+                                    <input type="text" id="cvv" class="checkout-input" placeholder="CVV">
+
+                                </div>
+
+                            </div>
+
+
+
+                            <input type="text" id="cardHolder" class="checkout-input"
+                                placeholder="Kart Üzerindeki İsim">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- RIGHT -->
+                <div class="col-lg-4">
+
+                    <div class="checkout-summary">
+
+                        <h3 class="checkout-title">
+                            Sipariş Özeti
+                        </h3>
+
+
+
+                        <!-- PRODUCTS -->
+                        <div id="checkoutItems"></div>
+
+                        <div class="summary-divider"></div>
+
+
+
+                        <!-- SUBTOTAL -->
+
+                        <div class="summary-row">
+
+                            <span>
+                                Ara Toplam
+                            </span>
+
+                            <span id="subtotal">
+                                ₺0
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- SHIPPING -->
+
+                        <div class="summary-row">
+
+                            <span>
+                                Kargo
+                            </span>
+
+                            <span id="shipping-price">
+                                ₺0
+                            </span>
+
+                        </div>
+
+
+
+                        <div class="summary-divider"></div>
+
+
+
+                        <!-- TOTAL -->
+
+                        <div class="summary-total">
+
+                            <span>
+                                Toplam
+                            </span>
+
+                            <span id="total">
+                                ₺0
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- COMPLETE -->
+
+                        <button id="completeOrderButton" class="checkout-complete-button">
+
+                            Siparişi Tamamla
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ADDRESS MODAL -->
+
+    <div id="addressModal" style="
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.5);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+">
+
+        <div style="
+        width:100%;
+        max-width:750px;
+        background:white;
+        border-radius:18px;
+        padding:40px;
+        position:relative;
+        max-height:90vh;
+        overflow-y:auto;
+    ">
+
+            <!-- CLOSE -->
+
+            <button id="closeAddressModal" style="
+            position:absolute;
+            top:25px;
+            right:25px;
+            border:none;
+            background:none;
+            font-size:32px;
+            cursor:pointer;
+            line-height:1;
+        ">
+                ×
+            </button>
+
+
+
+            <!-- HEADER -->
+
+            <div style="
+            margin-bottom:35px;
+        ">
+
+                <h3 style="
+                font-weight:700;
+                margin-bottom:8px;
+            ">
+                    Adreslerim
+                </h3>
+
+                <p style="
+                color:#777;
+                margin:0;
+            ">
+                    Teslimat adresinizi seçin.
+                </p>
+
+            </div>
+
+
+
+            <!-- ADDRESS LIST -->
+
+            <div id="addressesList" style="
+            display:flex;
+            flex-direction:column;
+            gap:18px;
+            margin-bottom:25px;
+        ">
+
+            </div>
+
+
+
+            <!-- NEW ADDRESS BUTTON -->
+
+            <button id="newAddressButton" style="
+            width:100%;
+            height:60px;
+            border:none;
+            border-radius:12px;
+            background:#f5f5f5;
+            font-weight:700;
+            cursor:pointer;
+            margin-bottom:20px;
+        ">
+
+                + Yeni Adres Ekle
+
+            </button>
+
+
+
+            <!-- NEW ADDRESS FORM -->
+
+            <div id="newAddressForm" style="
+            display:none;
+            border:1px solid #eee;
+            border-radius:12px;
+            padding:25px;
+        ">
+
+                <!-- FULL NAME -->
+
+                <input type="text" id="fullName" placeholder="Ad Soyad" style="
+                    width:100%;
+                    height:55px;
+                    border:1px solid #ddd;
+                    border-radius:10px;
+                    padding:0 15px;
+                    margin-bottom:15px;
+                ">
+
+
+
+                <!-- PHONE -->
+
+                <input type="text" id="phone" placeholder="Telefon" style="
+                    width:100%;
+                    height:55px;
+                    border:1px solid #ddd;
+                    border-radius:10px;
+                    padding:0 15px;
+                    margin-bottom:15px;
+                ">
+
+
+
+                <!-- TITLE -->
+
+                <input type="text" id="title" placeholder="Adres Başlığı" style="
+                    width:100%;
+                    height:55px;
+                    border:1px solid #ddd;
+                    border-radius:10px;
+                    padding:0 15px;
+                    margin-bottom:15px;
+                ">
+
+
+
+                <!-- CITY -->
+
+                <select id="citySelect" style="
+                width:100%;
+                height:55px;
+                border:1px solid #ddd;
+                border-radius:10px;
+                padding:0 15px;
+                margin-bottom:15px;
+            ">
+
+                    <option value="">
+                        İl Seçin
+                    </option>
+
+                </select>
+
+
+
+                <!-- DISTRICT -->
+
+                <select id="districtSelect" style="
+                width:100%;
+                height:55px;
+                border:1px solid #ddd;
+                border-radius:10px;
+                padding:0 15px;
+                margin-bottom:15px;
+            ">
+
+                    <option value="">
+                        İlçe Seçin
+                    </option>
+
+                </select>
+
+
+
+                <!-- NEIGHBORHOOD -->
+
+                <select id="neighborhoodSelect" style="
+                width:100%;
+                height:55px;
+                border:1px solid #ddd;
+                border-radius:10px;
+                padding:0 15px;
+                margin-bottom:15px;
+            ">
+
+                    <option value="">
+                        Mahalle Seçin
+                    </option>
+
+                </select>
+
+
+
+                <!-- ADDRESS -->
+
+                <textarea id="addressText" placeholder="Adres" style="
+                width:100%;
+                height:120px;
+                border:1px solid #ddd;
+                border-radius:10px;
+                padding:15px;
+                margin-bottom:20px;
+            "></textarea>
+
+
+
+                <!-- SAVE -->
+
+                <button id="saveAddressButton" style="
+                width:100%;
+                height:55px;
+                border:none;
+                border-radius:10px;
+                background:black;
+                color:white;
+                font-weight:700;
+            ">
+
+                    Adresi Kaydet
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ADDRESS MODAL -->
+
+    <!-- ADDRESS MODAL -->
+
+    <!-- CHECKOUT SECTION END -->
+    <!-- About Section Begin -->
+
+    <!-- About Section End -->
+
+    <!-- Testimonial Section Begin -->
+
+    <!-- Testimonial Section End -->
+
+    <!-- Counter Section Begin -->
+
+    <!-- Counter Section End -->
+
+    <!-- Team Section Begin -->
+
+
+    <!-- Team Section End -->
+
+    <!-- Client Section Begin -->
+
+
+    <!-- Client Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+
+                    <div class="footer__about">
+
+                        <div class="footer__logo">
+
+                            <h2 style="color:white;">
+                                MarketSepetim
+                            </h2>
+
+                        </div>
+
+                        <p>
+                            MarketSepetim ile temel gıda,
+                            içecek ve günlük ihtiyaçlarını
+                            güvenle sipariş ver.
+                        </p>
+
+                        <a href="#">
+                            <img src="img/payment.png" alt="">
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="
+                col-lg-2
+                offset-lg-1
+                col-md-3
+                col-sm-6
+            ">
+
+                    <div class="footer__widget">
+
+                        <h6>
+                            Kategoriler
+                        </h6>
+
+                        <ul>
+
+                            <li>
+                                <a href="./shop.html?category=icecekler">
+                                    İçecekler
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./shop.html?category=temel-gida">
+                                    Temel Gıda
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./shop.html?category=atistirmalik">
+                                    Atıştırmalıklar
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./shop.html">
+                                    Tüm Ürünler
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="
+                col-lg-2
+                col-md-3
+                col-sm-6
+            ">
+
+                    <div class="footer__widget">
+
+                        <h6>
+                            Kurumsal
+                        </h6>
+
+                        <ul>
+
+                            <li>
+                                <a href="./about.html">
+                                    Hakkımızda
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./contact.html">
+                                    İletişim
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./refund.html">
+                                    Teslimat & İade
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="
+                col-lg-3
+                offset-lg-1
+                col-md-6
+                col-sm-6
+            ">
+
+                    <div class="footer__widget">
+
+                        <h6>
+                            Bülten
+                        </h6>
+
+                        <div class="footer__newslatter">
+
+                            <p>
+                                Yeni ürün ve fırsatlardan
+                                haberdar olun.
+                            </p>
+
+                            <form action="#">
+
+                                <input type="text" placeholder="Email giriniz">
+
+                                <button type="submit">
+
+                                    <span class="
+                                    icon_mail_alt
+                                "></span>
+
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="row">
+
+                <div class="col-lg-12 text-center">
+
+                    <div class="
+                    footer__copyright__text
+                ">
+
+                        <p>
+
+                            Copyright ©
+
+                            <script>
+                                document.write(
+                                    new Date().getFullYear()
+                                );
+                            </script>
+
+                            2020
+
+                            All rights reserved |
+                            This template is made with
+
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+
+                            by
+
+                            <a href="https://colorlib.com" target="_blank">
+                                Colorlib
+                            </a>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+
+
+        const token =
+            localStorage.getItem("token");
+
+        if (!token) {
+
+            window.location.href =
+                "login.html";
+        }
+
+
+    </script>
+
+
+    <script>
+
+        /*
+        |--------------------------------------------------------------------------
+        | STATE
+        |--------------------------------------------------------------------------
+        */
+
+        let checkoutData = null;
+
+        let addresses = [];
+
+        let selectedAddressId = null;
+
+        let paymentMethod = "card";
+
+
+        let walletBalanceValue = 0;
+
+        const API_BASE =
+            "http://127.0.0.1:8000/api";
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | ELEMENTS
+        |--------------------------------------------------------------------------
+        */
+        const paymentButtons =
+
+            document.querySelectorAll(
+                ".paymentMethodButton"
+            );
+
+        paymentButtons.forEach(button => {
+
+            button.addEventListener(
+
+                "click",
+
+                function () {
+
+                    paymentButtons.forEach(btn => {
+
+                        btn.classList.remove(
+                            "active-payment"
+                        );
+
+                    });
+
+                    this.classList.add(
+                        "active-payment"
+                    );
+
+
+                    const method =
+                        this.dataset.method;
+
+                    paymentMethod =
+                        method;
+
+
+                    const cardFields =
+                        document.getElementById(
+                            "cardFields"
+                        );
+
+                    const walletInfo =
+                        document.getElementById(
+                            "walletInfo"
+                        );
+
+
+                    if (method === "wallet") {
+
+                        walletInfo.style.display =
+                            "block";
+
+                        cardFields.style.display =
+                            "none";
+
+                        if (
+
+                            checkoutData
+
+                            &&
+
+                            walletBalanceValue <
+
+                            checkoutData.summary.total
+
+                        ) {
+
+                            completeOrderButton.disabled =
+                                true;
+
+                            completeOrderButton.style.opacity =
+                                "0.5";
+
+                            completeOrderButton.style.cursor =
+                                "not-allowed";
+
+
+
+                            showPopup(
+
+                                "Cüzdan bakiyeniz yetersiz",
+
+                                false
+                            );
+                        }
+
+                        else {
+
+                            completeOrderButton.disabled =
+                                false;
+
+                            completeOrderButton.style.opacity =
+                                "1";
+
+                            completeOrderButton.style.cursor =
+                                "pointer";
+                        }
+                    }
+
+                    else {
+
+                        walletInfo.style.display =
+                            "none";
+
+                        cardFields.style.display =
+                            "block";
+
+
+
+                        completeOrderButton.disabled =
+                            false;
+
+                        completeOrderButton.style.opacity =
+                            "1";
+
+                        completeOrderButton.style.cursor =
+                            "pointer";
+                    }
+                }
+            );
+
+        });
+
+
+        const citySelect =
+            document.getElementById(
+                "citySelect"
+            );
+
+        const districtSelect =
+            document.getElementById(
+                "districtSelect"
+            );
+
+        const neighborhoodSelect =
+            document.getElementById(
+                "neighborhoodSelect"
+            );
+
+        const checkoutItems =
+            document.getElementById("checkoutItems");
+
+        const subtotalElement =
+            document.getElementById("subtotal");
+
+        const totalElement =
+            document.getElementById("total");
+
+        const selectedAddress =
+            document.getElementById("selectedAddress");
+
+        const addressesList =
+            document.getElementById(
+                "addressesList"
+            );
+
+        const addressModal =
+            document.getElementById("addressModal");
+
+        const changeAddressButton =
+            document.getElementById("changeAddressButton");
+
+        const closeAddressModal =
+            document.getElementById("closeAddressModal");
+
+        const newAddressButton =
+            document.getElementById("newAddressButton");
+
+        const newAddressForm =
+            document.getElementById("newAddressForm");
+
+        const completeOrderButton =
+            document.getElementById("completeOrderButton");
+
+        const walletBalance =
+            document.getElementById(
+                "walletBalance"
+            );
+
+        const saveAddressButton =
+            document.getElementById(
+                "saveAddressButton"
+            );
+
+        async function loadWallet() {
+
+            try {
+
+                const response =
+                    await fetch(
+
+                        `${API_BASE}/wallet`,
+
+                        {
+                            method: "GET",
+
+                            headers: {
+
+                                "Accept":
+                                    "application/json",
+
+                                "Authorization":
+                                    "Bearer " +
+                                    localStorage.getItem(
+                                        "token"
+                                    )
+                            }
+                        }
+                    );
+
+
+                const result =
+                    await response.json();
+
+                if (
+                    response.status === 401
+                ) {
+
+                    localStorage.removeItem(
+                        "token"
+                    );
+
+                    window.location.href =
+                        "login.html";
+
+                    return;
+                }
+
+                if (
+
+                    !response.ok ||
+
+                    !result.success
+
+                ) {
+
+                    showPopup(
+
+                        result?.message ||
+
+                        "Cüzdan bilgisi alınamadı",
+
+                        false
+                    );
+
+                    return;
+                }
+
+
+
+                walletBalanceValue =
+
+                    Number(
+                        result.data.balance
+                    );
+
+
+
+
+                walletBalance.innerText =
+
+                    "₺" +
+
+                    walletBalanceValue
+                        .toLocaleString(
+
+                            "tr-TR",
+
+                            {
+                                minimumFractionDigits: 2,
+                                maximumFractionDigits: 2
+                            }
+                        );
+
+
+                if (
+
+                    paymentMethod ===
+                    "wallet"
+
+                    &&
+
+                    checkoutData
+
+                    &&
+
+                    walletBalanceValue <
+
+                    checkoutData.summary.total
+
+                ) {
+
+                    completeOrderButton.disabled =
+                        true;
+
+                    completeOrderButton.style.opacity =
+                        "0.5";
+
+                    completeOrderButton.style.cursor =
+                        "not-allowed";
+
+
+
+                    showPopup(
+
+                        "Cüzdan bakiyeniz yetersiz",
+
+                        false
+                    );
+                }
+
+
+                else {
+
+                    completeOrderButton.disabled =
+                        false;
+
+                    completeOrderButton.style.opacity =
+                        "1";
+
+                    completeOrderButton.style.cursor =
+                        "pointer";
+                }
+
+            } catch (error) {
+
+                showPopup(
+
+                    "Sunucu hatası oluştu",
+
+                    false
+                );
+            }
+        }
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | INIT
+        |--------------------------------------------------------------------------
+        */
+
+        document.addEventListener(
+
+            "DOMContentLoaded",
+
+            async function () {
+
+                await loadHeader();
+
+                initialize();
+            }
+        );
+
+
+
+        async function initialize() {
+
+            await loadCheckout();
+
+            await loadAddresses();
+
+            await loadWallet();
+
+            await loadCities();
+
+            initializeEvents();
+        }
+
+        async function loadCities() {
+
+            try {
+
+                const response =
+                    await fetch(
+
+                        `${API_BASE}/locations/cities`
+                    );
+
+                const result =
+                    await response.json();
+
+                citySelect.innerHTML = `
+
+            <option value="">
+                İl Seçin
+            </option>
+
+        `;
+                if (!response.ok || !result.success) {
+
+                    return;
+                }
+                result.data.forEach(city => {
+
+                    citySelect.innerHTML += `
+
+                <option value="${city.id}">
+                    ${city.name}
+                </option>
+
+            `;
+                });
+
+
+            } catch (error) {
+
+                console.log(error);
+            }
+        }
+
+        /*
+        |--------------------------------------------------------------------------
+        | EVENTS
+        |--------------------------------------------------------------------------
+        */
+        function showPopup(
+
+            message,
+
+            success = true
+        ) {
+
+            const popup =
+                document.getElementById(
+                    "popup"
+                );
+
+            const popupText =
+                document.getElementById(
+                    "popupText"
+                );
+
+            const popupIcon =
+                document.getElementById(
+                    "popupIcon"
+                );
+
+
+
+            popupText.innerText =
+                message;
+
+
+
+            if (success) {
+
+                popupIcon.innerText =
+                    "✓";
+
+                popupIcon.style.background =
+                    "#27ae60";
+
+            }
+
+            else {
+
+                popupIcon.innerText =
+                    "!";
+
+                popupIcon.style.background =
+                    "#e74c3c";
+            }
+
+
+
+            popup.style.display =
+                "flex";
+
+
+
+            clearTimeout(
+                popup.hideTimeout
+            );
+
+
+
+            popup.hideTimeout =
+                setTimeout(() => {
+
+                    popup.style.display =
+                        "none";
+
+                }, 3000);
+        }
+        function initializeEvents() {
+
+            /*
+            |--------------------------------------------------------------------------
+            | OPEN MODAL
+            |--------------------------------------------------------------------------
+            */
+
+            changeAddressButton.addEventListener(
+
+                "click",
+
+                function () {
+
+                    addressModal.style.display = "flex";
+                }
+            );
+
+
+
+            /*
+            |--------------------------------------------------------------------------
+            | CLOSE MODAL
+            |--------------------------------------------------------------------------
+            */
+
+            closeAddressModal.addEventListener(
+
+                "click",
+
+                function () {
+
+                    addressModal.style.display =
+                        "none";
+                }
+            );
+
+
+
+            /*
+            |--------------------------------------------------------------------------
+            | OUTSIDE CLICK
+            |--------------------------------------------------------------------------
+            */
+
+            window.addEventListener(
+
+                "click",
+
+                function (e) {
+
+                    if (e.target === addressModal) {
+
+                        addressModal.style.display =
+                            "none";
+                    }
+                }
+            );
+
+
+
+            /*
+            |--------------------------------------------------------------------------
+            | NEW ADDRESS FORM
+            |--------------------------------------------------------------------------
+            */
+
+            newAddressButton.addEventListener(
+
+                "click",
+
+                function () {
+
+                    if (
+                        newAddressForm.style.display
+                        === "none"
+                    ) {
+
+                        newAddressForm.style.display =
+                            "block";
+
+                    } else {
+
+                        newAddressForm.style.display =
+                            "none";
+                    }
+                }
+            );
+
+            saveAddressButton.addEventListener(
+
+                "click",
+
+                async function () {
+
+                    try {
+
+                        /*
+                        |--------------------------------------------------------------------------
+                        | FORM VALUES
+                        |--------------------------------------------------------------------------
+                        */
+
+                        const fullName =
+                            document.getElementById(
+                                "fullName"
+                            ).value;
+
+                        const phone =
+                            document.getElementById(
+                                "phone"
+                            ).value;
+
+                        const title =
+                            document.getElementById(
+                                "title"
+                            ).value;
+
+                        const cityId =
+                            citySelect.value;
+
+                        const districtId =
+                            districtSelect.value;
+
+                        const neighborhoodId =
+                            neighborhoodSelect.value;
+
+                        const addressText =
+                            document.getElementById(
+                                "addressText"
+                            ).value;
+
+
+
+                        /*
+                        |--------------------------------------------------------------------------
+                        | REQUEST
+                        |--------------------------------------------------------------------------
+                        */
+
+                        const response =
+                            await fetch(
+
+                                'http://127.0.0.1:8000/api/addresses',
+
+                                {
+                                    method: "POST",
+
+                                    headers: {
+
+                                        "Content-Type":
+                                            "application/json",
+
+                                        "Accept":
+                                            "application/json",
+
+                                        "Authorization":
+                                            "Bearer " +
+                                            localStorage.getItem("token")
+                                    },
+
+                                    body: JSON.stringify({
+
+                                        full_name:
+                                            fullName,
+
+                                        phone:
+                                            phone,
+
+                                        title:
+                                            title,
+
+                                        city_id:
+                                            cityId,
+
+                                        district_id:
+                                            districtId,
+
+                                        neighborhood_id:
+                                            neighborhoodId,
+
+                                        address:
+                                            addressText
+                                    })
+                                }
+                            );
+
+
+
+                        const result =
+                            await response.json();
+
+
+
+
+                        /*
+                        |--------------------------------------------------------------------------
+                        | ERROR
+                        |--------------------------------------------------------------------------
+                        */
+
+                        if (!response.ok || !result.success) {
+
+                            showPopup(
+                                "Adres eklenemedi",
+                                false
+                            );
+                            return;
+                        }
+
+
+
+                        /*
+                        |--------------------------------------------------------------------------
+                        | SUCCESS
+                        |--------------------------------------------------------------------------
+                        */
+
+                        newAddressForm.style.display =
+                            "none";
+
+                        addresses.unshift(result.data);
+
+                        selectedAddressId =
+                            result.data.id;
+
+                        renderSelectedAddress(
+                            result.data
+                        );
+
+                        renderAddressList();
+
+                        newAddressForm.style.display =
+                            "none";
+
+                        addressModal.style.display =
+                            "none";
+
+                        showPopup(
+                            "Adres başarıyla eklendi"
+                        );
+
+                    } catch (error) {
+
+
+                        showPopup(
+                            "Sunucu hatası oluştu",
+                            false
+                        );
+                    }
+                }
+            );
+
+
+
+            completeOrderButton.addEventListener(
+
+                "click",
+
+                async function () {
+
+
+
+                    if (!selectedAddressId) {
+
+                        showPopup(
+
+                            "Lütfen adres seçiniz",
+
+                            false
+                        );
+
+                        return;
+                    }
+
+
+                    completeOrderButton.disabled =
+                        true;
+
+                    completeOrderButton.innerText =
+
+                        "Sipariş Oluşturuluyor...";
+
+
+
+                    try {
+
+                        const response =
+                            await fetch(
+
+                                `${API_BASE}/orders`,
+
+                                {
+                                    method: "POST",
+
+                                    headers: {
+
+                                        "Accept":
+                                            "application/json",
+
+                                        "Content-Type":
+                                            "application/json",
+
+                                        "Authorization":
+                                            "Bearer " +
+                                            localStorage.getItem(
+                                                "token"
+                                            )
+                                    },
+
+                                    body: JSON.stringify({
+
+                                        address_id:
+                                            selectedAddressId,
+
+                                        payment_method:
+                                            paymentMethod
+                                    })
+                                }
+                            );
+
+
+
+                        const result =
+                            await response.json();
+
+                        if (
+
+                            !response.ok ||
+
+                            !result.success
+
+                        ) {
+                            showPopup(
+
+                                result?.error?.message ||
+
+                                result?.message ||
+
+                                "Sipariş oluşturulamadı",
+
+                                false
+                            );
+
+
+
+                            completeOrderButton.disabled =
+                                false;
+
+                            completeOrderButton.innerText =
+                                "Siparişi Tamamla";
+
+                            return;
+                        }
+
+                        showPopup(
+
+                            result.message
+                        );
+
+
+                        completeOrderButton.innerText =
+
+                            "Sipariş Oluşturuldu";
+
+                        setTimeout(() => {
+
+                            window.location.href =
+
+                                `order-success.html?id=${result.data.id}`;
+
+                        }, 1500);
+
+                    } catch (error) {
+
+                        console.log(
+                            "CHECKOUT ERROR:",
+                            error
+                        );
+
+                        showPopup(
+
+                            "Sunucu hatası oluştu",
+
+                            false
+                        );
+
+
+
+                        completeOrderButton.disabled =
+                            false;
+
+                        completeOrderButton.innerText =
+                            "Siparişi Tamamla";
+                    }
+                }
+            );
+
+            const cardFields =
+                document.getElementById(
+                    "cardFields"
+                );
+
+
+
+            const walletInfo =
+                document.getElementById(
+                    "walletInfo"
+                );
+
+
+
+
+        }
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | CHECKOUT API
+        |--------------------------------------------------------------------------
+        */
+
+        async function loadCheckout() {
+
+            try {
+
+                const response = await fetch(
+
+                    `${API_BASE}/checkout/validate`,
+
+                    {
+                        method: "GET",
+
+                        headers: {
+
+                            "Accept": "application/json",
+
+                            "Authorization":
+                                "Bearer " +
+                                localStorage.getItem("token")
+                        }
+                    }
+                );
+
+                const result =
+                    await response.json();
+
+                if (
+                    response.status === 401
+                ) {
+
+                    localStorage.removeItem("token");
+
+                    window.location.href =
+                        "login.html";
+
+                    return;
+                }
+
+                if (!response.ok || !result.success) {
+
+                    showPopup(
+                        result?.message ||
+                        "Sepet bilgileri yüklenemedi",
+                        false
+                    );
+
+                    return;
+                }
+                checkoutData =
+                    result.data;
+
+                renderCheckoutItems(
+                    checkoutData.items
+                );
+
+                renderSummary(
+                    checkoutData.summary
+                );
+
+            } catch (error) {
+
+                console.log(error);
+            }
+        }
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | ADDRESS API
+        |--------------------------------------------------------------------------
+        */
+
+        async function loadAddresses() {
+
+            try {
+
+                const response = await fetch(
+
+                    `${API_BASE}/addresses`,
+
+                    {
+                        headers: {
+
+                            "Accept": "application/json",
+
+                            "Authorization":
+                                "Bearer " +
+                                localStorage.getItem("token")
+                        }
+                    }
+                );
+
+                const result =
+                    await response.json();
+
+
+                if (!result.success) {
+
+                    return;
+                }
+
+                addresses =
+                    result.data;
+
+
+
+                /*
+                |--------------------------------------------------------------------------
+                | DEFAULT ADDRESS
+                |--------------------------------------------------------------------------
+                */
+
+                if (addresses.length === 0) {
+
+                    selectedAddress.innerHTML = `
+
+                    <div style="
+                        text-align:center;
+                        padding:20px;
+                    ">
+
+                        <p style="
+                            margin-bottom:15px;
+                            color:#777;
+                        ">
+                            Kayıtlı adres bulunamadı
+                        </p>
+
+                    </div>
+
+                `;
+
+                    return;
+                }
+
+
+
+                const defaultAddress =
+                    addresses.find(
+
+                        address =>
+                            address.is_default === true
+                    );
+
+
+
+                if (defaultAddress) {
+
+                    selectedAddressId =
+                        defaultAddress.id;
+
+                    renderSelectedAddress(
+                        defaultAddress
+                    );
+                }
+
+
+
+                /*
+                |--------------------------------------------------------------------------
+                | ADDRESS LIST
+                |--------------------------------------------------------------------------
+                */
+
+                renderAddressList();
+
+            } catch (error) {
+
+                console.log(error);
+            }
+        }
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | SELECTED ADDRESS
+        |--------------------------------------------------------------------------
+        */
+
+        function renderSelectedAddress(address) {
+
+            selectedAddress.innerHTML = `
+
+                <h5 style="
+                    font-weight:700;
+                    margin-bottom:12px;
+                ">
+                    ${address.title}
+                </h5>
+
+                <p style="
+                    margin-bottom:6px;
+                ">
+                    ${address.full_name || ""}
+                </p>
+
+                <p style="
+                    margin-bottom:6px;
+                ">
+                    ${address.phone || ""}
+                </p>
+
+                <p style="
+                    margin-bottom:0;
+                    color:#666;
+                    line-height:28px;
+                ">
+
+                    ${address.city.name}
+                    /
+                    ${address.district.name}
+
+                    <br>
+
+                    ${address.address}
+
+                </p>
+
+            `;
+        }
+
+
+        /*
+|--------------------------------------------------------------------------
+| ADDRESS LIST
+|--------------------------------------------------------------------------
+*/
+
+        function renderAddressList() {
+
+            addressesList.innerHTML = "";
+
+
+
+            addresses.forEach(address => {
+
+                const isSelected =
+
+                    selectedAddressId ===
+                    address.id;
+
+
+
+                addressesList.innerHTML += `
+
+            <div
+                onclick="selectAddress(${address.id})"
+                style="
+                    border:
+
+                        ${isSelected
+
+                        ? '2px solid black'
+
+                        : '1px solid #eee'
+                    };
+
+                    border-radius:16px;
+
+                    padding:25px;
+
+                    cursor:pointer;
+
+                    transition:0.2s;
+
+                    background:white;
+                "
+            >
+
+                <div style="
+                    display:flex;
+                    justify-content:space-between;
+                    align-items:center;
+                    margin-bottom:15px;
+                ">
+
+                    <div style="
+                        display:flex;
+                        align-items:center;
+                        gap:10px;
+                    ">
+
+                        <h4 style="
+                            font-weight:700;
+                            margin-bottom:0;
+                        ">
+                            ${address.title}
+                        </h4>
+
+                        ${address.is_default
+
+                        ? `
+
+                                <span style="
+                                    background:black;
+                                    color:white;
+                                    font-size:12px;
+                                    padding:5px 10px;
+                                    border-radius:8px;
+                                ">
+                                    Varsayılan
+                                </span>
+
+                            `
+
+                        : ''
+                    }
+
+                    </div>
+
+                </div>
+
+
+
+                <p style="
+                    margin-bottom:8px;
+                    color:#444;
+                    line-height:28px;
+                ">
+
+                    ${address.city.name}
+                    /
+                    ${address.district.name}
+
+                    <br>
+
+                    ${address.address}
+
+                </p>
+
+            </div>
+
+        `;
+            });
+        }
+
+
+
+        /*
+|--------------------------------------------------------------------------
+| SELECT ADDRESS
+|--------------------------------------------------------------------------
+*/
+
+        function selectAddress(id) {
+
+            selectedAddressId = id;
+
+            const address =
+                addresses.find(
+
+                    item => item.id === id
+                );
+
+            renderSelectedAddress(address);
+
+            renderAddressList();
+
+            addressModal.style.display =
+                "none";
+        }
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | RENDER PRODUCTS
+        |--------------------------------------------------------------------------
+        */
+        function renderCheckoutItems(items) {
+
+            checkoutItems.innerHTML = "";
+
+
+
+            /*
+            |--------------------------------------------------------------------------
+            | EMPTY
+            |--------------------------------------------------------------------------
+            */
+
+            if (!items.length) {
+
+                checkoutItems.innerHTML = `
+
+            <div style="
+                padding:30px;
+                text-align:center;
+                color:#777;
+                font-weight:600;
+            ">
+
+                Sepetiniz boş
+
+            </div>
+
+        `;
+
+                return;
+            }
+
+
+
+            /*
+            |--------------------------------------------------------------------------
+            | ITEMS
+            |--------------------------------------------------------------------------
+            */
+
+            items.forEach(item => {
+
+                checkoutItems.innerHTML += `
+
+            <div style="
+                display:flex;
+                gap:18px;
+                padding-bottom:22px;
+                margin-bottom:22px;
+                border-bottom:1px solid #f1f1f1;
+                align-items:flex-start;
+            ">
+
+                <!-- IMAGE -->
+
+                <div style="
+                    width:95px;
+                    height:95px;
+                    flex-shrink:0;
+                    border-radius:14px;
+                    overflow:hidden;
+                    background:#f8f8f8;
+                ">
+
+                    <img
+                        src="${item.image
+                        ? item.image
+                        : 'img/no-image.png'
+                    }"
+
+                        alt="${item.product_name}"
+
+                        style="
+                            width:100%;
+                            height:100%;
+                            object-fit:contain;
+                            display:block;
+                        "
+                    >
+
+                </div>
+
+
+
+                <!-- CONTENT -->
+
+                <div style="
+                    flex:1;
+                    display:flex;
+                    flex-direction:column;
+                    gap:8px;
+                ">
+
+                    <!-- PRODUCT -->
+
+                    <h5 style="
+                        font-size:16px;
+                        font-weight:700;
+                        margin:0;
+                        color:#111;
+                        line-height:1.4;
+                    ">
+                        ${item.product_name}
+                    </h5>
+
+                    <div style="
+                        display:flex;
+                        flex-wrap:wrap;
+                        gap:10px;
+                        font-size:14px;
+                        color:#666;
+                    ">
+
+                        <span>
+                            Adet:
+                            <b style="color:#111;">
+                                ${item.quantity}
+                            </b>
+                        </span>
+
+                        ${item.size
+
+                        ? `
+
+                                <span>
+                                    Boyut:
+                                    <b style="color:#111;">
+                                        ${item.size}
+                                    </b>
+                                </span>
+
+                            `
+
+                        : ''
+                    }
+
+                    </div>
+
+                    <!-- PRICE -->
+
+                    <div style="
+                        display:flex;
+                        align-items:center;
+                        justify-content:space-between;
+                        margin-top:4px;
+                    ">
+
+                        <span style="
+                            font-size:14px;
+                            color:#777;
+                        ">
+                            ₺${Number(item.price)
+                        .toLocaleString("tr-TR")} / adet
+                        </span>
+
+                        <span style="
+                            font-size:17px;
+                            font-weight:800;
+                            color:#111;
+                        ">
+
+                            ₺${Number(item.subtotal)
+                        .toLocaleString(
+
+                            "tr-TR",
+
+                            {
+                                minimumFractionDigits: 2,
+                                maximumFractionDigits: 2
+                            }
+                        )}
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        `;
+            });
+        }
+
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | RENDER SUMMARY
+        |--------------------------------------------------------------------------
+        */
+
+        function renderSummary(summary) {
+
+            const shippingElement =
+                document.getElementById(
+                    "shipping-price"
+                );
+
+
+
+            subtotalElement.innerText =
+                "₺" +
+
+                Number(summary.subtotal)
+                    .toLocaleString(
+
+                        "tr-TR",
+
+                        {
+                            minimumFractionDigits: 2
+                        }
+                    );
+
+
+
+            totalElement.innerText =
+                "₺" +
+
+                Number(summary.total)
+                    .toLocaleString(
+
+                        "tr-TR",
+
+                        {
+                            minimumFractionDigits: 2
+                        }
+                    );
+
+
+
+            shippingElement.innerText =
+
+                summary.shipping === 0
+
+                    ? "Ücretsiz"
+
+                    : "₺" +
+
+                    Number(summary.shipping)
+                        .toLocaleString(
+
+                            "tr-TR",
+
+                            {
+                                minimumFractionDigits: 2
+                            }
+                        );
+        }
+
+
+        citySelect.addEventListener(
+
+            "change",
+
+            async function () {
+
+                const cityId = this.value;
+
+
+                districtSelect.innerHTML = `
+            <option value="">
+                İlçe Seçin
+            </option>
+        `;
+
+                neighborhoodSelect.innerHTML = `
+            <option value="">
+                Mahalle Seçin
+            </option>
+        `;
+
+
+                districtSelect.disabled = true;
+                neighborhoodSelect.disabled = true;
+
+                if (!cityId) {
+                    return;
+                }
+
+                try {
+
+                    const response = await fetch(
+
+                        `${API_BASE}/locations/districts/${cityId}`,
+
+                        {
+                            headers: {
+                                "Accept": "application/json"
+                            }
+                        }
+                    );
+
+                    const result = await response.json();
+
+
+
+                    if (
+                        !response.ok ||
+                        !result.success
+                    ) {
+
+                        showPopup(
+                            "İlçeler yüklenemedi",
+                            false
+                        );
+
+                        return;
+                    }
+
+
+                    result.data.forEach(district => {
+
+                        districtSelect.innerHTML += `
+
+                    <option value="${district.id}">
+                        ${district.name}
+                    </option>
+
+                `;
+                    });
+
+                    districtSelect.disabled = false;
+                }
+
+                catch (error) {
+
+                    showPopup(
+                        "İlçeler alınamadı",
+                        false
+                    );
+                }
+            }
+        );
+        districtSelect.addEventListener(
+            "change",
+            async function () {
+
+                const districtId = this.value;
+
+                neighborhoodSelect.innerHTML =
+                    `<option value="">Mahalle Seçin</option>`;
+
+                if (!districtId) return;
+
+                neighborhoodSelect.disabled = false;
+
+                try {
+
+                    const response = await fetch(
+                        `${API_BASE}/locations/neighborhoods/${districtId}`
+                    );
+
+                    const result = await response.json();
+
+                    result.data.forEach(neighborhood => {
+
+                        neighborhoodSelect.innerHTML += `
+                    <option value="${neighborhood.id}">
+                        ${neighborhood.name}
+                    </option>
+                `;
+                    });
+
+                } catch (error) {
+
+                    console.log(error);
+                }
+            }
+        );
+
+    </script>
+
+
+    <script>
+
+        async function loadHeader() {
+
+            const response =
+                await fetch("components/header.html");
+
+
+
+            const data =
+                await response.text();
+
+
+
+            document.getElementById("header").innerHTML =
+                data;
+
+
+
+            eval(
+                document
+                    .querySelector("#header script")
+                    .innerText
+            );
+
+        }
+    </script>
+
+    <div id="popup" style="
+    position:fixed;
+    top:30px;
+    right:30px;
+    background:white;
+    padding:18px 22px;
+    border-radius:16px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.12);
+    z-index:99999;
+    display:none;
+    min-width:320px;
+    align-items:center;
+    gap:15px;
+">
+
+        <div id="popupIcon" style="
+            width:38px;
+            height:38px;
+            border-radius:50%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            color:white;
+            font-size:18px;
+            font-weight:bold;
+            background:#27ae60;
+        ">
+            ✓
+        </div>
+
+        <p id="popupText" style="
+        margin:0;
+        font-size:16px;
+        font-weight:600;
+        color:#222;
+    "></p>
+
+    </div>
+</body>
+
+</html>

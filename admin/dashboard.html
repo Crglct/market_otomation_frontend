@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Male-Fashion | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/elegant-icons.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/nice-select.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+
+    <!-- Offcanvas Menu End -->
+
+
+    <!-- Header Section Begin -->
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__text">
+                        <h4>Admin Panel</h4>
+                        <div class="breadcrumb__links">
+                            <a href="/admin/dashboard.html">Dashboard</a>
+                            <span>Dashboard</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+    <div id="profileLoader" style="
+        height:500px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size:22px;
+        font-weight:700;
+    ">
+
+        Yükleniyor...
+
+    </div>
+
+    <!-- About Section Begin -->
+    <section class="profile-section spad" id="profileContent" style="display:none;">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- SOL MENU -->
+
+                <div class="col-lg-3">
+
+                    <div id="sidebar-container"></div>
+
+                </div>
+
+                <!-- SAĞ PANEL -->
+
+                <div class="col-lg-9">
+
+                    <div style="
+                    background:#fff;
+                    border:1px solid #eee;
+                    border-radius:14px;
+                    padding:40px;
+                    box-shadow:0 5px 20px rgba(0,0,0,0.04);
+                ">
+
+                        <div style="
+                        display:flex;
+                        align-items:center;
+                        justify-content:space-between;
+                        margin-bottom:35px;
+                    ">
+
+                            <div>
+
+                                <h3 style="
+                                font-weight:700;
+                                margin-bottom:8px;
+                            ">
+                                    Dashboard
+                                </h3>
+
+                                <p style="
+                                color:#777;
+                                margin:0;
+                            ">
+                                    Yönetim paneline hoş geldiniz.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- İSTATİSTİK KARTLARI -->
+
+                        <div class="row">
+
+                            <div class="col-lg-3">
+
+                                <div style="
+                                background:#fafafa;
+                                border-radius:16px;
+                                padding:30px;
+                                margin-bottom:25px;
+                                border:1px solid #eee;
+                            ">
+
+                                    <p style="
+                                    color:#777;
+                                    margin-bottom:10px;
+                                ">
+                                        Toplam Ürün
+                                    </p>
+
+                                    <h2 id="totalProducts" style="
+                                    font-weight:800;
+                                ">
+                                        0
+                                    </h2>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="col-lg-3">
+
+                                <div style="
+                                background:#fafafa;
+                                border-radius:16px;
+                                padding:30px;
+                                margin-bottom:25px;
+                                border:1px solid #eee;
+                            ">
+
+                                    <p style="
+                                    color:#777;
+                                    margin-bottom:10px;
+                                ">
+                                        Toplam Sipariş
+                                    </p>
+
+                                    <h2 id="totalOrders" style="
+                                    font-weight:800;
+                                ">
+                                        0
+                                    </h2>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="col-lg-3">
+
+                                <div style="
+                                background:#fafafa;
+                                border-radius:16px;
+                                padding:30px;
+                                margin-bottom:25px;
+                                border:1px solid #eee;
+                            ">
+
+                                    <p style="
+                                    color:#777;
+                                    margin-bottom:10px;
+                                ">
+                                        Toplam Kullanıcı
+                                    </p>
+
+                                    <h2 id="totalUsers" style="
+                                    font-weight:800;
+                                ">
+                                        0
+                                    </h2>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="col-lg-3">
+
+                                <div style="
+                                background:#fafafa;
+                                border-radius:16px;
+                                padding:30px;
+                                margin-bottom:25px;
+                                border:1px solid #eee;
+                            ">
+
+                                    <p style="
+                                    color:#777;
+                                    margin-bottom:10px;
+                                ">
+                                        Bu Ay Kazanç
+                                    </p>
+
+                                    <h2 id="totalRevenue" style="
+                                            font-weight:800;
+                                            font-size:16px;
+                                            line-height:1.2;
+                                            word-break:break-word;
+                                        ">
+                                        ₺0
+                                    </h2>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ALT ALAN -->
+
+                        <div class="row">
+
+                            <!-- SON SİPARİŞLER -->
+
+                            <div class="col-lg-8">
+
+                                <div style="
+                                background:#fafafa;
+                                border-radius:16px;
+                                padding:30px;
+                                border:1px solid #eee;
+                                height:100%;
+                            ">
+
+                                    <h4 style="
+                                    font-weight:700;
+                                    margin-bottom:20px;
+                                ">
+                                        Son Siparişler
+                                    </h4>
+
+                                    <div id="latestOrders" style="
+                                    display:flex;
+                                    flex-direction:column;
+                                    gap:15px;
+                                ">
+
+                                        <div style="
+                                        padding:18px;
+                                        border-radius:12px;
+                                        background:white;
+                                        border:1px solid #eee;
+                                    ">
+
+                                            Henüz sipariş bulunmuyor.
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- HIZLI İŞLEMLER -->
+
+                            <div class="col-lg-4">
+
+                                <div style="
+                                background:#fafafa;
+                                border-radius:16px;
+                                padding:30px;
+                                border:1px solid #eee;
+                                height:100%;
+                            ">
+
+                                    <h4 style="
+                                    font-weight:700;
+                                    margin-bottom:20px;
+                                ">
+                                        Hızlı İşlemler
+                                    </h4>
+
+                                    <div style="
+                                    display:flex;
+                                    flex-direction:column;
+                                    gap:15px;
+                                ">
+
+                                        <a href="./products.html" class="site-btn" style="
+                                        border-radius:12px;
+                                        text-align:center;
+                                    ">
+                                            Ürün Yönetimi
+                                        </a>
+
+
+
+                                        <a href="./product-create.html" class="site-btn" style="
+                                        border-radius:12px;
+                                        text-align:center;
+                                    ">
+                                            Ürün Ekle
+                                        </a>
+
+
+
+                                        <a href="./orders.html" class="site-btn" style="
+                                        border-radius:12px;
+                                        text-align:center;
+                                    ">
+                                            Siparişler
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- About Section End -->
+
+    <!-- Testimonial Section Begin -->
+
+    <!-- Testimonial Section End -->
+
+    <!-- Counter Section Begin -->
+
+    <!-- Counter Section End -->
+
+    <!-- Team Section Begin -->
+
+
+    <!-- Team Section End -->
+
+    <!-- Client Section Begin -->
+
+
+    <!-- Client Section End -->
+
+    <!-- Footer Section Begin -->
+
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+
+    <script src="../js/bootstrap.min.js"></script>
+
+    <script src="../js/jquery.nice-select.min.js"></script>
+
+    <script src="../js/jquery.nicescroll.min.js"></script>
+
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+
+    <script src="../js/jquery.countdown.min.js"></script>
+
+    <script src="../js/jquery.slicknav.js"></script>
+
+    <script src="../js/mixitup.min.js"></script>
+
+    <script src="../js/owl.carousel.min.js"></script>
+
+    <script src="../js/main.js"></script>
+    <script>
+
+        const API_BASE =
+            "http://127.0.0.1:8000/api";
+
+
+
+        const token =
+            localStorage.getItem("admin_token");
+
+
+
+        if (!token) {
+
+            window.location.href =
+                "login.html";
+        }
+
+        function showPopup(
+            message,
+            success = true
+        ) {
+
+            const popup =
+                document.getElementById(
+                    "popup"
+                );
+
+
+
+            const popupText =
+                document.getElementById(
+                    "popupText"
+                );
+
+
+
+            const popupIcon =
+                document.getElementById(
+                    "popupIcon"
+                );
+
+
+
+            popupText.innerText =
+                message;
+
+
+
+            if (success) {
+
+                popupIcon.style.background =
+                    "#27ae60";
+
+
+
+                popupIcon.innerText =
+                    "✓";
+
+            }
+            else {
+
+                popupIcon.style.background =
+                    "#e74c3c";
+
+
+
+                popupIcon.innerText =
+                    "!";
+            }
+
+
+
+            popup.style.display =
+                "flex";
+
+
+
+            setTimeout(function () {
+
+                popup.style.display =
+                    "none";
+
+            }, 3000);
+        }
+
+
+
+        async function loadDashboard() {
+
+            try {
+
+                const response =
+                    await fetch(
+
+                        API_BASE +
+                        "/admin/dashboard",
+
+                        {
+
+                            method: "GET",
+
+                            headers: {
+
+                                "Authorization":
+                                    "Bearer " + token,
+
+                                "Accept":
+                                    "application/json"
+                            }
+                        }
+                    );
+
+
+                if (response.status === 401) {
+
+                    localStorage.removeItem(
+                        "admin_token"
+                    );
+
+                    window.location.href =
+                        "login.html";
+
+                    return;
+                }
+
+                const data =
+                    await response.json();
+
+
+
+                console.log(data);
+
+
+
+                if (data.success) {
+
+                    document.getElementById(
+                        "totalProducts"
+                    ).innerText =
+
+                        data.data.total_products;
+
+
+
+                    document.getElementById(
+                        "totalOrders"
+                    ).innerText =
+
+                        data.data.total_orders;
+
+
+
+                    document.getElementById(
+                        "totalUsers"
+                    ).innerText =
+
+                        data.data.total_users;
+
+                    document.getElementById(
+                        "totalRevenue"
+                    ).innerText =
+
+                        "₺" +
+                        data.data.total_revenue;
+
+
+
+                    const latestOrders =
+                        data.data.latest_orders;
+
+
+
+                    const latestOrdersContainer =
+                        document.getElementById(
+                            "latestOrders"
+                        );
+
+
+
+                    latestOrdersContainer.innerHTML =
+                        "";
+
+
+
+                    if (
+                        latestOrders.length === 0
+                    ) {
+
+                        latestOrdersContainer.innerHTML = `
+
+                        <div style="
+                            padding:18px;
+                            border-radius:12px;
+                            background:white;
+                            border:1px solid #eee;
+                        ">
+
+                            Henüz sipariş bulunmuyor.
+
+                        </div>
+
+                    `;
+
+                    }
+
+
+
+                    latestOrders.forEach(order => {
+
+                        let statusText = "Sipariş Alındı";
+                        let statusColor = "#ffeaa7";
+
+                        switch (order.status) {
+
+                            case "pending":
+                                statusText = "Sipariş Alındı";
+                                statusColor = "#ffeaa7";
+                                break;
+
+                            case "approved":
+                                statusText = "Sipariş Onaylandı";
+                                statusColor = "#d4edda";
+                                break;
+
+                            case "supplying":
+                                statusText = "Tedarik Ediliyor";
+                                statusColor = "#d6e4ff";
+                                break;
+
+                            case "packaging":
+                                statusText = "Paketleniyor";
+                                statusColor = "#e5dbff";
+                                break;
+
+                            case "shipped":
+                                statusText = "Kargoya Verildi";
+                                statusColor = "#cfe2ff";
+                                break;
+
+                            case "out_for_delivery":
+                                statusText = "Dağıtıma Çıktı";
+                                statusColor = "#bfe3ff";
+                                break;
+
+                            case "delivered":
+                                statusText = "Teslim Edildi";
+                                statusColor = "#c8f7c5";
+                                break;
+
+                            case "completed":
+                                statusText = "Tamamlandı";
+                                statusColor = "#b2f2bb";
+                                break;
+
+                            case "cancelled":
+                                statusText = "İptal Edildi";
+                                statusColor = "#f8d7da";
+                                break;
+                        }
+
+                        latestOrdersContainer.innerHTML += `
+
+                        <a
+                            href="./order-detail.html?id=${order.id}"
+
+                            style="
+                                padding:18px;
+                                border-radius:14px;
+                                background:white;
+                                border:1px solid #eee;
+                                display:flex;
+                                justify-content:space-between;
+                                align-items:center;
+                                text-decoration:none;
+                                transition:0.3s;
+                            "
+
+                            onmouseover="
+                                this.style.transform='translateY(-3px)';
+                                this.style.boxShadow='0 10px 25px rgba(0,0,0,0.06)';
+                            "
+
+                            onmouseout="
+                                this.style.transform='translateY(0)';
+                                this.style.boxShadow='none';
+                            "
+                        >
+
+                            <div>
+
+                                <h6 style="
+                                    font-weight:700;
+                                    margin-bottom:6px;
+                                    color:#111;
+                                    font-size:17px;
+                                ">
+                                    ${order.order_number}
+                                </h6>
+
+                                <p style="
+                                    margin:0;
+                                    color:#777;
+                                    font-size:15px;
+                                ">
+                                    ${order.total_price} TL
+                                </p>
+
+                            </div>
+
+                            <span style="
+                                padding:10px 16px;
+                                border-radius:30px;
+                                background:${statusColor};
+                                font-size:13px;
+                                font-weight:700;
+                                color:#111;
+                            ">
+
+                                ${statusText}
+
+                            </span>
+
+                        </a>
+
+                    `;
+                    });
+
+
+                    document
+                        .getElementById(
+                            "profileLoader"
+                        )
+                        .style.display =
+                        "none";
+
+
+
+                    document
+                        .getElementById(
+                            "profileContent"
+                        )
+                        .style.display =
+                        "block";
+                }
+
+            }
+            catch (error) {
+
+                console.log(error);
+
+
+
+                showPopup(
+                    "Dashboard yüklenemedi",
+                    false
+                );
+            }
+        }
+
+
+
+
+
+        loadDashboard();
+
+    </script>
+    <script>
+
+        async function loadSidebar() {
+
+            const response =
+                await fetch(
+                    "./sidebar.html"
+                );
+
+            const html =
+                await response.text();
+
+            document.getElementById(
+                "sidebar-container"
+            ).innerHTML = html;
+
+
+
+            const sidebarLinks =
+
+                document.querySelectorAll(
+                    ".sidebar-link"
+                );
+
+
+
+            sidebarLinks.forEach(link => {
+
+                if (
+                    link.dataset.page ===
+                    currentPage
+                ) {
+
+                    link.classList.add(
+                        "active"
+                    );
+                }
+            });
+
+
+
+            initializeLogout();
+        }
+
+
+
+        loadSidebar();
+
+        function initializeLogout() {
+
+            const logoutBtn =
+
+                document.getElementById(
+                    "logoutBtn"
+                );
+
+
+
+            if (!logoutBtn) {
+                return;
+            }
+
+
+
+            logoutBtn.addEventListener(
+
+                "click",
+
+                function (e) {
+
+                    e.preventDefault();
+
+
+
+                    localStorage.removeItem(
+                        "admin_token"
+                    );
+
+
+
+                    window.location.href =
+                        "./login.html";
+                }
+            );
+        }
+
+    </script>
+    <script>
+
+        const currentPage =
+            "dashboard";
+
+    </script>
+
+
+
+    <div id="popup" style="
+    position:fixed;
+    top:30px;
+    right:30px;
+    background:white;
+    padding:18px 22px;
+    border-radius:16px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.12);
+    z-index:99999;
+    display:none;
+    min-width:320px;
+    align-items:center;
+    gap:15px;
+">
+
+        <div id="popupIcon" style="
+        width:38px;
+        height:38px;
+        border-radius:50%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        color:white;
+        font-size:18px;
+        font-weight:bold;
+        background:#27ae60;
+    ">
+            ✓
+        </div>
+
+        <p id="popupText" style="
+        margin:0;
+        font-size:16px;
+        font-weight:600;
+        color:#222;
+    "></p>
+
+    </div>
+</body>
+
+</html>

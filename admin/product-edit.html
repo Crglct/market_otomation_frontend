@@ -1,0 +1,1694 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Male-Fashion | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/elegant-icons.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+
+    <style>
+        .admin-page-header {
+
+            margin-bottom: 30px;
+        }
+
+        .admin-title {
+
+            font-size: 30px;
+
+            font-weight: 800;
+
+            color: #111;
+
+            margin-bottom: 8px;
+        }
+
+        .admin-subtitle {
+
+            color: #777;
+
+            margin: 0;
+
+            font-size: 15px;
+        }
+
+        .admin-create-btn {
+
+            height: 52px;
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 10px;
+
+            padding: 0 24px;
+
+            background: #111;
+
+            color: #fff;
+
+            border-radius: 12px;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            transition: .2s;
+        }
+
+        .admin-create-btn:hover {
+
+            background: #000;
+
+            color: #fff;
+        }
+
+        .admin-card {
+
+            background: #fff;
+
+            border-radius: 18px;
+
+            padding: 24px;
+
+            box-shadow:
+                0 4px 20px rgba(0, 0, 0, .05);
+        }
+
+        .admin-input-group {
+
+            position: relative;
+        }
+
+        .admin-input-group i {
+
+            position: absolute;
+
+            top: 50%;
+
+            left: 16px;
+
+            transform: translateY(-50%);
+
+            color: #888;
+
+            font-size: 14px;
+        }
+
+        .admin-input {
+
+            height: 52px;
+
+            border-radius: 12px;
+
+            border: 1px solid #ececec;
+
+            padding-left: 45px;
+
+            font-size: 14px;
+
+            box-shadow: none;
+        }
+
+        .admin-input:focus {
+
+            border-color: #111;
+
+            box-shadow: none;
+        }
+
+        .admin-select {
+
+            height: 52px;
+
+            border-radius: 12px;
+
+            border: 1px solid #ececec;
+
+            box-shadow: none;
+
+            font-size: 14px;
+        }
+
+        .admin-select:focus {
+
+            border-color: #111;
+
+            box-shadow: none;
+        }
+
+        .admin-filter-btn {
+
+            width: 100%;
+
+            height: 52px;
+
+            border: none;
+
+            border-radius: 12px;
+
+            background: #111;
+
+            color: #fff;
+
+            font-size: 15px;
+
+            transition: .2s;
+        }
+
+        .admin-filter-btn:hover {
+
+            background: #000;
+        }
+
+        .admin-table {
+
+            margin: 0;
+        }
+
+        .admin-table thead tr {
+
+            background: #fafafa;
+        }
+
+        .admin-table th {
+
+            border: none;
+
+            padding: 18px;
+
+            font-size: 13px;
+
+            font-weight: 800;
+
+            color: #111;
+
+            white-space: nowrap;
+        }
+
+        .admin-table td {
+
+            vertical-align: middle;
+
+            padding: 20px 18px;
+
+            border-top: 1px solid #f3f3f3;
+        }
+
+        .product-image-box {
+
+            width: 90px;
+
+            height: 90px;
+
+            border-radius: 16px;
+
+            overflow: hidden;
+
+            background: #f7f7f7;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+        }
+
+        .product-image-box img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: contain;
+        }
+
+        .product-name {
+
+            font-size: 15px;
+
+            font-weight: 700;
+
+            color: #111;
+
+            margin-bottom: 6px;
+        }
+
+        .product-slug {
+
+            font-size: 13px;
+
+            color: #888;
+        }
+
+        .variant-count {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            min-width: 42px;
+
+            height: 32px;
+
+            padding: 0 12px;
+
+            border-radius: 30px;
+
+            background: #f4f4f4;
+
+            font-size: 13px;
+
+            font-weight: 700;
+        }
+
+        .status-badge {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 8px 16px;
+
+            border-radius: 30px;
+
+            font-size: 12px;
+
+            font-weight: 800;
+        }
+
+        .status-active {
+
+            background: #e8fff1;
+
+            color: #16a34a;
+        }
+
+        .status-passive {
+
+            background: #fff0f0;
+
+            color: #dc2626;
+        }
+
+        .action-buttons {
+
+            display: flex;
+
+            justify-content: flex-end;
+
+            gap: 10px;
+        }
+
+        .action-btn {
+
+            width: 42px;
+
+            height: 42px;
+
+            border: none;
+
+            border-radius: 12px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            transition: .2s;
+
+            font-size: 15px;
+        }
+
+        .btn-edit {
+
+            background: #111;
+
+            color: #fff;
+        }
+
+        .btn-edit:hover {
+
+            background: #000;
+        }
+
+        .btn-status {
+
+            background: #fff4e5;
+
+            color: #f59e0b;
+        }
+
+        .btn-status:hover {
+
+            background: #f59e0b;
+
+            color: #fff;
+        }
+
+        .empty-product-area {
+
+            padding: 80px 20px;
+
+            text-align: center;
+        }
+
+        .empty-product-area img {
+
+            width: 90px;
+
+            opacity: .7;
+
+            margin-bottom: 20px;
+        }
+
+        .empty-product-area h4 {
+
+            font-size: 24px;
+
+            font-weight: 800;
+
+            margin-bottom: 10px;
+        }
+
+        .empty-product-area p {
+
+            color: #777;
+
+            margin: 0;
+        }
+
+        .pagination-area {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 10px;
+        }
+
+        .variant-card {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            padding: 20px;
+
+            border: 1px solid #eee;
+
+            border-radius: 18px;
+
+            margin-bottom: 18px;
+
+            cursor: pointer;
+
+            transition: .2s;
+        }
+
+        .variant-card:hover {
+
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 6px 18px rgba(0, 0, 0, .06);
+        }
+
+        .variant-image {
+
+            width: 90px;
+
+            height: 90px;
+
+            border-radius: 18px;
+
+            overflow: hidden;
+
+            background: #f7f7f7;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            margin-right: 18px;
+        }
+
+        .variant-image img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: contain;
+        }
+
+        .variant-content {
+
+            flex: 1;
+        }
+
+        .variant-content h4 {
+
+            font-size: 18px;
+
+            font-weight: 800;
+
+            margin-bottom: 6px;
+        }
+
+        .variant-content p {
+
+            margin: 0;
+
+            color: #777;
+        }
+
+        .variant-right span {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 10px 16px;
+
+            border-radius: 999px;
+
+            background: #f4f4f4;
+
+            font-weight: 700;
+        }
+
+        .modal-xl {
+
+            max-width: 1200px;
+        }
+
+        .modal-content {
+
+            border-radius: 24px;
+
+            border: none;
+        }
+
+        .modal-header {
+
+            padding: 28px 32px;
+
+            border-bottom: 1px solid #f3f3f3;
+        }
+
+        .modal-body {
+
+            padding: 32px;
+        }
+
+        .modal-footer {
+
+            padding: 24px 32px;
+
+            border-top: 1px solid #f3f3f3;
+        }
+
+        #variantImagesArea {
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 14px;
+        }
+
+        #variantImagesArea img {
+
+            width: 100%;
+
+            height: 140px;
+
+            object-fit: cover;
+
+            border-radius: 18px;
+
+            border: 1px solid #eee;
+        }
+
+        #variantImagesArea {
+
+            max-height: 700px;
+
+            overflow-y: auto;
+
+            padding-right: 8px;
+        }
+
+        #variantSizesArea {
+
+            max-height: 500px;
+
+            overflow-y: auto;
+
+            padding-right: 8px;
+        }
+
+        .variant-size-box {
+
+            border: 1px solid #eee;
+
+            border-radius: 18px;
+
+            padding: 18px;
+
+            margin-bottom: 18px;
+        }
+
+        .form-text {
+
+            margin-top: 8px;
+
+            color: #888;
+
+            font-size: 13px;
+        }
+
+        .admin-card .form-control {
+
+            height: 54px;
+
+            border-radius: 14px;
+
+            border: 1px solid #ececec;
+
+            box-shadow: none;
+        }
+
+        .admin-card textarea.form-control {
+
+            height: auto;
+        }
+
+        .admin-card .form-control:focus {
+
+            border-color: #111;
+
+            box-shadow: none;
+        }
+
+        .variant-card-left {
+
+            display: flex;
+
+            align-items: center;
+        }
+
+        .variant-right {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+
+    <!-- Offcanvas Menu End -->
+
+
+    <!-- Header Section Begin -->
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__text">
+                        <h4>Admin Panel</h4>
+                        <div class="breadcrumb__links">
+                            <a href="/admin/dashboard.html">Dashboard</a>
+                            <span>Dashboard</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+    <div id="profileLoader" style="
+        height:500px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size:22px;
+        font-weight:700;
+    ">
+
+        Yükleniyor...
+
+    </div>
+
+    <!-- About Section Begin -->
+    <section class="profile-section spad" id="profileContent" style="display:none;">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-3">
+
+                    <div id="sidebar-container"></div>
+
+                </div>
+
+                <div class="col-lg-9">
+
+                    <div class="admin-card">
+
+                        <div class="d-flex justify-content-between align-items-center mb-5">
+
+                            <div>
+
+                                <h2 class="admin-title">
+                                    Ürün Düzenle
+                                </h2>
+
+                                <p class="admin-subtitle">
+                                    Ürün bilgilerini güncelleyebilirsiniz.
+                                </p>
+
+                            </div>
+
+                            <a href="./products.html" class="site-btn">
+
+                                Geri Dön
+
+                            </a>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-lg-6">
+
+                                <div class="checkout__input">
+
+                                    <p>Ürün Adı</p>
+
+                                    <input type="text" id="nameInput" placeholder="Ürün adı girin">
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-6">
+
+                                <div class="checkout__input">
+
+                                    <p>Ürün Ölçüsü</p>
+
+                                    <div style="display:flex;gap:10px;">
+
+                                        <input type="number" id="sizeValueInput" placeholder="Örn: 500">
+
+                                        <select id="sizeTypeInput">
+
+                                            <option value="ML">ML</option>
+                                            <option value="L">L</option>
+                                            <option value="GR">GR</option>
+                                            <option value="KG">KG</option>
+                                            <option value="Adet">Adet</option>
+
+                                        </select>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-6">
+
+                                <div class="checkout__input">
+
+                                    <p>Kategori</p>
+
+                                    <select id="categoryInput">
+
+                                        <option value="">
+                                            Kategori Seç
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-6">
+
+                                <div class="checkout__input">
+
+                                    <p>Marka</p>
+
+                                    <select id="brandInput">
+
+                                        <option value="">
+                                            Marka Seç
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-6">
+
+                                <div class="checkout__input">
+
+                                    <p>Fiyat</p>
+
+                                    <input type="number" id="priceInput" placeholder="Ürün fiyatı">
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-6">
+
+                                <div class="checkout__input">
+
+                                    <p>Stok</p>
+
+                                    <input type="number" id="stockInput" placeholder="Ürün stok miktarı">
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-6">
+
+                                <div class="checkout__input">
+
+                                    <p>İndirim Oranı (%)</p>
+
+                                    <input type="number" id="discountInput" placeholder="Örn: 10">
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-lg-12">
+
+                                <div class="checkout__input">
+
+                                    <p>Açıklama</p>
+
+                                    <textarea id="descriptionInput" style="
+                width:100%;
+                height:140px;
+                border:1px solid #e1e1e1;
+                border-radius:8px;
+                padding:15px;
+            "></textarea>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-6">
+
+                                <div class="checkout__input">
+
+                                    <p>Barkod</p>
+
+                                    <input type="text" id="barcodeInput" placeholder="Ürün barkodu">
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-6">
+
+                                <div class="checkout__input">
+
+                                    <p>Son Kullanma Tarihi</p>
+
+                                    <input type="date" id="expireDateInput">
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-6">
+
+                                <div class="checkout__input">
+
+                                    <p>Menşei Ülke</p>
+
+                                    <input type="text" id="countryInput" placeholder="Örn: Türkiye">
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-12">
+
+                                <div class="checkout__input">
+
+                                    <p>İçindekiler</p>
+
+                                    <textarea id="contentsInput" style="
+                width:100%;
+                height:120px;
+                border:1px solid #e1e1e1;
+                border-radius:8px;
+                padding:15px;
+            "></textarea>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-12">
+
+                                <div class="checkout__input">
+
+                                    <p>Saklama Koşulu</p>
+
+                                    <textarea id="storageInput" style="
+                width:100%;
+                height:120px;
+                border:1px solid #e1e1e1;
+                border-radius:8px;
+                padding:15px;
+            "></textarea>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-12">
+
+                                <div class="checkout__input">
+
+                                    <p>Ürün Fotoğrafları</p>
+
+                                    <input type="file" id="productImagesInput" multiple>
+
+                                    <div id="imagePreviewContainer" style="
+                    display:flex;
+                    flex-wrap:wrap;
+                    gap:15px;
+                    margin-top:20px;
+                ">
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <button id="updateProductButton" class="site-btn" style="
+        margin-top:40px;
+        border-radius:10px;
+        padding:14px 35px;
+    ">
+
+                            Ürünü Güncelle
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- About Section End -->
+
+    <!-- Testimonial Section Begin -->
+
+    <!-- Testimonial Section End -->
+
+    <!-- Counter Section Begin -->
+
+    <!-- Counter Section End -->
+
+    <!-- Team Section Begin -->
+
+
+    <!-- Team Section End -->
+
+    <!-- Client Section Begin -->
+
+
+    <!-- Client Section End -->
+
+    <!-- Footer Section Begin -->
+
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+
+    <script src="../js/bootstrap.min.js"></script>
+
+
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+
+    <script src="../js/jquery.countdown.min.js"></script>
+
+    <script src="../js/jquery.slicknav.js"></script>
+
+    <script src="../js/mixitup.min.js"></script>
+
+    <script src="../js/owl.carousel.min.js"></script>
+
+    <script src="../js/main.js"></script>
+    <script>
+
+        const currentPage = "products";
+
+        const API_BASE =
+            "http://127.0.0.1:8000/api";
+
+        let product = null;
+
+        let deletedImages = [];
+
+        let selectedImages = [];
+
+        const urlParams =
+            new URLSearchParams(
+                window.location.search
+            );
+
+        const productId =
+            urlParams.get("id");
+
+        async function loadSidebar() {
+
+            const response =
+                await fetch("./sidebar.html");
+
+            const html =
+                await response.text();
+
+            document.getElementById(
+                "sidebar-container"
+            ).innerHTML = html;
+
+            document
+                .querySelectorAll(".sidebar-link")
+                .forEach(link => {
+
+                    if (
+                        link.dataset.page === currentPage
+                    ) {
+
+                        link.classList.add("active");
+                    }
+                });
+        }
+
+        async function loadBrands() {
+
+            try {
+
+                const response =
+                    await fetch(
+                        API_BASE + "/brands"
+                    );
+
+                const data =
+                    await response.json();
+
+                const select =
+                    document.getElementById(
+                        "brandInput"
+                    );
+
+                select.innerHTML = `
+            <option value="">
+                Marka Seç
+            </option>
+        `;
+
+                (data.data || []).forEach(brand => {
+
+                    select.innerHTML += `
+                <option value="${brand.id}">
+                    ${brand.name}
+                </option>
+            `;
+                });
+
+            } catch {
+
+                alert("Markalar yüklenemedi");
+            }
+        }
+
+        async function loadCategories() {
+
+            try {
+
+                const response =
+                    await fetch(
+                        API_BASE + "/categories"
+                    );
+
+                const data =
+                    await response.json();
+
+                const select =
+                    document.getElementById(
+                        "categoryInput"
+                    );
+
+                select.innerHTML = `
+            <option value="">
+                Kategori Seç
+            </option>
+        `;
+
+                (data.data || []).forEach(category => {
+
+                    select.innerHTML += `
+                <option value="${category.id}">
+                    ${category.name}
+                </option>
+            `;
+                });
+
+            } catch {
+
+                alert("Kategoriler yüklenemedi");
+            }
+        }
+
+        async function loadProduct() {
+
+            try {
+
+                const token =
+                    localStorage.getItem(
+                        "admin_token"
+                    );
+
+                if (!token) {
+
+                    window.location.href =
+                        "../login.html";
+
+                    return;
+                }
+
+                const response =
+                    await fetch(
+
+                        API_BASE +
+                        `/admin/products/${productId}`,
+
+                        {
+
+                            headers: {
+
+                                Accept:
+                                    "application/json",
+
+                                Authorization:
+                                    `Bearer ${token}`
+                            }
+                        }
+                    );
+
+                const data =
+                    await response.json();
+
+                if (!response.ok) {
+
+                    alert(
+                        data.message ||
+                        "Ürün yüklenemedi"
+                    );
+
+                    return;
+                }
+
+                product = data.data || {};
+
+                product.images =
+                    product.images || [];
+
+                fillProductFields();
+
+                renderProductImages();
+
+                document.getElementById(
+                    "profileLoader"
+                ).style.display = "none";
+
+                document.getElementById(
+                    "profileContent"
+                ).style.display = "block";
+
+            } catch {
+
+                alert("Ürün yüklenemedi");
+            }
+        }
+
+        function fillProductFields() {
+
+            console.log(product);
+
+            document.getElementById(
+                "nameInput"
+            ).value =
+                product.name || "";
+
+            document.getElementById(
+                "descriptionInput"
+            ).value =
+                product.description || "";
+
+            document.getElementById(
+                "categoryInput"
+            ).value =
+                product.category_id ||
+                "";
+
+            document.getElementById(
+                "brandInput"
+            ).value =
+                product.brand_id ||
+                "";
+
+            document.getElementById(
+                "priceInput"
+            ).value =
+                product.price || "";
+
+            document.getElementById(
+                "stockInput"
+            ).value =
+                product.stock || "";
+
+            document.getElementById(
+                "discountInput"
+            ).value =
+                product.discount_rate || "";
+
+            document.getElementById(
+                "barcodeInput"
+            ).value =
+                product.barcode || "";
+
+            document.getElementById(
+                "expireDateInput"
+            ).value =
+                product.expire_date || "";
+
+            document.getElementById(
+                "countryInput"
+            ).value =
+                product.country || "";
+
+            document.getElementById(
+                "contentsInput"
+            ).value =
+                product.contents || "";
+
+            document.getElementById(
+                "storageInput"
+            ).value =
+                product.storage || "";
+
+            if (product.size) {
+
+                const parts =
+                    product.size.split(" ");
+
+                document.getElementById(
+                    "sizeValueInput"
+                ).value =
+                    parts[0] || "";
+
+                document.getElementById(
+                    "sizeTypeInput"
+                ).value =
+                    parts[1] || "ML";
+            }
+        }
+
+        function renderProductImages() {
+
+            const container =
+                document.getElementById(
+                    "imagePreviewContainer"
+                );
+
+            container.innerHTML = "";
+
+            const existingImages =
+                Array.isArray(product.images)
+                    ? product.images
+                    : [];
+
+            existingImages.forEach(image => {
+
+                container.innerHTML += `
+
+        <div style="width:150px;">
+
+            <div style="
+                border:1px solid #eee;
+                border-radius:14px;
+                overflow:hidden;
+            ">
+
+                <img
+                    src="${image.url}"
+                    style="
+                        width:100%;
+                        height:170px;
+                        object-fit:cover;
+                    "
+                >
+
+                <button
+                    type="button"
+
+                    onclick="
+                        removeExistingImage(${image.id})
+                    "
+
+                    style="
+                        width:100%;
+                        border:none;
+                        background:#e74c3c;
+                        color:white;
+                        padding:12px;
+                        font-weight:700;
+                    "
+                >
+
+                    Sil
+
+                </button>
+
+            </div>
+
+        </div>
+        `;
+            });
+
+            selectedImages.forEach(
+                (image, index) => {
+
+                    const preview =
+                        URL.createObjectURL(image);
+
+                    container.innerHTML += `
+
+            <div style="width:150px;">
+
+                <div style="
+                    border:1px solid #eee;
+                    border-radius:14px;
+                    overflow:hidden;
+                ">
+
+                    <img
+                        src="${preview}"
+                        style="
+                            width:100%;
+                            height:170px;
+                            object-fit:cover;
+                        "
+                    >
+
+                    <button
+                        type="button"
+
+                        onclick="
+                            removeNewImage(${index})
+                        "
+
+                        style="
+                            width:100%;
+                            border:none;
+                            background:#111;
+                            color:white;
+                            padding:12px;
+                            font-weight:700;
+                        "
+                    >
+
+                        Kaldır
+
+                    </button>
+
+                </div>
+
+            </div>
+            `;
+                }
+            );
+        }
+
+        function removeExistingImage(id) {
+
+            deletedImages.push(id);
+
+            product.images =
+                product.images.filter(
+
+                    image =>
+                        image.id !== id
+                );
+
+            renderProductImages();
+        }
+
+        function removeNewImage(index) {
+
+            selectedImages.splice(index, 1);
+
+            renderProductImages();
+        }
+
+        document
+            .getElementById(
+                "productImagesInput"
+            )
+            .addEventListener(
+                "change",
+                function (e) {
+
+                    selectedImages = [
+
+                        ...selectedImages,
+
+                        ...Array.from(
+                            e.target.files
+                        )
+                    ];
+
+                    renderProductImages();
+                }
+            );
+
+        async function saveProduct() {
+
+            const button =
+                document.getElementById(
+                    "updateProductButton"
+                );
+
+            try {
+
+                button.disabled = true;
+
+                button.innerHTML =
+                    "Güncelleniyor...";
+
+                const token =
+                    localStorage.getItem(
+                        "admin_token"
+                    );
+
+                const formData =
+                    new FormData();
+
+                formData.append(
+                    "_method",
+                    "PATCH"
+                );
+
+                formData.append(
+                    "name",
+                    document.getElementById(
+                        "nameInput"
+                    ).value
+                );
+
+                formData.append(
+                    "description",
+                    document.getElementById(
+                        "descriptionInput"
+                    ).value
+                );
+
+                formData.append(
+                    "category_id",
+                    document.getElementById(
+                        "categoryInput"
+                    ).value
+                );
+
+                formData.append(
+                    "brand_id",
+                    document.getElementById(
+                        "brandInput"
+                    ).value
+                );
+
+                formData.append(
+                    "price",
+                    document.getElementById(
+                        "priceInput"
+                    ).value
+                );
+
+                formData.append(
+                    "stock",
+                    document.getElementById(
+                        "stockInput"
+                    ).value
+                );
+
+                const discountValue =
+                    document.getElementById(
+                        "discountInput"
+                    ).value.trim();
+
+                formData.append(
+                    "discount_rate",
+                    discountValue === ""
+                        ? 0
+                        : discountValue
+                );
+
+                formData.append(
+                    "barcode",
+                    document.getElementById(
+                        "barcodeInput"
+                    ).value
+                );
+
+                formData.append(
+                    "expire_date",
+                    document.getElementById(
+                        "expireDateInput"
+                    ).value
+                );
+
+                formData.append(
+                    "country",
+                    document.getElementById(
+                        "countryInput"
+                    ).value
+                );
+
+                formData.append(
+                    "contents",
+                    document.getElementById(
+                        "contentsInput"
+                    ).value
+                );
+
+                formData.append(
+                    "storage",
+                    document.getElementById(
+                        "storageInput"
+                    ).value
+                );
+
+                const sizeValue =
+                    document.getElementById(
+                        "sizeValueInput"
+                    ).value;
+
+                const sizeType =
+                    document.getElementById(
+                        "sizeTypeInput"
+                    ).value;
+
+                formData.append(
+                    "size",
+                    sizeValue + " " + sizeType
+                );
+
+                deletedImages.forEach(
+                    (id, index) => {
+
+                        formData.append(
+                            `deleted_images[${index}]`,
+                            id
+                        );
+                    }
+                );
+
+                selectedImages.forEach(
+                    (image, index) => {
+
+                        formData.append(
+                            `images[${index}]`,
+                            image
+                        );
+                    }
+                );
+
+                const response =
+                    await fetch(
+
+                        API_BASE +
+                        `/admin/products/${productId}`,
+
+                        {
+
+                            method: "POST",
+
+                            headers: {
+
+                                Accept:
+                                    "application/json",
+
+                                Authorization:
+                                    `Bearer ${token}`
+                            },
+
+                            body: formData
+                        }
+                    );
+
+                const data =
+                    await response.json();
+
+                if (!response.ok) {
+
+                    console.log(data);
+
+                    alert(
+                        data.message ||
+                        "Ürün güncellenemedi"
+                    );
+
+                    return;
+                }
+
+                alert(
+                    "Ürün başarıyla güncellendi 🚀"
+                );
+
+                window.location.href =
+                    "./products.html";
+
+            } catch (error) {
+
+                console.log(error);
+
+                alert(
+                    "Bir hata oluştu"
+                );
+
+            } finally {
+
+                button.disabled = false;
+
+                button.innerHTML =
+                    "Ürünü Güncelle";
+            }
+        }
+
+        document
+            .getElementById(
+                "updateProductButton"
+            )
+            .addEventListener(
+                "click",
+                saveProduct
+            );
+
+        async function initPage() {
+
+            await loadSidebar();
+
+            await loadBrands();
+
+            await loadCategories();
+
+            await loadProduct();
+        }
+
+        initPage();
+
+    </script>
+</body>
+
+</html>

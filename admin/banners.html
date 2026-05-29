@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Male-Fashion | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/elegant-icons.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/nice-select.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+
+    <style>
+        .admin-topbar {
+
+            margin-bottom: 30px;
+        }
+
+
+
+        .admin-page-title h3 {
+
+            font-size: 34px;
+
+            font-weight: 800;
+
+            color: #111;
+
+            margin-bottom: 8px;
+        }
+
+
+
+        .admin-page-title p {
+
+            color: #888;
+
+            margin: 0;
+
+            font-size: 15px;
+        }
+
+
+
+        .admin-card {
+
+            background: #fff;
+
+            border-radius: 24px;
+
+            padding: 30px;
+
+            box-shadow:
+                0 10px 35px rgba(0, 0, 0, 0.04);
+
+            border: 1px solid #f1f1f1;
+        }
+
+
+
+        .admin-table {
+
+            margin: 0;
+
+            border-collapse: separate;
+
+            border-spacing: 0 18px;
+        }
+
+
+
+        .admin-table thead tr {
+
+            background: transparent;
+        }
+
+
+
+        .admin-table th {
+
+            font-size: 14px;
+
+            font-weight: 800;
+
+            color: #999;
+
+            border: none;
+
+            padding: 0 20px 14px 20px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 0.5px;
+        }
+
+
+
+        .admin-table tbody tr {
+
+            background: #fff;
+
+            transition: 0.25s;
+
+            box-shadow:
+                0 3px 12px rgba(0, 0, 0, 0.04);
+
+            border-radius: 18px;
+        }
+
+
+
+        .admin-table tbody tr:hover {
+
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 10px 25px rgba(0, 0, 0, 0.07);
+        }
+
+
+
+        .admin-table td {
+
+            vertical-align: middle;
+
+            padding: 22px 20px;
+
+            border: none;
+
+            background: #fff;
+        }
+
+
+
+        .admin-table td:first-child {
+
+            border-top-left-radius: 18px;
+
+            border-bottom-left-radius: 18px;
+        }
+
+
+
+        .admin-table td:last-child {
+
+            border-top-right-radius: 18px;
+
+            border-bottom-right-radius: 18px;
+        }
+
+
+
+        .product-image-wrapper {
+
+            width: 110px;
+
+            height: 110px;
+
+            background: #f8f8f8;
+
+            border-radius: 24px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            overflow: hidden;
+
+            border: 1px solid #f1f1f1;
+        }
+
+
+
+        .product-image {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+        }
+
+
+
+        .product-info {
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            gap: 6px;
+        }
+
+
+
+        .product-name {
+
+            font-size: 18px;
+
+            font-weight: 800;
+
+            color: #111;
+
+            line-height: 1.4;
+        }
+
+
+
+        .status-badge {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 10px 18px;
+
+            border-radius: 999px;
+
+            font-size: 13px;
+
+            font-weight: 800;
+        }
+
+
+
+        .status-active {
+
+            background: #e7f8ef;
+
+            color: #1f9d55;
+        }
+
+
+
+        .status-passive {
+
+            background: #fff0f0;
+
+            color: #ff4d4f;
+        }
+
+
+
+        .actions {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
+        }
+
+
+
+        .action-btn {
+
+            width: 44px;
+
+            height: 44px;
+
+            border-radius: 14px;
+
+            border: none;
+
+            cursor: pointer;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            transition: 0.2s;
+
+            font-size: 18px;
+        }
+
+
+
+        .action-btn:hover {
+
+            transform: translateY(-2px);
+        }
+
+
+
+        .btn-edit {
+
+            background: #111;
+
+            color: #fff;
+        }
+
+
+
+        .btn-passive {
+
+            background: #fff4e5;
+
+            color: #ff9800;
+        }
+
+
+
+        .btn-active {
+
+            background: #e8f7ee;
+
+            color: #1f9d55;
+        }
+
+
+
+        .form-control {
+
+            height: 56px;
+
+            border-radius: 16px;
+
+            border: 1px solid #eee;
+
+            box-shadow: none;
+
+            font-size: 15px;
+
+            padding: 0 20px;
+        }
+
+
+
+        .form-control:focus {
+
+            border-color: #111;
+
+            box-shadow: none;
+        }
+
+
+
+        .site-btn {
+
+            height: 56px;
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 0 28px;
+
+            border-radius: 16px;
+
+            font-size: 14px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.5px;
+        }
+
+        .banner-card {
+
+            padding: 20px;
+        }
+
+
+
+        .banner-image-wrapper {
+
+            width: 100%;
+
+            height: 240px;
+
+            overflow: hidden;
+
+            border-radius: 18px;
+
+            background: #f8f8f8;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 10px;
+        }
+
+
+
+        .banner-image {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: contain;
+        }
+
+
+
+        .admin-label {
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            margin-bottom: 10px;
+
+            display: block;
+
+            color: #111;
+        }
+
+        .banner-create-card {
+
+            padding: 22px;
+        }
+
+        .banner-card {
+
+            transition: .25s;
+        }
+
+
+
+        .banner-card:hover {
+
+            transform: translateY(-4px);
+
+            box-shadow:
+                0 14px 40px rgba(0, 0, 0, .08);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+
+    <!-- Offcanvas Menu End -->
+
+
+    <!-- Header Section Begin -->
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__text">
+                        <h4>Admin Panel</h4>
+                        <div class="breadcrumb__links">
+                            <a href="/admin/dashboard.html">Dashboard</a>
+                            <span>Dashboard</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+    <div id="profileLoader" style="
+        height:500px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size:22px;
+        font-weight:700;
+    ">
+
+        Yükleniyor...
+
+    </div>
+
+    <!-- About Section Begin -->
+    <section class="profile-section spad" id="profileContent" style="display:none;">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- SOL MENU -->
+
+                <div class="col-lg-3">
+
+                    <div id="sidebar-container"></div>
+
+                </div>
+
+                <!-- SAĞ PANEL -->
+
+                <div class="col-lg-9">
+
+                    <!-- TOP BAR -->
+
+                    <div class="admin-topbar">
+
+                        <div class="row align-items-center">
+
+                            <div class="col-lg-12">
+
+                                <div class="admin-page-title">
+
+                                    <h3>
+                                        Banner Yönetimi
+                                    </h3>
+
+                                    <p>
+                                        Bannerları buradan yönetebilirsiniz.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CREATE BANNER -->
+
+                    <!-- CREATE BANNER -->
+
+                    <div class="admin-card banner-create-card">
+
+                        <!-- TOP -->
+
+                        <div class="row">
+
+                            <!-- TITLE -->
+
+                            <div class="col-lg-9">
+
+                                <label class="admin-label">
+
+                                    Banner Başlığı
+
+                                </label>
+
+                                <input type="text" class="form-control" id="bannerTitle"
+                                    placeholder="Örn: Yeni Sezon İndirimi">
+
+                            </div>
+
+
+
+                            <!-- STATUS -->
+
+                            <div class="col-lg-3">
+
+                                <label class="admin-label">
+
+                                    Durum
+
+                                </label>
+
+                                <select class="form-control" id="bannerStatus">
+
+                                    <option value="1">
+                                        Aktif
+                                    </option>
+
+                                    <option value="0">
+                                        Pasif
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- BOTTOM -->
+
+                        <div class="row mt-4 align-items-end">
+
+                            <!-- IMAGE -->
+
+                            <div class="col-lg-9">
+
+                                <label class="admin-label">
+
+                                    Banner Görseli
+
+                                </label>
+
+                                <input type="file" class="form-control" id="bannerImage">
+
+                            </div>
+
+
+
+                            <!-- BUTTON -->
+
+                            <div class="col-lg-3">
+
+                                <button class="site-btn w-100" onclick="createBanner()">
+
+                                    + Banner Ekle
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- BANNERS GRID -->
+
+                    <div class="row mt-4" id="bannersContainer">
+
+                        <!-- JS RENDER -->
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        </div>
+
+    </section>
+    <!-- About Section End -->
+
+    <!-- Testimonial Section Begin -->
+
+    <!-- Testimonial Section End -->
+
+    <!-- Counter Section Begin -->
+
+    <!-- Counter Section End -->
+
+    <!-- Team Section Begin -->
+
+
+    <!-- Team Section End -->
+
+    <!-- Client Section Begin -->
+
+
+    <!-- Client Section End -->
+
+    <!-- Footer Section Begin -->
+
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+
+    <script src="../js/bootstrap.min.js"></script>
+
+    <script src="../js/jquery.nice-select.min.js"></script>
+
+    <script src="../js/jquery.nicescroll.min.js"></script>
+
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+
+    <script src="../js/jquery.countdown.min.js"></script>
+
+    <script src="../js/jquery.slicknav.js"></script>
+
+    <script src="../js/mixitup.min.js"></script>
+
+    <script src="../js/owl.carousel.min.js"></script>
+
+    <script src="../js/main.js"></script>
+
+    <script>
+
+        const currentPage = "banners";
+
+        let banners = [];
+
+
+
+        document.addEventListener(
+
+            "DOMContentLoaded",
+
+            async function () {
+
+                await initializePage();
+
+            }
+        );
+
+
+
+        async function initializePage() {
+
+
+
+            try {
+
+                const token = localStorage.getItem(
+                    "admin_token"
+                );
+
+                if (!token) {
+
+                    window.location.href =
+                        "login.html";
+
+                    return;
+                }
+
+                showLoader();
+
+                await loadSidebar();
+
+                await fetchBanners();
+
+                hideLoader();
+
+            } catch (error) {
+
+                console.error(
+                    "Sayfa yüklenirken hata oluştu:",
+                    error
+                );
+            }
+        }
+
+
+
+        async function loadSidebar() {
+
+            try {
+
+                const response = await fetch(
+                    "./sidebar.html"
+                );
+
+
+
+                if (!response.ok) {
+
+                    throw new Error(
+                        "Sidebar yüklenemedi"
+                    );
+                }
+
+
+
+                const html =
+                    await response.text();
+
+
+
+                document.getElementById(
+                    "sidebar-container"
+                ).innerHTML = html;
+
+
+
+                setActiveSidebar();
+
+            } catch (error) {
+
+                console.error(
+                    "Sidebar hatası:",
+                    error
+                );
+            }
+        }
+
+
+
+        function setActiveSidebar() {
+
+            const sidebarLinks =
+
+                document.querySelectorAll(
+                    ".sidebar-link"
+                );
+
+
+
+            sidebarLinks.forEach(link => {
+
+                link.classList.remove(
+                    "active"
+                );
+
+
+
+                if (
+                    link.dataset.page ===
+                    currentPage
+                ) {
+
+                    link.classList.add(
+                        "active"
+                    );
+                }
+            });
+        }
+
+
+
+        async function fetchBanners() {
+
+            try {
+
+                const token =
+                    localStorage.getItem(
+                        "admin_token"
+                    );
+
+
+
+                const response = await fetch(
+
+                    `http://127.0.0.1:8000/api/admin/banners`,
+
+                    {
+
+                        method: "GET",
+
+                        headers: {
+
+                            "Accept":
+                                "application/json",
+
+                            "Authorization":
+                                `Bearer ${token}`
+                        }
+                    }
+                );
+
+
+
+                if (response.status === 401) {
+
+                    localStorage.removeItem(
+                        "admin_token"
+                    );
+
+                    window.location.href =
+                        "login.html";
+
+                    return;
+                }
+
+
+
+                const result =
+                    await response.json();
+
+                console.log(result.data);
+
+                banners =
+                    result.data ?? [];
+
+
+
+                renderBanners();
+
+            } catch (error) {
+
+                console.error(
+                    "Bannerlar alınamadı:",
+                    error
+                );
+            }
+        }
+
+
+
+        function renderBanners() {
+
+            const container =
+
+                document.getElementById(
+                    "bannersContainer"
+                );
+
+
+
+            container.innerHTML = "";
+
+            let html = "";
+
+
+
+            if (banners.length === 0) {
+
+                container.innerHTML = `
+
+            <div class="col-lg-12">
+
+                <div class="admin-card text-center">
+
+                    Banner bulunamadı
+
+                </div>
+
+            </div>
+        `;
+
+                return;
+            }
+
+
+
+            banners.forEach(banner => {
+
+                html += `
+
+            <div class="col-lg-6 mb-4">
+
+                <div class="admin-card banner-card">
+
+                    <div class="banner-image-wrapper">
+
+                        <img
+                        src="${banner.image}"    
+                      class="banner-image"
+                        >
+
+                    </div>
+
+
+
+                    <div class="mt-4">
+
+                        <label class="admin-label">
+
+                            Başlık
+
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="title-${banner.id}"
+                            value="${banner.title ?? ''}"
+                        >
+
+                    </div>
+
+
+
+                    <div class="row mt-3">
+
+                        <div class="col-6">
+
+                            <label class="admin-label">
+
+                                Sıra
+
+                            </label>
+
+                            <input
+                                type="number"
+                                class="form-control"
+                                id="sort-${banner.id}"
+                                value="${banner.sort_order}"
+                            >
+
+                        </div>
+
+
+
+                        <div class="col-6">
+
+                            <label class="admin-label">
+
+                                Durum
+
+                            </label>
+
+                            <select
+                                class="form-control"
+                                id="status-${banner.id}"
+                            >
+
+                                                        <option
+                                value="1"
+                                ${String(banner.is_active) === 'true' ||
+                        Number(banner.is_active) === 1
+                        ? 'selected'
+                        : ''}
+                            >
+                                Aktif
+                            </option>
+
+                            <option
+                                value="0"
+                                ${String(banner.is_active) === 'false' ||
+                        Number(banner.is_active) === 0
+                        ? 'selected'
+                        : ''}
+                            >
+                                Pasif
+                            </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="mt-3">
+
+                        <label class="admin-label">
+
+                            Yeni Görsel
+
+                        </label>
+
+                        <input
+                            type="file"
+                            class="form-control"
+                            id="image-${banner.id}"
+                        >
+
+                    </div>
+
+
+
+                    <div class="d-flex mt-4">
+
+                        <button
+
+                            class="
+                                site-btn
+                                w-100
+                                mr-2
+                            "
+
+                            onclick="
+                                updateBanner(
+                                    ${banner.id}
+                                )
+                            "
+                        >
+
+                            Kaydet
+
+                        </button>
+
+
+
+                        <button
+
+                            class="
+                                site-btn
+                                w-100
+                            "
+
+                            style="
+                                background:#ff4d4f;
+                            "
+
+                            onclick="
+                                deleteBanner(
+                                    ${banner.id}
+                                )
+                            "
+                        >
+
+                            Sil
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+        `;
+            });
+
+
+
+            container.innerHTML = html;
+        }
+
+
+        async function createBanner() {
+
+            try {
+
+                const token =
+
+                    localStorage.getItem(
+                        "admin_token"
+                    );
+
+
+
+                const title =
+
+                    document.getElementById(
+                        "bannerTitle"
+                    ).value.trim();
+
+
+
+                const status =
+
+                    document.getElementById(
+                        "bannerStatus"
+                    ).value;
+
+
+
+                const imageInput =
+
+                    document.getElementById(
+                        "bannerImage"
+                    );
+
+
+
+                if (!title) {
+
+                    showPopup(
+                        "Banner başlığı zorunlu",
+                        false
+                    );
+
+                    return;
+                }
+
+
+
+                if (!imageInput.files[0]) {
+
+                    showPopup(
+                        "Banner görseli seçmelisiniz",
+                        false
+                    );
+
+                    return;
+                }
+
+
+
+                const formData =
+                    new FormData();
+
+
+
+                formData.append(
+                    "title",
+                    title
+                );
+
+
+
+                formData.append(
+                    "is_active",
+                    Number(status)
+                );
+
+
+
+                formData.append(
+                    "image",
+                    imageInput.files[0]
+                );
+
+
+
+                const response = await fetch(
+
+                    "http://127.0.0.1:8000/api/admin/banners",
+
+                    {
+
+                        method: "POST",
+
+                        headers: {
+
+                            "Authorization":
+                                `Bearer ${token}`,
+
+                            "Accept":
+                                "application/json"
+                        },
+
+                        body: formData
+                    }
+                );
+
+
+
+                const result =
+                    await response.json();
+
+
+
+                console.log(result);
+
+
+
+                if (!response.ok) {
+
+                    showPopup(
+
+                        result.message ||
+
+                        "Banner oluşturulamadı",
+
+                        false
+                    );
+
+                    return;
+                }
+
+
+
+                showPopup(
+                    "Banner oluşturuldu 🚀"
+                );
+
+
+
+                await fetchBanners();
+
+
+
+                document.getElementById(
+                    "bannerTitle"
+                ).value = "";
+
+
+
+                document.getElementById(
+                    "bannerStatus"
+                ).value = "1";
+
+
+
+                document.getElementById(
+                    "bannerImage"
+                ).value = "";
+
+            }
+            catch (error) {
+
+                console.error(error);
+
+
+
+                showPopup(
+                    "Sunucu hatası",
+                    false
+                );
+            }
+        }
+
+
+
+        async function toggleBannerStatus(
+            bannerId,
+            currentStatus
+        ) {
+
+            try {
+
+                const token =
+                    localStorage.getItem(
+                        "admin_token"
+                    );
+
+
+
+                const formData =
+                    new FormData();
+
+
+
+                formData.append(
+
+                    "is_active",
+
+                    currentStatus ? 0 : 1
+                );
+
+
+
+                formData.append(
+                    "_method",
+                    "PATCH"
+                );
+
+
+
+                await fetch(
+
+                    `http://127.0.0.1:8000/api/admin/banners/${bannerId}`,
+
+                    {
+
+                        method: "POST",
+
+                        headers: {
+
+                            "Accept":
+                                "application/json",
+
+                            "Authorization":
+                                `Bearer ${token}`
+                        },
+
+                        body: formData
+                    }
+                );
+
+
+
+                await fetchBanners();
+
+            } catch (error) {
+
+                console.error(
+                    "Banner status değişmedi:",
+                    error
+                );
+            }
+        }
+
+
+
+        async function updateBanner(
+            bannerId
+        ) {
+
+            try {
+
+                const token =
+
+                    localStorage.getItem(
+                        "admin_token"
+                    );
+
+
+
+                const formData =
+                    new FormData();
+
+
+
+                formData.append(
+
+                    "title",
+
+                    document.getElementById(
+                        `title-${bannerId}`
+                    ).value
+                );
+
+
+
+                formData.append(
+
+                    "sort_order",
+
+                    document.getElementById(
+                        `sort-${bannerId}`
+                    ).value
+                );
+
+
+
+                formData.append(
+
+                    "is_active",
+
+                    document.getElementById(
+                        `status-${bannerId}`
+                    ).value
+                );
+
+
+
+                const imageInput =
+
+                    document.getElementById(
+                        `image-${bannerId}`
+                    );
+
+
+                if (
+                    imageInput.files[0]
+                ) {
+
+                    formData.append(
+
+                        "image",
+
+                        imageInput.files[0]
+                    );
+                }
+
+
+
+                formData.append(
+                    "_method",
+                    "PATCH"
+                );
+
+
+
+                const response = await fetch(
+
+                    `http://127.0.0.1:8000/api/admin/banners/${bannerId}`,
+
+                    {
+
+                        method: "POST",
+
+                        headers: {
+                            "Accept":
+                                "application/json",
+
+                            "Authorization":
+                                `Bearer ${token}`
+                        },
+
+                        body: formData
+                    }
+                );
+
+
+
+                if (!response.ok) {
+
+                    throw new Error(
+                        "Banner güncellenemedi"
+                    );
+                }
+
+
+
+                await fetchBanners();
+
+            } catch (error) {
+
+                console.error(
+                    "Banner güncelleme hatası:",
+                    error
+                );
+            }
+        }
+
+
+
+        async function deleteBanner(
+            bannerId
+        ) {
+
+            const confirmed = confirm(
+                "Banner silinsin mi?"
+            );
+
+
+
+            if (!confirmed) {
+                return;
+            }
+
+
+
+            try {
+
+                const token =
+                    localStorage.getItem(
+                        "admin_token"
+                    );
+
+
+
+                await fetch(
+
+                    `http://127.0.0.1:8000/api/admin/banners/${bannerId}`,
+
+                    {
+
+                        method: "DELETE",
+
+                        headers: {
+                            "Accept":
+                                "application/json",
+
+                            "Authorization":
+                                `Bearer ${token}`
+                        }
+                    }
+                );
+
+
+
+                await fetchBanners();
+
+            } catch (error) {
+
+                console.error(
+                    "Banner silinemedi:",
+                    error
+                );
+            }
+        }
+
+
+
+        function showLoader() {
+
+            document.getElementById(
+                "profileLoader"
+            ).style.display = "flex";
+
+
+
+            document.getElementById(
+                "profileContent"
+            ).style.display = "none";
+        }
+
+
+
+        function hideLoader() {
+
+            document.getElementById(
+                "profileLoader"
+            ).style.display = "none";
+
+
+
+            document.getElementById(
+                "profileContent"
+            ).style.display = "block";
+        }
+
+
+        function showPopup(
+            message,
+            success = true
+        ) {
+
+            alert(message);
+        }
+    </script>
+
+</html>

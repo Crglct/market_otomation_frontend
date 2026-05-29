@@ -1,0 +1,207 @@
+<style>
+    .admin-sidebar {
+
+        background: #fff;
+        border: 1px solid #eee;
+        border-radius: 18px;
+        padding: 30px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+        position: sticky;
+        top: 20px;
+    }
+
+    .admin-user {
+
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .admin-avatar {
+
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background: #111;
+        color: white;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: auto;
+
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .admin-title {
+
+        margin-top: 18px;
+        font-size: 30px;
+        font-weight: 700;
+        color: #111;
+    }
+
+    .admin-menu {
+
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .admin-section-title {
+
+        font-size: 13px;
+        font-weight: 800;
+        color: #999;
+
+        margin-top: 18px;
+        margin-bottom: 4px;
+
+        letter-spacing: 1px;
+    }
+
+    .sidebar-link {
+
+        padding: 16px 18px;
+        border-radius: 14px;
+
+        color: #111;
+        font-weight: 600;
+        font-size: 17px;
+
+        border: 1px solid #eee;
+
+        transition: 0.3s;
+
+        text-decoration: none;
+
+        display: block;
+
+        background: white;
+    }
+
+    .sidebar-link:hover {
+
+        background: #111;
+        color: white;
+        border-color: #111;
+
+        transform: translateX(4px);
+    }
+
+    .sidebar-link.active {
+
+        background: #111 !important;
+        color: white !important;
+        border-color: #111 !important;
+
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+    }
+</style>
+
+
+
+<div class="admin-sidebar">
+
+    <div class="admin-user">
+
+        <div class="admin-avatar">
+            A
+        </div>
+
+        <h5 class="admin-title">
+            Admin Panel
+        </h5>
+
+    </div>
+
+
+
+    <div class="admin-menu">
+
+        <div class="admin-section-title">
+            YÖNETİM
+        </div>
+
+        <a href="./dashboard.html" class="sidebar-link" data-page="dashboard">
+            Dashboard
+        </a>
+
+
+
+        <div class="admin-section-title">
+            ÜRÜNLER
+        </div>
+
+        <a href="./products.html" class="sidebar-link" data-page="products">
+            Ürünler
+        </a>
+
+        <a href="./product-create.html" class="sidebar-link" data-page="product-create">
+            Ürün Ekle
+        </a>
+
+        <a href="./attributes.html" class="sidebar-link" data-page="attributes">
+            Özellikler
+        </a>
+
+
+
+        <div class="admin-section-title">
+            SİPARİŞLER
+        </div>
+
+        <a href="./orders.html" class="sidebar-link" data-page="orders">
+            Siparişler
+        </a>
+
+
+
+        <div class="admin-section-title">
+            İÇERİK
+        </div>
+
+        <a href="./banners.html" class="sidebar-link" data-page="banners">
+            Bannerlar
+        </a>
+
+
+        <div class="admin-section-title">
+            KULLANICILAR
+        </div>
+
+        <a href="./users.html" class="sidebar-link" data-page="users">
+            Kullanıcılar
+        </a>
+
+
+
+        <div class="admin-section-title">
+            SİSTEM
+        </div>
+
+        <a href="#" id="logoutBtn" class="sidebar-link">
+            Çıkış Yap
+        </a>
+
+    </div>
+
+</div>
+
+
+
+<script>
+
+
+    function logoutAdmin() {
+
+        localStorage.removeItem(
+            "admin_token"
+        );
+
+        window.location.href =
+            "./login.html";
+    }
+
+</script>

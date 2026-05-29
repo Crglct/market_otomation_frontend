@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Male-Fashion | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__option">
+            <div class="offcanvas__links">
+                <a href="#">Sign in</a>
+                <a href="#">FAQs</a>
+            </div>
+            <div class="offcanvas__top__hover">
+                <span>Usd <i class="arrow_carrot-down"></i></span>
+                <ul>
+                    <li>USD</li>
+                    <li>EUR</li>
+                    <li>USD</li>
+                </ul>
+            </div>
+        </div>
+        <div class="offcanvas__nav__option">
+            <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
+            <a href="#"><img src="img/icon/heart.png" alt=""></a>
+            <a href="#"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
+            <div class="price">$0.00</div>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__text">
+            <p>Free shipping, 30-day return or refund guarantee.</p>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <div class="header__top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-4">
+                    <div class="header__top__left">
+                        <p>🚚 Ücretsiz Kargo</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="header__top__center">
+                        <p>Yeni Üyelere %10 İndirim</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 text-right">
+                    <div class="header__top__right">
+                        <p>📞 0850 123 45 67</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <div id="header"></div>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="profile-section spad" id="profileContent" style="
+        display:block;
+        background:#f8f8f8;
+        padding-top:50px;
+        padding-bottom:80px;
+    ">
+
+        <div class="container">
+
+            <div style="
+            max-width:1450px;
+            margin:auto;
+        ">
+
+                <!-- HEADER -->
+
+                <div style="
+                background:white;
+                border-radius:28px;
+                padding:40px;
+                margin-bottom:28px;
+                border:1px solid #efefef;
+                box-shadow:0 10px 35px rgba(0,0,0,0.04);
+            ">
+
+                    <div style="
+                    display:flex;
+                    align-items:center;
+                    justify-content:space-between;
+                    gap:20px;
+                    flex-wrap:wrap;
+                ">
+
+                        <div>
+
+                            <h1 style="
+                            font-size:42px;
+                            font-weight:900;
+                            margin-bottom:14px;
+                            color:#111;
+                        ">
+                                Favorilerim
+                            </h1>
+
+                            <p style="
+                            color:#777;
+                            font-size:15px;
+                            margin:0;
+                            line-height:28px;
+                            max-width:650px;
+                        ">
+                                Favori ürünlerinizi görüntüleyebilir,
+                                ürün detayına gidebilir veya favorilerinizden kaldırabilirsiniz.
+                            </p>
+
+                        </div>
+
+                        <div style="
+                        min-width:130px;
+                        height:58px;
+                        padding:0 22px;
+                        border-radius:16px;
+                        background:#111;
+                        color:white;
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                        gap:8px;
+                        font-size:17px;
+                        font-weight:800;
+                    ">
+
+                            <span id="favoriteCount">
+                                0
+                            </span>
+
+                            Ürün
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- FAVORITES -->
+
+                <div id="favoritesList" style="
+                    display:flex;
+                    flex-direction:column;
+                    gap:18px;
+                ">
+
+                    <!-- FAVORITE CARD -->
+
+                    <div class="favorite-card" style="
+                        background:white;
+                        border:1px solid #eee;
+                        border-radius:26px;
+                        padding:22px;
+                        display:flex;
+                        align-items:center;
+                        justify-content:space-between;
+                        gap:24px;
+                        transition:0.3s;
+                        flex-wrap:wrap;
+                    " onmouseover="
+                        this.style.transform='translateY(-6px)';
+                        this.style.boxShadow='0 18px 45px rgba(0,0,0,0.08)';
+                    " onmouseout="
+                        this.style.transform='translateY(0)';
+                        this.style.boxShadow='none';
+                    ">
+
+                        <!-- LEFT -->
+
+                        <div style="
+                        display:flex;
+                        align-items:center;
+                        gap:22px;
+                        flex:1;
+                        min-width:0;
+                    ">
+
+                            <!-- IMAGE -->
+
+                            <a href="#">
+
+                                <div style="
+                                width:160px;
+                                height:160px;
+                                border-radius:24px;
+                                background:#fafafa;
+                                border:1px solid #eee;
+                                overflow:hidden;
+                                padding:16px;
+                                display:flex;
+                                align-items:center;
+                                justify-content:center;
+                                flex-shrink:0;
+                            ">
+
+                                    <img src="img/product/product-1.jpg" alt="" style="
+                                        width:100%;
+                                        height:100%;
+                                        object-fit:contain;
+                                    ">
+
+                                </div>
+
+                            </a>
+
+                            <!-- CONTENT -->
+
+                            <div style="
+                            flex:1;
+                            min-width:0;
+                            max-width:700px;
+                        ">
+
+                                <a href="#" style="
+                                    text-decoration:none;
+                                    color:#111;
+                                ">
+
+                                    <h2 style="
+                                    font-size:26px;
+                                    font-weight:800;
+                                    line-height:40px;
+                                    margin-bottom:16px;
+                                ">
+                                        Court Classic Vulc FS 396353
+                                        Unisex Spor Ayakkabı
+                                    </h2>
+
+                                </a>
+
+                                <div style="
+                                font-size:30px;
+                                font-weight:800;
+                                color:#111;
+                            ">
+                                    ₺2.200
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- RIGHT -->
+
+                        <div style="
+                        display:flex;
+                        align-items:center;
+                        gap:12px;
+                        flex-shrink:0;
+                        flex-wrap:wrap;
+                    ">
+
+                            <a href="#" style="
+                                min-width:140px;
+                                height:52px;
+                                padding:0 26px;
+                                border-radius:16px;
+                                background:#111;
+                                color:white;
+                                display:flex;
+                                align-items:center;
+                                justify-content:center;
+                                text-decoration:none;
+                                font-size:14px;
+                                font-weight:700;
+                                transition:0.2s;
+                            " onmouseover="
+                                this.style.opacity='0.9';
+                            " onmouseout="
+                                this.style.opacity='1';
+                            ">
+                                Detaya Git
+                            </a>
+
+                            <button style="
+                                min-width:180px;
+                                height:52px;
+                                padding:0 22px;
+                                border-radius:16px;
+                                border:1px solid #ff4d4f;
+                                background:white;
+                                color:#ff4d4f;
+                                font-size:14px;
+                                font-weight:700;
+                                cursor:pointer;
+                                transition:0.2s;
+                            " onmouseover="
+                                this.style.background='#ff4d4f';
+                                this.style.color='white';
+                            " onmouseout="
+                                this.style.background='white';
+                                this.style.color='#ff4d4f';
+                            ">
+                                Favorilerden Kaldır
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- About Section End -->
+
+    <!-- Testimonial Section Begin -->
+
+    <!-- Testimonial Section End -->
+
+    <!-- Counter Section Begin -->
+
+    <!-- Counter Section End -->
+
+    <!-- Team Section Begin -->
+
+
+    <!-- Team Section End -->
+
+    <!-- Client Section Begin -->
+
+
+    <!-- Client Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+
+                    <div class="footer__about">
+
+                        <div class="footer__logo">
+
+                            <h2 style="color:white;">
+                                MarketSepetim
+                            </h2>
+
+                        </div>
+
+                        <p>
+                            MarketSepetim ile temel gıda,
+                            içecek ve günlük ihtiyaçlarını
+                            güvenle sipariş ver.
+                        </p>
+
+                        <a href="#">
+                            <img src="img/payment.png" alt="">
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="
+                col-lg-2
+                offset-lg-1
+                col-md-3
+                col-sm-6
+            ">
+
+                    <div class="footer__widget">
+
+                        <h6>
+                            Kategoriler
+                        </h6>
+
+                        <ul>
+
+                            <li>
+                                <a href="./shop.html?category=icecekler">
+                                    İçecekler
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./shop.html?category=temel-gida">
+                                    Temel Gıda
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./shop.html?category=atistirmalik">
+                                    Atıştırmalıklar
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./shop.html">
+                                    Tüm Ürünler
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="
+                col-lg-2
+                col-md-3
+                col-sm-6
+            ">
+
+                    <div class="footer__widget">
+
+                        <h6>
+                            Kurumsal
+                        </h6>
+
+                        <ul>
+
+                            <li>
+                                <a href="./about.html">
+                                    Hakkımızda
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./contact.html">
+                                    İletişim
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./refund.html">
+                                    Teslimat & İade
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="
+                col-lg-3
+                offset-lg-1
+                col-md-6
+                col-sm-6
+            ">
+
+                    <div class="footer__widget">
+
+                        <h6>
+                            Bülten
+                        </h6>
+
+                        <div class="footer__newslatter">
+
+                            <p>
+                                Yeni ürün ve fırsatlardan
+                                haberdar olun.
+                            </p>
+
+                            <form action="#">
+
+                                <input type="text" placeholder="Email giriniz">
+
+                                <button type="submit">
+
+                                    <span class="
+                                    icon_mail_alt
+                                "></span>
+
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="row">
+
+                <div class="col-lg-12 text-center">
+
+                    <div class="
+                    footer__copyright__text
+                ">
+
+                        <p>
+
+                            Copyright ©
+
+                            <script>
+                                document.write(
+                                    new Date().getFullYear()
+                                );
+                            </script>
+
+                            2020
+
+                            All rights reserved |
+                            This template is made with
+
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+
+                            by
+
+                            <a href="https://colorlib.com" target="_blank">
+                                Colorlib
+                            </a>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+
+        const API_BASE =
+            "http://127.0.0.1:8000/api";
+
+        const token =
+            localStorage.getItem("token");
+
+        if (!token) {
+
+            window.location.href =
+                "login.html";
+        }
+
+        async function loadHeader() {
+            const response =
+                await fetch(
+                    "components/header.html"
+                );
+
+            const data =
+                await response.text();
+
+            document.getElementById(
+                "header"
+            ).innerHTML =
+                data;
+
+            eval(
+                document
+                    .querySelector(
+                        "#header script"
+                    )
+                    .innerText
+            );
+        }
+
+        loadHeader();
+
+        window.addEventListener(
+            "load",
+            function () {
+
+                document
+                    .getElementById(
+                        "profileLoader"
+                    )
+                    .style.display =
+                    "none";
+
+                document
+                    .getElementById(
+                        "profileContent"
+                    )
+                    .style.display =
+                    "block";
+            }
+        );
+
+        async function loadFavorites() {
+            try {
+
+                const favoritesList =
+                    document.getElementById(
+                        "favoritesList"
+                    );
+
+                const favoriteCount =
+                    document.getElementById(
+                        "favoriteCount"
+                    );
+
+                favoritesList.innerHTML = `
+
+                <div style="
+                    background:white;
+                    border-radius:24px;
+                    padding:80px;
+                    text-align:center;
+                    border:1px solid #eee;
+                ">
+
+                    <h3 style="
+                        font-size:26px;
+                        font-weight:800;
+                        margin-bottom:14px;
+                    ">
+                        Favoriler yükleniyor...
+                    </h3>
+
+                    <p style="
+                        color:#777;
+                        margin:0;
+                    ">
+                        Lütfen bekleyin.
+                    </p>
+
+                </div>
+
+            `;
+
+                const response =
+                    await fetch(
+
+                        API_BASE +
+                        "/favorites",
+
+                        {
+                            headers: {
+
+                                Authorization:
+                                    "Bearer " +
+                                    token,
+
+                                Accept:
+                                    "application/json"
+                            }
+                        }
+                    );
+
+                const data =
+                    await response.json();
+
+                if (!response.ok) {
+
+                    throw new Error(
+                        data.message
+                    );
+                }
+
+                const favorites =
+                    data.data;
+
+                favoriteCount.innerText =
+                    favorites.length;
+
+                if (
+                    !favorites ||
+                    favorites.length === 0
+                ) {
+
+                    favoritesList.innerHTML = `
+
+                    <div style="
+                        background:white;
+                        border:1px dashed #ddd;
+                        border-radius:26px;
+                        padding:90px 30px;
+                        text-align:center;
+                    ">
+
+                        <h2 style="
+                            font-size:34px;
+                            font-weight:900;
+                            margin-bottom:18px;
+                            color:#111;
+                        ">
+                            Henüz favori ürününüz yok
+                        </h2>
+
+                        <p style="
+                            color:#777;
+                            font-size:16px;
+                            margin-bottom:35px;
+                        ">
+                            Beğendiğiniz ürünleri favorilere ekleyebilirsiniz.
+                        </p>
+
+                        <a
+                            href="./shop.html"
+
+                            style="
+                                display:inline-flex;
+                                align-items:center;
+                                justify-content:center;
+                                height:58px;
+                                padding:0 34px;
+                                background:#111;
+                                color:white;
+                                border-radius:18px;
+                                text-decoration:none;
+                                font-weight:700;
+                                font-size:15px;
+                            "
+                        >
+                            Alışverişe Başla
+                        </a>
+
+                    </div>
+
+                `;
+
+                    return;
+                }
+
+                let html = "";
+
+                favorites.forEach(favorite => {
+
+                    html += `
+
+<div
+
+    class="favorite-card"
+
+    onclick="
+        window.location.href =
+        'product-details.html?slug=${favorite.slug}'
+    "
+
+    style="
+        background:white;
+        border:1px solid #eee;
+        border-radius:26px;
+        padding:22px;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        gap:24px;
+        transition:0.3s;
+        cursor:pointer;
+        flex-wrap:wrap;
+    "
+
+    onmouseover="
+        this.style.transform='translateY(-6px)';
+        this.style.boxShadow='0 18px 45px rgba(0,0,0,0.08)';
+    "
+
+    onmouseout="
+        this.style.transform='translateY(0)';
+        this.style.boxShadow='none';
+    "
+>
+
+    <!-- LEFT -->
+
+    <div style="
+        display:flex;
+        align-items:center;
+        gap:22px;
+        flex:1;
+        min-width:0;
+    ">
+
+        <!-- IMAGE -->
+
+        <div style="
+            width:160px;
+            height:160px;
+            border-radius:24px;
+            background:#fafafa;
+            border:1px solid #eee;
+            overflow:hidden;
+            padding:16px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-shrink:0;
+        ">
+
+            <img
+
+                src="${favorite.image
+                            ? favorite.image
+                            : 'img/no-image.png'
+                        }"
+
+                style="
+                    width:100%;
+                    height:100%;
+                    object-fit:contain;
+                "
+            >
+
+        </div>
+
+        <!-- CONTENT -->
+
+        <div style="
+            flex:1;
+            min-width:0;
+            max-width:700px;
+        ">
+
+            <h2 style="
+                font-size:26px;
+                font-weight:800;
+                line-height:40px;
+                margin-bottom:14px;
+                color:#111;
+            ">
+                ${favorite.name}
+            </h2>
+
+            <div style="
+                font-size:30px;
+                font-weight:800;
+                color:#111;
+            ">
+                ₺${Number(
+                            favorite.price
+                        ).toLocaleString("tr-TR")}
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT -->
+
+    <div style="
+        display:flex;
+        align-items:center;
+        gap:12px;
+        flex-wrap:wrap;
+    ">
+
+        <a
+
+            href="
+                product-details.html?slug=${favorite.slug}
+            "
+
+            onclick="
+                event.stopPropagation();
+            "
+
+            style="
+                min-width:140px;
+                height:52px;
+                padding:0 26px;
+                border-radius:16px;
+                background:#111;
+                color:white;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                text-decoration:none;
+                font-size:14px;
+                font-weight:700;
+            "
+        >
+            Detaya Git
+        </a>
+
+        <button
+
+            onclick="
+                event.stopPropagation();
+                removeFavorite(
+                    ${favorite.id},
+                    this
+                );
+            "
+
+            style="
+                min-width:180px;
+                height:52px;
+                padding:0 22px;
+                border-radius:16px;
+                border:1px solid #ff4d4f;
+                background:white;
+                color:#ff4d4f;
+                font-size:14px;
+                font-weight:700;
+                cursor:pointer;
+                transition:0.2s;
+            "
+
+            onmouseover="
+                this.style.background='#ff4d4f';
+                this.style.color='white';
+            "
+
+            onmouseout="
+                this.style.background='white';
+                this.style.color='#ff4d4f';
+            "
+        >
+            Favorilerden Kaldır
+        </button>
+
+    </div>
+
+</div>
+
+`;
+                });
+
+                favoritesList.innerHTML =
+                    html;
+
+            }
+
+            catch (error) {
+
+                console.log(error);
+
+                showPopup(
+                    "Favoriler yüklenemedi",
+                    false
+                );
+            }
+        }
+
+        async function removeFavorite(
+            productId,
+            button
+        ) {
+
+            try {
+
+                button.disabled = true;
+
+                const response =
+                    await fetch(
+
+                        API_BASE +
+                        "/favorites/toggle/" +
+                        productId,
+
+                        {
+                            method: "POST",
+
+                            headers: {
+
+                                Authorization:
+                                    "Bearer " +
+                                    token,
+
+                                Accept:
+                                    "application/json"
+                            }
+                        }
+                    );
+
+                const data =
+                    await response.json();
+
+                if (!response.ok) {
+
+                    throw new Error(
+                        data.message
+                    );
+                }
+
+                const card =
+                    button.closest(
+                        ".favorite-card"
+                    );
+
+                card.style.opacity =
+                    "0";
+
+                card.style.transform =
+                    "scale(0.95)";
+
+                setTimeout(() => {
+
+                    card.remove();
+
+                    const favoriteCount =
+                        document.getElementById(
+                            "favoriteCount"
+                        );
+
+                    favoriteCount.innerText =
+                        Number(
+                            favoriteCount.innerText
+                        ) - 1;
+
+                    if (
+                        document.querySelectorAll(
+                            ".favorite-card"
+                        ).length === 0
+                    ) {
+
+                        loadFavorites();
+                    }
+
+                }, 250);
+
+                showPopup(
+                    "Favorilerden kaldırıldı"
+                );
+
+            }
+
+            catch (error) {
+
+                console.log(error);
+
+                showPopup(
+                    error.message,
+                    false
+                );
+            }
+        }
+
+        loadFavorites();
+
+        function showPopup(
+            message,
+            success = true
+        ) {
+
+            const popup =
+                document.getElementById(
+                    "popup"
+                );
+
+            const popupText =
+                document.getElementById(
+                    "popupText"
+                );
+
+            const popupIcon =
+                document.getElementById(
+                    "popupIcon"
+                );
+
+            popupText.innerText =
+                message;
+
+            if (success) {
+
+                popupIcon.style.background =
+                    "#27ae60";
+
+                popupIcon.innerText =
+                    "✓";
+
+            } else {
+
+                popupIcon.style.background =
+                    "#e74c3c";
+
+                popupIcon.innerText =
+                    "!";
+            }
+
+            popup.style.display =
+                "flex";
+
+            setTimeout(function () {
+
+                popup.style.display =
+                    "none";
+
+            }, 3000);
+        }
+
+    </script>
+
+    <div id="popup" style="
+    position:fixed;
+    top:30px;
+    right:30px;
+    background:white;
+    padding:18px 22px;
+    border-radius:16px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.12);
+    z-index:99999;
+    display:none;
+    min-width:320px;
+    align-items:center;
+    gap:15px;
+">
+
+        <div id="popupIcon" style="
+            width:38px;
+            height:38px;
+            border-radius:50%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            color:white;
+            font-size:18px;
+            font-weight:bold;
+            background:#27ae60;
+        ">
+            ✓
+        </div>
+
+        <p id="popupText" style="
+        margin:0;
+        font-size:16px;
+        font-weight:600;
+        color:#222;
+    "></p>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
