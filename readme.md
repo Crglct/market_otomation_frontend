@@ -109,7 +109,7 @@ Proje responsive tasarım prensiplerine uygun olarak geliştirilmiş olup masaü
 
 Bu frontend uygulaması aşağıdaki Laravel API servisini kullanmaktadır:
 
-https://github.com/icanKuleli61/MarketSepeti-api
+// git hub linki koy sil 
 
 ---
 
