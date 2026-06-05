@@ -109,7 +109,7 @@ Proje responsive tasarım prensiplerine uygun olarak geliştirilmiş olup masaü
 
 Bu frontend uygulaması aşağıdaki Laravel API servisini kullanmaktadır:
 
-// git hub linki koy sil 
+https://github.com/Crglct/market_otomasyon_backend
 
 ---
 
